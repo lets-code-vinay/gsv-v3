@@ -1,0 +1,4 @@
+1. use parcel
+2. use all updated packages
+3. use latest MUI
+4. add shimmer on all page
