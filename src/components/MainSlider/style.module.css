@@ -1,0 +1,317 @@
+.sliderInformationBarTitle {
+  color: #ffffff;
+  text-shadow: 2px 2px black;
+  position: absolute;
+}
+
+.progressBars {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+
+.main-screen {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+.image-slider {
+  height: 100vh !important;
+}
+.infoBlock .informationBar {
+  width: 60%;
+  height: 210px;
+  position: absolute;
+}
+.informationMsgContainer {
+  width: 100%;
+  height: fit-content;
+  color: #ffffff;
+  border-radius: 0 80px 80px 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.informationMsgContainer .informationMSG {
+  color: #ffffff !important;
+  opacity: 1;
+  padding-right: 5% !important;
+  padding: "2%";
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  height: 20vh;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+/* 320px — 480px: Mobile devices
+  481px — 768px: iPads, Tablets
+  769px — 1024px: Small screens, laptops
+  1025px — 1200px: Desktops, large screens
+  1201px and more —  Extra large screens, TV */
+@media screen and (max-width: 480px) {
+  .sliderInformationBarTitle {
+    color: #ffffff;
+    padding: 3% 0% 0 6%;
+    text-shadow: 2px 2px black;
+    font-size: 2rem !important;
+    width: 80%;
+    top: 40%;
+    background-position: top 40% left 0%;
+    background-position-x: 40%;
+    background-position-y: 0%;
+  }
+  .infoBlock .informationBar {
+    width: 95%;
+    height: 60px;
+    position: absolute;
+    top: 80%;
+    background-position: top 80% left 0%;
+    background-position-x: 80%;
+    background-position-y: 0%;
+  }
+  .informationBar .informationMsgContainer {
+    width: 100%;
+    height: 8vh;
+    color: #ffffff;
+    text-shadow: 1px 1px solid black;
+    border-radius: 0 100px 100px 0;
+  }
+  .informationMsgContainer .informationMSG {
+    color: #ffffff !important;
+    opacity: 1;
+    padding: 2% 5% 2% 2%;
+    font-size: 0.7rem;
+  }
+
+  .progressBars {
+    width: 95%;
+    margin: 0 5%;
+    top: 75%;
+    background-position: top 75% left 0%;
+    background-position-x: 75%;
+    background-position-y: 0%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+  .sliderInformationBarTitle {
+    color: #ffffff;
+    padding: 0% 4%;
+    text-shadow: 2px 2px black;
+    font-size: 1.4rem !important;
+    width: 75%;
+    bottom: 40%;
+    background-position: bottom 40% left 0%;
+    background-position-x: -40%;
+    background-position-y: 0%;
+  }
+  .infoBlock .informationBar {
+    width: 95%;
+    height: 60px;
+    position: absolute;
+    bottom: 5%;
+    background-position: bottom 5% left 0%;
+    background-position-x: -5%;
+    background-position-y: 0%;
+  }
+  .informationBar .informationMsgContainer {
+    width: 100%;
+    height: fit-content;
+    color: #ffffff;
+    text-shadow: 1px 1px solid black;
+    border-radius: 0 100px 100px 0;
+  }
+  .informationMsgContainer .informationMSG {
+    color: #ffffff !important;
+    padding: 1% 3% 1% 2%;
+    font-size: 0.7rem;
+    opacity: 1;
+  }
+  .progressBars {
+    width: 70%;
+    bottom: 33%;
+    background-position: bottom 33% left 0%;
+    background-position-x: -33%;
+    background-position-y: 0%;
+    margin: 0 5%;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1023px) {
+  .infoBlock .informationBar {
+    width: 90%;
+    height: 60px;
+    position: absolute;
+    bottom: 12%;
+    background-position: bottom 12% left 0%;
+    background-position-x: -12%;
+    background-position-y: 0%;
+  }
+  .informationBar .informationMsgContainer {
+    width: 90%;
+    height: fit-content;
+    color: #ffffff;
+    text-shadow: 1px 1px solid black;
+    border-radius: 0 100px 100px 0;
+    opacity: 0.8;
+  }
+  .informationMsgContainer .informationMSG {
+    color: #ffffff !important;
+    padding: 1% 2%;
+    font-size: 1rem;
+    opacity: 1;
+    height: 8vh;
+  }
+  .sliderInformationBarTitle {
+    color: #ffffff;
+    padding: 3% 4%;
+    text-shadow: 2px 2px black;
+    font-size: 35px !important;
+    width: 65%;
+    bottom: 40%;
+    background-position: bottom 40% left 0%;
+    background-position-x: -40%;
+    background-position-y: 0%;
+  }
+
+  .progressBars {
+    width: 60%;
+    bottom: 33%;
+    background-position: bottom 33% left 0%;
+    background-position-x: -33%;
+    background-position-y: 0%;
+    margin: 0 5%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1219px) {
+  .sliderInformationBarTitle {
+    color: #ffffff;
+    padding: 3% 4%;
+    text-shadow: 2px 2px black;
+    font-size: 40px !important;
+    width: 60%;
+    bottom: 40%;
+    background-position: bottom 40% left 0%;
+    background-position-x: -40%;
+    background-position-y: 0%;
+  }
+  .infoBlock .informationBar {
+    width: 90%;
+    height: 60px;
+    position: absolute;
+    bottom: 12%;
+    background-position: bottom 12% left 0%;
+    background-position-x: -12%;
+    background-position-y: 0%;
+  }
+  .informationBar .informationMsgContainer {
+    width: 100%;
+    height: fit-content;
+    color: #ffffff;
+    text-shadow: 1px 1px solid black;
+    border-radius: 0 100px 100px 0;
+  }
+  .informationMsgContainer .informationMSG {
+    color: #ffffff !important;
+    padding: 1% 2%;
+    font-size: 1rem;
+  }
+  .progressBars {
+    width: 60%;
+    bottom: 35%;
+    background-position: bottom 35% left 0%;
+    background-position-x: -35%;
+    background-position-y: 0%;
+    margin: 0 5%;
+  }
+}
+
+@media screen and (min-width: 1220px) and (max-width: 1919px) {
+  .sliderInformationBarTitle {
+    color: #ffffff;
+    padding: 3% 4%;
+    text-shadow: 2px 2px black;
+    width: 60%;
+    bottom: 40%;
+    background-position: bottom 40% left 0%;
+    background-position-x: -40%;
+    background-position-y: 0%;
+    font-size: 55px !important;
+  }
+  .infoBlock .informationBar {
+    width: 60%;
+    height: 60px;
+    position: absolute;
+    bottom: 20%;
+    background-position: bottom 20% left 0%;
+    background-position-x: -20%;
+    background-position-y: 0%;
+  }
+  .informationBar .informationMsgContainer {
+    width: 100%;
+    height: fit-content;
+    color: #ffffff;
+    text-shadow: 1px 1px solid black;
+    border-radius: 0 100px 100px 0;
+  }
+  .informationMsgContainer .informationMSG {
+    color: #ffffff !important;
+    padding: 1% 2%;
+    font-size: 24px;
+  }
+  .progressBars {
+    width: 50%;
+    bottom: 40%;
+    background-position: bottom 50% left 0%;
+    background-position-x: -50%;
+    background-position-y: 0%;
+    margin: 0 5%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .sliderInformationBarTitle {
+    margin-bottom: 2%;
+    font-size: 60px !important;
+    padding: 3% 4%;
+    width: 60%;
+    bottom: 40%;
+    background-position: bottom 40% left 0%;
+    background-position-x: -40%;
+    background-position-y: 0%;
+  }
+  .infoBlock .informationBar {
+    width: 70%;
+    height: 210px;
+    position: absolute;
+    bottom: 5%;
+    background-position: bottom 5% left 0%;
+    background-position-x: -5%;
+    background-position-y: 0%;
+  }
+  .informationBar .informationMsgContainer {
+    width: 100%;
+    height: fit-content;
+    color: #ffffff;
+    text-shadow: 1px 1px solid black;
+    border-radius: 0 150px 150px 0;
+    opacity: 0.8;
+  }
+  .informationMSG {
+    padding: 1% 2%;
+    font-size: 2rem !important;
+  }
+  .progressBars {
+    width: 50%;
+    bottom: 35%;
+    background-position: bottom 35% left 0%;
+    background-position-x: -35%;
+    background-position-y: 0%;
+    margin: 0 5%;
+  }
+}
