@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Footer from "../../components/Footer";
 import * as classes from "./Homepage.module.css";
 import MainSlider from "../../components/MainSlider";
+import Trending from "../../components/Trending";
 
 const Homepage = () => {
   const mainRef = React.useRef(null);
@@ -30,8 +31,8 @@ const Homepage = () => {
   return (
     <Box className={classes["homepage-container"]} ref={mainRef}>
       <MainSlider scrollPosition={scrollPosition} />
-      {/*<Trending />
-      <Insight />
+      <Trending />
+      {/* <Insight />
       <InfinitySliderContainer />
       <Technologies />
       <OurPresence />
