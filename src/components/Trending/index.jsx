@@ -11,7 +11,7 @@ import * as classes from "./style.module.css";
 
 import TRENDING_LOGO from "../../assets/icons/trending.svg";
 
-// import CustomizedDialogs from "../CustomizedDialogs";
+import CustomizedDialogs from "../CustomizedDialogs";
 import { TRENDING_CONFIGS } from "../../Configs/Trending";
 
 const Trending = () => {

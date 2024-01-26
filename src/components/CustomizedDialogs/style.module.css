@@ -1,0 +1,10 @@
+.DialogTitle {
+  justify-content: space-between;
+  display: flex;
+}
+.closeButton {
+  color: #f3f5f8;
+  position: absolute;
+  right: 5px;
+  top: 3px;
+}
