@@ -1,5 +1,6 @@
 import React, { memo, useState } from "react";
 
+import { number } from "prop-types";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Box from "@mui/material/Box";
@@ -7,10 +8,9 @@ import Typography from "@mui/material/Typography";
 
 import * as classes from "./style.module.css";
 
-// import StructuredNavbar from "../StructuredNavbar";
-import { number } from "prop-types";
-import { MAIN_SLIDER_DATA } from "../../configs/MainSlider";
 import ActiveProgress from "./ActiveProgress";
+import StructuredNavbar from "../StructuredNavbar";
+import { MAIN_SLIDER_DATA } from "../../configs/MainSlider";
 
 const MainSlider = ({ scrollPosition }) => {
   const [currentSlideData, setCurrentSlideData] = useState({});
@@ -94,7 +94,7 @@ const MainSlider = ({ scrollPosition }) => {
           </div>
         </Carousel>
 
-        {/* <StructuredNavbar scrollPosition={scrollPosition} /> */}
+        <StructuredNavbar scrollPosition={scrollPosition} />
 
         <Typography
           variant={"body1"}
