@@ -12,6 +12,11 @@
   display: flex;
   justify-content: space-around;
 }
+
+.appBarChild {
+  display: flex;
+  justify-content: space-between;
+}
 .grow {
   flex-grow: 0.5;
 }
@@ -31,7 +36,9 @@
 }
 
 .menuButton {
-  margin-left: 14%;
+  /* margin-left: 14%; */
+  display: flex;
+  justify-content: space-evenly;
 }
 .login_button {
   font-size: 1.3rem;

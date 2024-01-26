@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 
 import { THEME_COLOR } from "../../../configs/Theme";
-import "./styles.module.css";
+import * as classes from "./styles.module.css";
 
 const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
   const navigate = useNavigate();
