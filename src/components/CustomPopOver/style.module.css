@@ -1,0 +1,8 @@
+.paper {
+  width: 28%;
+  margin-top: -3%;
+  padding: 1% 0%;
+}
+.popover {
+  pointer-events: "none";
+}
