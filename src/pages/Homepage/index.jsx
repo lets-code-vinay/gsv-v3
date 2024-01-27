@@ -12,6 +12,7 @@ import InfinitySlider from "../../components/InfinitySlider";
 import InfinitySliderContainer from "../../components/InfinitySliderContainers";
 import CustomPopOver from "../../components/CustomPopOver";
 import Insight from "../../components/Insight";
+import Testimonials from "../../components/Testimonials";
 
 const Homepage = () => {
   const mainRef = React.useRef(null);
@@ -53,8 +54,9 @@ const Homepage = () => {
      
      
       <OurPresence />
-      <Testimonials />
+      
     */}
+      <Testimonials />
       <Footer />
     </Box>
   );
