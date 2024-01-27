@@ -4,7 +4,8 @@ import { ChevronLeft, ChevronRight } from "react-feather";
 import "slick-carousel/slick/slick.css";
 import * as classes from "./style.module.css";
 import { IMAGES } from "../../configs/Images";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+import { Typography } from "@mui/material";
 
 const OurClients = () => {
   const settings = {
