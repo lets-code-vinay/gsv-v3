@@ -8,6 +8,7 @@ import Technologies from "../../components/Technologies";
 import WorldMapWithIndia from "../../components/WorldMapWithIndia";
 import CustomPopOver from "../../components/CustomPopOver";
 import OurClients from "../../components/OurClient/OurClients";
+import InfinitySlider from "../../components/InfinitySlider";
 
 const Homepage = () => {
   const mainRef = React.useRef(null);
@@ -40,6 +41,7 @@ const Homepage = () => {
       <WorldMapWithIndia />
       <CustomPopOver />
       <OurClients />
+      <InfinitySlider />
       {/* <Insight />
       <InfinitySliderContainer />
      
