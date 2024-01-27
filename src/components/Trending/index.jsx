@@ -11,7 +11,7 @@ import * as classes from "./style.module.css";
 
 import TRENDING_LOGO from "../../assets/icons/trending.svg";
 
-// import CustomizedDialogs from "../CustomizedDialogs";
+import CustomizedDialogs from "../CustomizedDialogs";
 import { TRENDING_CONFIGS } from "../../Configs/Trending";
 
 const Trending = () => {
@@ -173,12 +173,12 @@ const Trending = () => {
           )}
         </Tabs>
       </Box>
-      {/* <CustomizedDialogs
+      <CustomizedDialogs
         title={dialogTitle}
         open={openLearnMore}
         onClose={handleClose}
         msg={dialogMSG}
-      /> */}
+      />
     </main>
   );
 };
