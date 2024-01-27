@@ -13,6 +13,7 @@ import InfinitySliderContainer from "../../components/InfinitySliderContainers";
 import CustomPopOver from "../../components/CustomPopOver";
 import Insight from "../../components/Insight";
 import Testimonials from "../../components/Testimonials";
+import TestimonialCard from "../../components/TestimonialCard";
 
 const Homepage = () => {
   const mainRef = React.useRef(null);
@@ -46,7 +47,7 @@ const Homepage = () => {
       <Technologies />
       <WorldMapWithIndia />
       <CustomPopOver />
-
+      <TestimonialCard />
       {/* <InfinitySlider /> */}
 
       {/* 
