@@ -173,12 +173,12 @@ const Trending = () => {
           )}
         </Tabs>
       </Box>
-      {/* <CustomizedDialogs
+      <CustomizedDialogs
         title={dialogTitle}
         open={openLearnMore}
         onClose={handleClose}
         msg={dialogMSG}
-      /> */}
+      />
     </main>
   );
 };
