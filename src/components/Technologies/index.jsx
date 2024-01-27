@@ -15,7 +15,7 @@ const Technologies = () => {
     <main className={classes["technologiesPage"]}>
       <Box className={classes["technologies-container"]}>
         <Box className={classes["technologiesTitle"]}>
-          <Typography variant="h4" className={classes["technologiesText"]}>
+          <Typography variant="h2" className={classes["technologiesText"]}>
             Technologies
           </Typography>
         </Box>
@@ -65,7 +65,7 @@ const Technologies = () => {
             <Card className={classes["cardMenu"]}>
               <CardContent className={classes["softwareImageOverlay"]}>
                 <div
-                  className={classes["divImgClass imageLeft"]}
+                  className={`${classes["divImgClass"]} ${classes["imageLeft"]}`}
                   src={Software_Define_Grid}
                 >
                   <img
@@ -97,9 +97,9 @@ const Technologies = () => {
           </Grid>
           <Grid item xs={12} sm={12} md={4} lg={4} className={classes["bck2"]}>
             <Card className={classes["cardMenu"]}>
-              <CardContent className="securityOverlay">
+              <CardContent className={classes["securityOverlay"]}>
                 <div
-                  className={classes["divImgClassSecurity imageRight"]}
+                  className={`${classes["divImgClassSecurity"]} ${classes["imageRight"]}`}
                   src={Security_Img}
                 >
                   <img
@@ -138,23 +138,13 @@ const Technologies = () => {
               para = "",
             } = itemData || {};
             return (
-              <Grid
-                item
-                xs={6}
-                sm={6}
-                md={4}
-                lg={4}
-                className={classes["cardBody"]}
-                key={i}
-              >
+              <Grid item xs={6} sm={6} md={4} lg={4} key={i}>
                 <Card
                   key={i}
                   sx={{ minWidth: 275 }}
                   className={classes["cardMenu"]}
                 >
-                  <CardContent
-                    className={classes["cardContent position-relative"]}
-                  >
+                  <CardContent className={`${classes["cardContent"]}`}>
                     <div className={classes["overlay"]}>
                       <div className={className} src={img}>
                         <img

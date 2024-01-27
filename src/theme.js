@@ -60,6 +60,14 @@ const theme = createTheme({
         },
       },
     },
+    MuiCardContent: {
+      styleOverrides: {
+        root: {
+          padding: "0",
+          margin: "0",
+        },
+      },
+    },
   },
 });
 
