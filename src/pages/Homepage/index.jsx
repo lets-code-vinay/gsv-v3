@@ -46,7 +46,6 @@ const Homepage = () => {
       <Technologies />
       <WorldMapWithIndia />
       <CustomPopOver />
-      <OurClients />
 
       {/* <InfinitySlider /> */}
 
@@ -57,6 +56,7 @@ const Homepage = () => {
       
     */}
       <Testimonials />
+      <OurClients />
       <Footer />
     </Box>
   );
