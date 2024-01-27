@@ -1,57 +1,57 @@
 // Government
-import AIRPORT from "../../Assets/Images/Testimonials/Government/airportAuthority.png";
-import DELHI_POLICE from "../../Assets/Images/Testimonials/Government/DelhiPolice.jpg";
-import ASSAM_POLICE from "../../Assets/Images/Testimonials/Government/AssamPolice.jpg";
-import AIR_FORCE from "../../Assets/Images/Testimonials/Government/airForce.png";
-import JKL from "../../Assets/Images/Testimonials/Government/JKL.jpg";
-import HP from "../../Assets/Images/Testimonials/Government/HP.png";
-import INDIAN_ARMY from "../../Assets/Images/Testimonials/Government/IndianArmy.png";
-import JHARKHAND from "../../Assets/Images/Testimonials/Government/Jharkhand.png";
-import UK from "../../Assets/Images/Testimonials/Government/UK.png";
-import LAW from "../../Assets/Images/Testimonials/Government/law.png";
+import AIRPORT from "../../assets/images/Testimonials/Government/airportAuthority.png";
+import DELHI_POLICE from "../../assets/images/Testimonials/Government/DelhiPolice.jpg";
+import ASSAM_POLICE from "../../assets/images/Testimonials/Government/AssamPolice.jpg";
+import AIR_FORCE from "../../assets/images/Testimonials/Government/airForce.png";
+import JKL from "../../assets/images/Testimonials/Government/JKL.jpg";
+import HP from "../../assets/images/Testimonials/Government/HP.png";
+import INDIAN_ARMY from "../../assets/images/Testimonials/Government/IndianArmy.png";
+import JHARKHAND from "../../assets/images/Testimonials/Government/Jharkhand.png";
+import UK from "../../assets/images/Testimonials/Government/UK.png";
+import LAW from "../../assets/images/Testimonials/Government/law.png";
 
 // IT--1
-import BLUE_NETWORK from "../../Assets/Images/Testimonials/IT/BNI.jpeg";
-import ATNIS from "../../Assets/Images/Testimonials/IT/atnis.png";
-import ENSTAL from "../../Assets/Images/Testimonials/IT/Enstal.png";
-import GLOBAL_XPERT from "../../Assets/Images/Testimonials/IT/Globalxperts.png";
-import GUARIDAN from "../../Assets/Images/Testimonials/IT/Guardian.jpeg";
-import HYPER_SHIFT from "../../Assets/Images/Testimonials/IT/HyperShift.png";
-import LMQ from "../../Assets/Images/Testimonials/IT/LMQ.png";
-import MIDDLE_GROUND from "../../Assets/Images/Testimonials/IT/Middleground.png";
-import TOUCH_BASE from "../../Assets/Images/Testimonials/IT/Touchbase.jpg";
-import PCNC from "../../Assets/Images/Testimonials/IT/PCNC.png";
-import INTRUM from "../../Assets/Images/Testimonials/IT/Intrum.png";
-import ROYAL from "../../Assets/Images/Testimonials/IT/Royal.png";
-import CLOUD_REACH from "../../Assets/Images/Testimonials/IT/cloudreach.png";
-import GEAR_HOST from "../../Assets/Images/Testimonials/IT/gearhost.png";
-import FINAL_FRAME from "../../Assets/Images/Testimonials/IT/final frame.png";
-import VIRTUVENT from "../../Assets/Images/Testimonials/IT/virtuvent.png";
-import WORLD_POSSIBLE from "../../Assets/Images/Testimonials/IT/worldPossible.png";
-import VOIPED from "../../Assets/Images/Testimonials/IT/voiped.png";
-import WELCOME from "../../Assets/Images/Testimonials/IT/welcome.png";
-import STAR_DATA from "../../Assets/Images/Testimonials/IT/stardata.jpg";
-import VGC from "../../Assets/Images/Testimonials/IT/VGC.png";
+import BLUE_NETWORK from "../../assets/images/Testimonials/IT/BNI.jpeg";
+import ATNIS from "../../assets/images/Testimonials/IT/atnis.png";
+import ENSTAL from "../../assets/images/Testimonials/IT/Enstal.png";
+import GLOBAL_XPERT from "../../assets/images/Testimonials/IT/Globalxperts.png";
+import GUARIDAN from "../../assets/images/Testimonials/IT/Guardian.jpeg";
+import HYPER_SHIFT from "../../assets/images/Testimonials/IT/HyperShift.png";
+import LMQ from "../../assets/images/Testimonials/IT/LMQ.png";
+import MIDDLE_GROUND from "../../assets/images/Testimonials/IT/Middleground.png";
+import TOUCH_BASE from "../../assets/images/Testimonials/IT/Touchbase.jpg";
+import PCNC from "../../assets/images/Testimonials/IT/PCNC.png";
+import INTRUM from "../../assets/images/Testimonials/IT/Intrum.png";
+import ROYAL from "../../assets/images/Testimonials/IT/Royal.png";
+import CLOUD_REACH from "../../assets/images/Testimonials/IT/cloudreach.png";
+import GEAR_HOST from "../../assets/images/Testimonials/IT/gearhost.png";
+import FINAL_FRAME from "../../assets/images/Testimonials/IT/final frame.png";
+import VIRTUVENT from "../../assets/images/Testimonials/IT/virtuvent.png";
+import WORLD_POSSIBLE from "../../assets/images/Testimonials/IT/worldPossible.png";
+import VOIPED from "../../assets/images/Testimonials/IT/voiped.png";
+import WELCOME from "../../assets/images/Testimonials/IT/welcome.png";
+import STAR_DATA from "../../assets/images/Testimonials/IT/stardata.jpg";
+import VGC from "../../assets/images/Testimonials/IT/VGC.png";
 
 // Health & Education
-import KAILASH_HOSPITAL from "../../Assets/Images/Testimonials/Health Education/KailashHospital.jpg";
-import JOHN_JAY from "../../Assets/Images/Testimonials/Health Education/JohnJay.jpg";
-import UROLOGY from "../../Assets/Images/Testimonials/Health Education/urology.png";
+import KAILASH_HOSPITAL from "../../assets/images/Testimonials/Health Education/KailashHospital.jpg";
+import JOHN_JAY from "../../assets/images/Testimonials/Health Education/JohnJay.jpg";
+import UROLOGY from "../../assets/images/Testimonials/Health Education/urology.png";
 
 // Hospitality
-import BEST_WESTERN from "../../Assets/Images/Testimonials/Hospitality/BestWestern.png";
-import IHG from "../../Assets/Images/Testimonials/Hospitality/IHG.png";
-import OYO from "../../Assets/Images/Testimonials/Hospitality/oyo.png";
+import BEST_WESTERN from "../../assets/images/Testimonials/Hospitality/BestWestern.png";
+import IHG from "../../assets/images/Testimonials/Hospitality/IHG.png";
+import OYO from "../../assets/images/Testimonials/Hospitality/oyo.png";
 
 // Retail
-import LC from "../../Assets/Images/Testimonials/Retail/LC.png";
-import SPAR from "../../Assets/Images/Testimonials/Retail/spar.png";
-import SEVEN_Eleven from "../../Assets/Images/Testimonials/Retail/7Eleven.png";
+import LC from "../../assets/images/Testimonials/Retail/LC.png";
+import SPAR from "../../assets/images/Testimonials/Retail/spar.png";
+import SEVEN_Eleven from "../../assets/images/Testimonials/Retail/7Eleven.png";
 
 // Manufacturing
-import GRANITIZE from "../../Assets/Images/Testimonials/Manufacturing/granitize.png";
-import BALARAMPUR_CHINI_MILL from "../../Assets/Images/Testimonials/Manufacturing/balarampur.png";
-import COLOR from "../../Assets/Images/Testimonials/Manufacturing/color.jpg";
+import GRANITIZE from "../../assets/images/Testimonials/Manufacturing/granitize.png";
+import BALARAMPUR_CHINI_MILL from "../../assets/images/Testimonials/Manufacturing/balarampur.png";
+import COLOR from "../../assets/images/Testimonials/Manufacturing/color.jpg";
 
 export const IMAGES = [
   { image: AIRPORT, alt: "AIRPORT" },

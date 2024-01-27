@@ -74,7 +74,7 @@ const OurClients = () => {
 
   return (
     <Box className={`${classes["topContainer"]} container`}>
-      <Box className={classes[clientsTitle]}>
+      <Box className={classes["clientsTitle"]}>
         <Typography variant="h4" className={classes["ourClientsText"]}>
           Our Clients
         </Typography>
