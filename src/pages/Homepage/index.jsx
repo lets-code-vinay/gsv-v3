@@ -11,6 +11,7 @@ import OurClients from "../../components/OurClient/OurClients";
 import InfinitySlider from "../../components/InfinitySlider";
 import InfinitySliderContainer from "../../components/InfinitySliderContainers";
 import CustomPopOver from "../../components/CustomPopOver";
+import Insight from "../../components/Insight";
 
 const Homepage = () => {
   const mainRef = React.useRef(null);
@@ -39,13 +40,16 @@ const Homepage = () => {
     <Box className={classes["homepage-container"]} ref={mainRef}>
       <MainSlider scrollPosition={scrollPosition} />
       <Trending />
+      <Insight />
+      <InfinitySliderContainer />
       <Technologies />
       <WorldMapWithIndia />
       <CustomPopOver />
       <OurClients />
+
       {/* <InfinitySlider /> */}
-      <InfinitySliderContainer />
-      {/* <Insight />
+
+      {/* 
      
      
       <OurPresence />
