@@ -1,0 +1,260 @@
+.topContainer {
+  background-color: "#F8FBFF";
+}
+.ourClientsText {
+  color: #0d274d;
+  font-weight: 500;
+  width: fit-content;
+  margin: 0 auto;
+}
+.clientsTitle {
+  display: flex;
+  flex-direction: row;
+  padding: 2% 0 0 0;
+  align-items: center;
+  color: #0d274d;
+  width: 90%;
+  margin: 1% auto;
+}
+.imageToResponsive {
+  display: block;
+  width: 170px;
+  margin: 24% auto;
+  height: 75px;
+}
+hr {
+  width: 100%;
+  margin: 1% auto;
+}
+.ourClientHading {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 51px;
+  line-height: 60px;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 3%;
+}
+.clientSlider {
+  padding: 0 10%;
+}
+.imageArray2 {
+  margin-top: 5%;
+}
+.topContainer .slick-next {
+  cursor: pointer;
+  position: absolute;
+  right: 3%;
+  top: 40%;
+  background-position: top 40% right 3%;
+  background-position-x: 40%;
+  background-position-y: -3%;
+}
+.topContainer .slick-prev {
+  cursor: pointer;
+  position: absolute;
+  left: 3%;
+  top: 40%;
+  background-position: top 40% left 3%;
+  background-position-x: 40%;
+  background-position-y: 3%;
+  z-index: 99;
+}
+
+.imageStyle {
+  margin-top: 25%;
+}
+
+.allCustomer {
+  cursor: pointer;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #0d274d;
+  margin-top: 6.5%;
+}
+.upto420 {
+  margin-left: 2%;
+}
+@media screen and (max-width: 550px) {
+  /* .topContainer .firstimage {
+    margin-left: 20%;
+  } */
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+@media screen and (max-width: 480px) {
+  .topContainer {
+    height: 100vh;
+  }
+  .topContainer .clientsTitle {
+    padding: 15vh 0 5vh;
+  }
+
+  .topContainer .clientsTitle .ourClientsText {
+    font-size: 3rem;
+  }
+  .imageBlock .imageToResponsive {
+    width: 10rem !important;
+    height: 5rem !important;
+  }
+
+  .imageBlock .bottomImage {
+    margin: 20% auto 0 !important;
+  }
+
+  .clientsTitle .ourClientsIcon,
+  .clientsTitle .ourClientsText {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+
+  .slick-slider svg.slick-arrow.slick-prev {
+    left: 5%;
+    top: 42%;
+    background-position: top 42% left 5%;
+    background-position-x: 42%;
+    background-position-y: 5%;
+  }
+
+  .topContainer svg.slick-arrow.slick-next {
+    right: 5%;
+    top: 42% !important;
+    background-position: top 42% right 3% !important;
+    background-position-x: 42% !important;
+    background-position-y: -3% !important;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 760px) {
+  .hr {
+    margin-bottom: 10px;
+  }
+
+  .imageToResponsive {
+    width: 8rem !important;
+    height: 3rem !important;
+    margin: 5% auto !important;
+  }
+  .imageBlock .bottomImage {
+    margin: 25% auto 0 !important;
+  }
+
+  .slick-slider svg.slick-arrow.slick-prev {
+    left: 0;
+    top: 40% !important;
+    background-position: top 40% left 0% !important;
+    background-position-x: 40% !important;
+    background-position-y: 0% !important;
+  }
+
+  .topContainer .slick-next {
+    right: 0 !important;
+    top: 40% !important;
+    background-position: top 40% right 0% !important;
+    background-position-x: 40% !important;
+    /* background-position-y: 3% !important; */
+  }
+}
+@media screen and (min-width: 761px) and (max-width: 1024px) {
+  .container.topContainer {
+    padding: 17% 10% 10%;
+  }
+  .container.topContainer .hr {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+
+  .clientsTitle {
+    margin-left: 15%;
+  }
+  .imageToResponsive {
+    width: 8rem !important;
+    height: 3rem !important;
+    margin: 5% auto !important;
+  }
+  .imageBlock .bottomImage {
+    margin: 28% auto 0 !important;
+  }
+
+  .slick-slider svg.slick-arrow.slick-prev {
+    left: 43%;
+    top: 25%;
+    background-position: top 25% left 43%;
+    background-position-x: 25%;
+    background-position-y: 43%;
+  }
+
+  .topContainer .slick-next {
+    right: 0 !important;
+    top: 35% !important;
+    background-position: top 35% right 0%;
+    background-position-x: 35%;
+    /* background-position-y: 3%; */
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .topContainer {
+    height: 100vh;
+    padding: 21vh 10% !important;
+  }
+  .hr {
+    margin-bottom: 10px;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .topContainer {
+    height: 100vh;
+    padding: 21vh 10% !important;
+  }
+  .hr {
+    margin: 0 auto 10px;
+    width: 90%;
+    height: 2px;
+  }
+  .clientsTitle .ourClientsText {
+    font-size: 3rem;
+    margin-top: 0;
+  }
+  .topContainer .hr {
+    height: 2px;
+    background-color: #0d274d;
+    width: 90% !important;
+    margin: 2% auto;
+  }
+}
+
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+  .container {
+    padding: 6% 10% !important;
+  }
+  .topContainer .hr {
+    height: 2px;
+    background-color: #0d274d;
+    width: 90% !important;
+    margin: 2% auto;
+  }
+
+  .clientsTitle .ourClientsText {
+    font-size: 5rem;
+    margin-top: 0;
+  }
+  .imageToResponsive {
+    width: 67% !important;
+    height: 176px !important;
+    margin: 12% auto !important;
+  }
+}

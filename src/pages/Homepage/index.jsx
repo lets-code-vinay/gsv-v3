@@ -7,6 +7,7 @@ import Trending from "../../components/Trending";
 import Technologies from "../../components/Technologies";
 import WorldMapWithIndia from "../../components/WorldMapWithIndia";
 import CustomPopOver from "../../components/CustomPopOver";
+import OurClients from "../../components/OurClient/OurClients";
 
 const Homepage = () => {
   const mainRef = React.useRef(null);
@@ -38,12 +39,13 @@ const Homepage = () => {
       <Technologies />
       <WorldMapWithIndia />
       <CustomPopOver />
+      <OurClients />
       {/* <Insight />
       <InfinitySliderContainer />
      
       <OurPresence />
       <Testimonials />
-      <OurClients /> */}
+    */}
       <Footer />
     </Box>
   );
