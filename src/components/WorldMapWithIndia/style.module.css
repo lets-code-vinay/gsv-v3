@@ -1,0 +1,34 @@
+#chartdiv {
+  padding: 0 2%;
+  width: 100%;
+  height: 70vh;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 47%;
+  margin: auto;
+  cursor: pointer;
+  color: white;
+  margin-top: 20px;
+}
+
+.county-name {
+  font-size: 1.2rem !important;
+}
+
+@media screen and (max-width: 480px) {
+  #chartdiv {
+    padding: 0 2%;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .buttonContainer {
+    width: 90%;
+    margin-top: 0;
+  }
+}

@@ -5,6 +5,7 @@ import * as classes from "./Homepage.module.css";
 import MainSlider from "../../components/MainSlider";
 import Trending from "../../components/Trending";
 import Technologies from "../../components/Technologies";
+import WorldMapWithIndia from "../../components/WorldMapWithIndia";
 
 const Homepage = () => {
   const mainRef = React.useRef(null);
@@ -34,6 +35,7 @@ const Homepage = () => {
       <MainSlider scrollPosition={scrollPosition} />
       <Trending />
       <Technologies />
+      <WorldMapWithIndia />
       {/* <Insight />
       <InfinitySliderContainer />
      
