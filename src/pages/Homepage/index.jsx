@@ -14,6 +14,10 @@ import CustomPopOver from "../../components/CustomPopOver";
 import Insight from "../../components/Insight";
 import Testimonials from "../../components/Testimonials";
 import TestimonialCard from "../../components/TestimonialCard";
+import SubNavBar from "../../components/SubNavBar";
+
+import NavbarMenus from "../../components/NavbarMenus";
+//import OurPresence from "../../components/OurPresence";
 
 const Homepage = () => {
   const mainRef = React.useRef(null);
@@ -49,6 +53,9 @@ const Homepage = () => {
       <CustomPopOver />
       <TestimonialCard />
       {/* <InfinitySlider /> */}
+      <SubNavBar />
+      <NavbarMenus />
+      {/* <OurPresence /> */}
 
       {/* 
      

@@ -1,10 +1,10 @@
 import React, { useState, memo } from "react";
 import { object } from "prop-types";
-import { Box } from "@mui/material";
+import { Box, ClickAwayListener } from "@mui/material";
 import { Tab } from "@mui/material";
 import { Tabs } from "@mui/material";
-import "./styles.module.css";
-// import NavbarMenus from "../NavbarMenus";
+import * as classes from "./styles.module.css";
+import NavbarMenus from "../NavbarMenus";
 
 function a11yProps(index) {
   return {
@@ -39,9 +39,9 @@ const SubNavBar = ({
   /**
    * @description Closing sub Nav bar and menus by calling CB
    */
-  // const handleCloseMenu = (_) => {
-  //   onCloseSubNavbar(true);
-  // };
+  const handleCloseMenu = (_) => {
+    onCloseSubNavbar(true);
+  };
 
   return (
     <ClickAwayListener
@@ -77,9 +77,9 @@ const SubNavBar = ({
         )}
 
         {/* --- Navbar menus ---- */}
-        {/* {isSubNavbarOpened && !subNavMenus.isMore && (
+        {isSubNavbarOpened && !subNavMenus.isMore && (
           <NavbarMenus navMenus={navMenus} onCloseMenu={handleCloseMenu} />
-        )} */}
+        )}
       </Box>
     </ClickAwayListener>
   );
