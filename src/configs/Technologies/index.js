@@ -1,9 +1,9 @@
-import DevOps from "../../Assets/Images/devops.png"
-import Data_Center from "../../Assets/Images/data-center.png"
-import Cloud_Computing from "../../Assets/Images/cloud_computing.png"
-import DesktopImage from "../../Assets/Images/desktop-image.png"
-import Networking from "../../Assets/Images/networking.png"
-import Docker_img from "../../Assets/Images/Docker_img.png"
+import DevOps from "../../assets/images/devops.png"
+import Data_Center from "../../assets/images/data-center.png"
+import Cloud_Computing from "../../assets/images/cloud_computing.png"
+import DesktopImage from "../../assets/images/desktop-image.png"
+import Networking from "../../assets/images/networking.png"
+import Docker_img from "../../assets/images/Docker_img.png"
 
 export const cardBox = [
   {
