@@ -1,0 +1,142 @@
+.footer {
+  /* scroll-snap-align: start; */
+  height: fit-content;
+}
+
+.footerBody {
+  padding: 2%;
+  width: 80%;
+  margin: auto;
+}
+.footerLogo {
+  width: 70%;
+}
+
+.socialIcon {
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 15px;
+}
+.socialIcon:hover {
+  color: #0d274d;
+}
+.socialMedia {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+}
+
+.menuListTextContact {
+  list-style-type: none;
+  margin-left: 5px;
+  font-size: 1rem;
+  width: 80%;
+  cursor: pointer;
+  color: red;
+}
+.menuListTextContact:hover {
+  color: yellow;
+}
+
+.menuListText {
+  list-style: none;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: red;
+}
+.menuListText:hover {
+  color: green;
+  font-size: 1.2rem;
+}
+.menuListLink {
+  text-decoration: none;
+  color: white;
+}
+
+.menuList {
+  display: flex;
+  justify-content: start;
+}
+.menuListIcon {
+  color: white;
+  font-size: 1rem;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+.menuListIcon.hover {
+  color: orange;
+  font-size: 1.2rem;
+}
+.footer {
+  background-color: navy;
+}
+
+.menuListTitle {
+  font-size: 1.6rem;
+  color: honeydew;
+  width: 80%;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.menuListTitleHeadOffice {
+  font-size: 1rem;
+  color: yellowgreen;
+  width: 80%;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+@media screen and (min-width: 279px) and (max-width: 480px) {
+  .footerBody {
+    width: 90% !important;
+  }
+  #grid {
+    padding: 10px;
+  }
+  #grid .footerLogo {
+    width: 120px;
+    margin-top: 5%;
+  }
+  .menuListTitle {
+    font-size: 1.2rem !important;
+    width: 80%;
+    margin: 20px 0;
+    font-weight: 600;
+  }
+  .menuListText {
+    font-size: 0.8rem !important;
+  }
+  .menuListTextContact {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 760px) {
+  #grid .footerLogo {
+    width: 150px;
+    margin-top: 20%;
+  }
+}
+@media screen and (min-width: 761px) and (max-width: 1024px) {
+  .footer {
+    height: 104vh;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .footer {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1919px) {
+}
+
+@media screen and (min-width: 1920px) {
+}

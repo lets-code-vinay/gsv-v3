@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "3rd version",
   "scripts": {
-    "start": "parcel index.html",
+    "clean-node-modules": "rimraf node_modules",
+    "clean": "rimraf dist && rimraf .parcel-cache",
+    "start": "rimraf .parcel-cache && parcel index.html",
     "build": "parcel build index.html",
     "test": "jest"
   },
@@ -19,12 +21,26 @@
   "author": "Vinay Maurya",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.11.0",
+    "@parcel/transformer-webmanifest": "^2.11.0",
     "parcel": "^2.11.0",
     "process": "^0.11.10"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.6",
+    "@mui/material": "^5.15.6",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.13",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-responsive-masonry": "^2.1.7",
+    "react-router-dom": "^6.21.3",
+    "react-tabs": "^6.0.2",
+    "rimraf": "^5.0.5",
+    "styled-components": "^6.1.8"
   },
   "browsersList": [
     "last 2 versions"
