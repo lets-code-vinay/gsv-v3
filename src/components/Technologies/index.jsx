@@ -155,7 +155,7 @@ const Technologies = () => {
                           className={classes["overlayImgClass"]}
                         />
                       </div>
-                      <span className={classes["gradient"]}></span>
+                      <span className="gradient"></span>
                       <div className={classes["headingMainDiv"]}>
                         <h3 className={classes["cardTopHeading"]}>{heading}</h3>
                         <div className={classes["cardTextDiv"]}>
