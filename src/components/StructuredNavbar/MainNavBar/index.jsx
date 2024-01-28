@@ -106,7 +106,7 @@ const MainNavBar = ({
             <img
               src={Logo}
               alt="main-logo"
-              className={classes["logo1"]}
+              className={`${classes["logo1"]} logo1`}
               onClick={redirectToHomepage}
             />
             <div className={classes["sectionDesktop"]}>

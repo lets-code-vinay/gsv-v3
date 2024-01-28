@@ -3,12 +3,13 @@ import { string, node, func, bool, arrayOf, any } from "prop-types";
 import CloseIcon from "@mui/icons-material/Close";
 import Dialog from "@mui/material/Dialog";
 import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import { DialogContentText } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
-import "./style.module.css";
+import * as classes from "./style.module.css";
 import { DialogTitle } from "@mui/material";
 
 export default function CustomizedDialogs({
@@ -89,22 +90,20 @@ CustomizedDialogs.defaultProps = {
 function DialogBoxTitle(props) {
   const { children, onClose, ...other } = props;
 
-  const classes = useStyles();
-
   return (
-    <Box className={classes[DialogTitle]}>
+    <Box className={classes["dialogTitle"]}>
       <DialogTitle sx={{ m: 0, p: 2 }} {...other}>
-        {children}
-        {onClose ? (
-          <IconButton
-            aria-label="close"
-            onClick={onClose}
-            className={classes[closeButton]}
-          >
-            <CloseIcon />
-          </IconButton>
-        ) : null}
+        <Typography variant={"h5"}>{children}</Typography>
       </DialogTitle>
+      {onClose ? (
+        <IconButton
+          aria-label="close"
+          onClick={onClose}
+          className={classes["closeButton"]}
+        >
+          <CloseIcon />
+        </IconButton>
+      ) : null}
     </Box>
   );
 }

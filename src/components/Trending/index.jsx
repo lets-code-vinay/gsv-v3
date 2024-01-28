@@ -71,7 +71,7 @@ const Trending = () => {
             alt="Trending logo"
             className={classes["trendingIcon"]}
           />
-          <Typography variant={"h4"} className={classes["trendingText"]}>
+          <Typography variant={"h2"} className={classes["trendingText"]}>
             Trending
           </Typography>
         </Box>
@@ -133,29 +133,31 @@ const Trending = () => {
                     <Grid item xs={12} sm={7} md={8} lg={8}>
                       <Box className="content">
                         <Typography
-                          variant={"h4"}
+                          variant="h2"
                           className={classes["trendingTitle"]}
+                          sx={{
+                            margin: "5px 0 6%",
+                          }}
                         >
                           {title}
                         </Typography>
 
                         <Typography
                           variant={"body1"}
-                          className="trendingSubTitle"
+                          className={classes["trendingSubTitle"]}
                         >
                           {handleSubTitle(subtitle)}
                         </Typography>
 
                         {link && (
                           <Typography
-                            className="btn btn-outline-primary learn-link"
+                            className={`btn btn-outline-primary ${classes["learn-button"]}`}
                             rel="noreferrer"
                             onClick={handleLearnMore(title, subtitle)}
                             onMouseOver={handleLearnMore(title, subtitle)}
+                            variant="h5"
                           >
-                            <span className="learn-button">
-                              {`Learn More...`}
-                            </span>
+                            Learn More...
                           </Typography>
                         )}
 
@@ -171,12 +173,12 @@ const Trending = () => {
           )}
         </Tabs>
       </Box>
-      {/* <CustomizedDialogs
+      <CustomizedDialogs
         title={dialogTitle}
         open={openLearnMore}
         onClose={handleClose}
         msg={dialogMSG}
-      /> */}
+      />
     </main>
   );
 };
