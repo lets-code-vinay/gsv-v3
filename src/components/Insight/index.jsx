@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import PieChart from "./GooglePieChart";
 import { DEFAULT_SERVICES, INSIGHT_DATA } from "./insightData";

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import { Chart } from "react-google-charts";
 
@@ -128,6 +127,18 @@ const PieChart = ({ fetchInsightDetails, onKnowMoreClick }) => {
     // fetchInsightDetails(null);
   };
 
+  /**
+   * @description Handle click use
+   * @impact : slice split,
+   *
+   * @param {Number} slice
+   */
+  const handleSliceClick = (slice) => {
+    setSlice(slice);
+    fetchInsightDetails(slice);
+    onKnowMoreClick();
+  };
+
   return (
     <>
       <Box className={classes["pie"]}>
@@ -162,7 +173,9 @@ const PieChart = ({ fetchInsightDetails, onKnowMoreClick }) => {
                 );
 
                 google.visualization.events.addListener(chart, "click", (e) => {
-                  console.log("clicked on slice");
+                  console.log("--e--", e);
+                  const { targetID } = e;
+                  handleSliceClick(targetID && targetID.replace(/^\D+/g, ""));
                 });
               },
             },
@@ -175,11 +188,11 @@ const PieChart = ({ fetchInsightDetails, onKnowMoreClick }) => {
           width={"100px"}
         />
 
-        {Object.values(INSIGHT_DATA).map(
+        {/* {Object.values(INSIGHT_DATA).map(
           ({ button_text = "", label = "", text_color = "#000" }, index) => {
             return (
               <Box key={index + "-" + label}>
-                {/* <Typography
+                 <Typography
                   className={`insight-text insight-text-${index}`}
                   style={{
                     color: slice === index ? text_color : "black",
@@ -197,9 +210,9 @@ const PieChart = ({ fetchInsightDetails, onKnowMoreClick }) => {
                   onMouseOver={handleTextMouseEnter(index)}
                 >
                   {label}
-                </Typography>  */}
+                </Typography> 
 
-                {/* {slice === index && (
+                {slice === index && (
                   <Button
                     className={`button button-${index}`}
                     onClick={handleButtonClick(index)}
@@ -209,11 +222,11 @@ const PieChart = ({ fetchInsightDetails, onKnowMoreClick }) => {
                   >
                     {button_text}
                   </Button>
-                )} */}
+                )}
               </Box>
             );
           }
-        )}
+        )} */}
       </Box>
     </>
   );
