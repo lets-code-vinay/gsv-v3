@@ -76,19 +76,14 @@
 }
 .content .trendingTitle {
   color: #000;
+  margin: 5px 0 6%;
 }
 
-.trendingSubTitle,
-.trendingSubTitleForce {
+.trendingSubTitle {
   color: #000;
   text-indent: 50px;
   overflow: overlay;
-}
-
-.learn-link {
-  text-decoration: none;
-  bottom: -20%;
-  position: absolute;
+  margin-bottom: 5% !important;
 }
 
 .learn-button {

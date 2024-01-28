@@ -138,6 +138,7 @@
 .cardContent .overlay .overlayImg {
   object-fit: cover;
   transition: 0.4s linear;
+  padding: 0;
 }
 .cardContent .overlay:hover .overlayImg::before {
   width: 15vw;
@@ -420,6 +421,7 @@
 }
 .securityOverlay:hover .divImgClassSecurity img {
   opacity: 0.3;
+  padding: 0;
 }
 .securityOverlay:hover .divImgClassSecurity {
   background-color: rgba(10, 3, 70, 0.9);
@@ -472,7 +474,7 @@
 .paraTextSecurity p {
   opacity: 0;
 }
-.securityOverlay:hover .cardDivSecurity .paraTextSecurity p {
+.securityOverlay:hover .paraTextSecurity p {
   opacity: 1 !important;
   color: white;
   font-size: 20px;
@@ -672,18 +674,15 @@
     padding: 0;
   }
 
-  .technologiesPage .softwareImageOverlay {
-    padding: 0;
-  }
   .technologiesPage .cardMenu {
     border-radius: 15px;
   }
   .imgTagSoftware {
     height: inherit;
   }
-  .MuiCardContent-root:last-child {
+  /* .MuiCardContent-root:last-child {
     padding: 0 !important ;
-  }
+  } */
   .imageLeft {
     height: 40vh;
   }
