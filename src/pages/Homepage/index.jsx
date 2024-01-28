@@ -11,9 +11,9 @@ import OurClients from "../../components/OurClient/OurClients";
 import InfinitySlider from "../../components/InfinitySlider";
 import InfinitySliderContainer from "../../components/InfinitySliderContainers";
 import CustomPopOver from "../../components/CustomPopOver";
-import Insight from "../../components/Insight";
 import Testimonials from "../../components/Testimonials";
 import TestimonialCard from "../../components/TestimonialCard";
+import OurPresence from "../../components/OurPresence";
 
 const Homepage = () => {
   const mainRef = React.useRef(null);
@@ -42,10 +42,10 @@ const Homepage = () => {
     <Box className={classes["homepage-container"]} ref={mainRef}>
       <MainSlider scrollPosition={scrollPosition} />
       <Trending />
-      <Insight />
+      {/* <Insight /> */}
       <InfinitySliderContainer />
       <Technologies />
-      <WorldMapWithIndia />
+      {/* <WorldMapWithIndia /> */}
       <CustomPopOver />
       <TestimonialCard />
       {/* <InfinitySlider /> */}
@@ -53,9 +53,10 @@ const Homepage = () => {
       {/* 
      
      
-      <OurPresence />
+      
       
     */}
+      <OurPresence />
       <Testimonials />
       <OurClients />
       <Footer />
