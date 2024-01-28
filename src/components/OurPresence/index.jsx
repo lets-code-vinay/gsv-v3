@@ -1,7 +1,9 @@
 import * as React from "react";
 import * as classes from "./style.module.css";
-import { Typography } from "@mui/material";
-import { Grid } from "@mui/material";
+import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+
 // TODO: use it or remove it when required
 // import wave1 from "../../Assets/SVGs/wave1white.svg";
 // import wave2 from "../../Assets/SVGs/wave2grey.svg";
@@ -9,7 +11,6 @@ import { Grid } from "@mui/material";
 // DEPRECATED: deprecated previous chart
 // import MapContainer from "./MapContainer.jsx";
 import WorldMapWithIndia from "../WorldMapWithIndia";
-import { Box } from "@mui/material";
 
 export default function OurPresence() {
   return (
