@@ -10,7 +10,7 @@ text {
 .pie {
   position: relative !important;
   z-index: 10;
-  height: 85vh !important;
+  height: 85vh;
 }
 
 .pie .logoInside {
@@ -414,8 +414,11 @@ text {
   .pie-chart-height {
     height: 800px !important;
   }
+
   .pie {
     position: relative !important;
+    z-index: 10;
+    height: 80vh;
   }
   .pie .logoInside {
     min-width: 16% !important;
@@ -523,9 +526,13 @@ text {
     font-weight: 700;
     word-break: break-all;
   }
+
   .pie {
     position: relative !important;
+    z-index: 10;
+    height: 80vh;
   }
+
   .pie .logoInside {
     min-width: 18% !important;
     max-width: 23% !important;
@@ -629,6 +636,11 @@ text {
   .pie-chart-height {
     /* height: 500px !important; */
   }
+  .pie {
+    position: relative !important;
+    z-index: 10;
+    height: 80vh;
+  }
   .pie .logoInside {
     top: 46%;
     left: 43%;
@@ -727,6 +739,11 @@ text {
 @media screen and (min-width: 1921px) and (max-width: 2559px) {
   .pie-chart-height {
     height: 700px !important;
+  }
+  .pie {
+    position: relative !important;
+    z-index: 10;
+    height: 80vh;
   }
 
   div#reactgooglegraph-1 {
