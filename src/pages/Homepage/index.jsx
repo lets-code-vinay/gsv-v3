@@ -5,6 +5,8 @@ import * as classes from "./Homepage.module.css";
 import MainSlider from "../../components/MainSlider";
 import Trending from "../../components/Trending";
 import Technologies from "../../components/Technologies";
+import Insight from "../../components/Insight";
+import InfinitySliderContainer from "../../components/InfinitySliderContainers";
 
 const Homepage = () => {
   const mainRef = React.useRef(null);
@@ -33,11 +35,11 @@ const Homepage = () => {
     <Box className={classes["homepage-container"]} ref={mainRef}>
       <MainSlider scrollPosition={scrollPosition} />
       <Trending />
+      <Insight />
       <Technologies />
-      {/* <Insight />
       <InfinitySliderContainer />
-     
-      <OurPresence />
+
+      {/*<OurPresence />
       <Testimonials />
       <OurClients /> */}
       <Footer />
