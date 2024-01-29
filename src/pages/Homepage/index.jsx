@@ -7,6 +7,7 @@ import Trending from "../../components/Trending";
 import Technologies from "../../components/Technologies";
 import Insight from "../../components/Insight";
 import InfinitySliderContainer from "../../components/InfinitySliderContainers";
+import OurClients from "../../components/OurClient/OurClients";
 
 const Homepage = () => {
   const mainRef = React.useRef(null);
@@ -40,8 +41,8 @@ const Homepage = () => {
       <InfinitySliderContainer />
 
       {/*<OurPresence />
-      <Testimonials />
-      <OurClients /> */}
+      <Testimonials />*/}
+      <OurClients />
       <Footer />
     </Box>
   );
