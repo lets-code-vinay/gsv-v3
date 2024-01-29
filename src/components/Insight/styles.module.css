@@ -1,0 +1,269 @@
+/* box-shadow: 4px 4px 70px 30px rgba(0, 0, 0, 0.25); */
+
+.container-services {
+  width: 100%;
+  height: 100vh;
+  padding: 8% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* scroll-snap-align: start; */
+  height: 100vh;
+}
+
+.insightTooltip {
+  border: 1px solid #002446;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.pieInfoMenu {
+  padding: 1px 0 1px 2% !important;
+  color: #0d274d;
+}
+.piePaper {
+  border-radius: 50px !important;
+  height: 85vh !important;
+}
+.piePaper .pieGrid {
+  height: 85vhmportant;
+}
+.pieBox {
+  width: 100%;
+}
+.pieDetail {
+  width: 80%;
+  margin: 9% auto;
+}
+.pieInfo {
+  margin-top: 5%;
+  color: #0d274d;
+  /* // overflow:'auto' */
+}
+.pieButton {
+  color: white;
+  margin-top: 5% !important;
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+@media screen and (min-width: 279px) and (max-width: 480px) {
+  .container-services {
+    padding: 8% 5%;
+  }
+  .MuiPaper-root.makeStyles-piePaper-38.piePaper.MuiPaper-elevation24.MuiPaper-rounded {
+    width: 90%;
+    margin: 5% auto;
+  }
+  .MuiGrid-root.makeStyles-pieBox-40.pieBox.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-12.MuiGrid-grid-md-6.MuiGrid-grid-lg-6 {
+    height: 330px;
+  }
+
+  .pieGrid .pieDetail {
+    margin: 0 auto;
+  }
+  h3.MuiTypography-root.undefined.pieTitle.MuiTypography-h3 {
+    font-size: 1.8rem;
+  }
+  p.MuiTypography-root.makeStyles-pieInfo-42.pieInfo.MuiTypography-body1 {
+    font-size: 0.9rem;
+    padding-bottom: 5%;
+  }
+  .container-services .piePaper {
+    border-radius: 1.5rem;
+  }
+
+  .pieInfoList {
+    text-overflow: ellipsis;
+    overflow-y: auto;
+    word-break: break-all;
+    max-height: 18vh;
+    min-height: 14vh;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 760px) {
+  .MuiBox-root.MuiBox-root-46.makeStyles-pieDetail-41.pieDetail {
+    margin: -8% auto 8%;
+  }
+}
+@media screen and (min-width: 761px) and (max-width: 1023px) {
+  .container-services {
+    padding: 8%;
+  }
+
+  .MuiBox-root.MuiBox-root-46.makeStyles-pieDetail-41.pieDetail {
+    margin: -8% auto 8%;
+  }
+  .piePaper {
+    height: 90vh;
+    width: 100%;
+  }
+  .pieInfoList {
+    text-overflow: ellipsis;
+    overflow-y: auto;
+    white-space: nowrap;
+    word-break: break-all;
+    height: 40vh;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 13;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .MuiBox-root.MuiBox-root-46.makeStyles-pieDetail-41.pieDetail {
+    margin: 15% auto 8%;
+  }
+
+  .pieDetail {
+    margin-top: 10%;
+  }
+  .pieInfo .pieInfoList {
+    font-size: 1rem !important;
+    text-overflow: ellipsis;
+    overflow-y: auto;
+    word-break: break-word;
+    max-height: 42vh;
+    min-height: 39vh;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 15;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+  .pieTitle {
+    font-size: 2rem;
+  }
+  .piePaper,
+  #reactgooglegraph-1 {
+    height: 80vh !important;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .container-services {
+    display: flex;
+    align-items: center;
+    padding: 0 8% !important;
+  }
+  .MuiBox-root.MuiBox-root-46.makeStyles-pieDetail-41.pieDetail {
+    margin: 15% auto 8%;
+  }
+
+  .pieDetail {
+    margin-top: 10%;
+  }
+  .pieInfo .pieInfoList {
+    font-size: 1.5rem !important;
+    text-overflow: ellipsis;
+    overflow-y: auto;
+    word-break: break-word;
+    max-height: 40vh;
+    min-height: 25vh;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 15;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+  .pieTitle {
+    font-size: 2rem;
+  }
+
+  .piePaper,
+  #reactgooglegraph-1 {
+    height: 80vh !important;
+  }
+}
+
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+  .container-services {
+    display: flex;
+    align-items: center;
+    padding: 0 10% !important;
+  }
+  .MuiBox-root.MuiBox-root-46.makeStyles-pieDetail-41.pieDetail {
+    margin: 15% auto 8%;
+  }
+
+  .piePaper {
+    height: 85vh !important;
+  }
+  .pie {
+  }
+  .pieDetail {
+    margin-top: 10%;
+  }
+  .pieInfo .pieInfoList {
+    font-size: 1.8rem !important;
+    overflow-y: auto;
+  }
+  .pieTitle {
+    font-size: 3rem !important;
+  }
+  .pieButton {
+    height: 3rem !important;
+    width: 10rem !important;
+    font-size: 1.1rem !important;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3840px) {
+  .MuiBox-root.MuiBox-root-46.makeStyles-pieDetail-41.pieDetail {
+    margin: 15% auto 8%;
+  }
+
+  .piePaper {
+    height: 75vh !important;
+    padding-top: 3%;
+    margin-top: 5%;
+  }
+
+  .pieDetail {
+    margin-top: 10%;
+  }
+  .pieInfo .pieInfoList {
+    font-size: 1.7rem !important;
+    overflow-y: auto;
+  }
+  .pieTitle {
+    font-size: 3rem !important;
+  }
+}
+
+@media screen and (min-width: 3840px) and (max-width: 7680px) {
+  .MuiBox-root.MuiBox-root-46.makeStyles-pieDetail-41.pieDetail {
+    margin: 15% auto 8%;
+  }
+
+  .piePaper {
+    height: 75vh !important;
+    padding-top: 3%;
+    margin-top: 5%;
+  }
+
+  .pieDetail {
+    margin-top: 10%;
+  }
+
+  .pie {
+    top: 10%;
+  }
+  .pieDetail {
+    margin-top: 10%;
+  }
+  .pieInfo .pieInfoList {
+    font-size: 2rem !important;
+    overflow-y: auto;
+  }
+  .pieTitle {
+    font-size: 4rem !important;
+  }
+}
