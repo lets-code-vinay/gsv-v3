@@ -8,7 +8,7 @@ import am4geodata_worldIndiaHigh from "@amcharts/amcharts4-geodata/worldIndiaHig
 
 import * as classes from "./style.module.css";
 import { GSV_LOCATIONS } from "../../configs/OurPresenceConfig/gsvLocations";
-import { Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
 
 am4core.useTheme(am4themes_animated);
 am4core.options.disableHoverOnTransform = "touch";

@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Typography } from "@mui/material";
-import { Box } from "@mui/material";
-import { Tab } from "@mui/material";
-import { Tabs } from "@mui/material";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import Tab from "@mui/material/Tab";
+import Tabs from "@mui/material/Tabs";
 import * as classes from "./style.module.css";
 import MapCharts from "./Maps.jsx";
 import { CONTINENTS } from "../../../OurPresenceConfig/index.js";
@@ -56,7 +56,7 @@ export default function MapContainer({ isMapTitleEnable = false, title = "" }) {
   return (
     <Box className={classes["presenceMain"]}>
       {isMapTitleEnable && (
-        <h1 className={classes["mapTitle my-3"]}>{title}</h1>
+        <h1 className={`${classes["mapTitle"]} ${classes["my-3"]}`}>{title}</h1>
       )}
 
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
