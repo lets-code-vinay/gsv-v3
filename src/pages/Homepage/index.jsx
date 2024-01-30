@@ -9,6 +9,7 @@ import Insight from "../../components/Insight";
 import InfinitySliderContainer from "../../components/InfinitySliderContainers";
 import OurClients from "../../components/OurClient/OurClients";
 import Testimonials from "../../components/Testimonials";
+import OurPresence from "../../components/OurPresence";
 
 const Homepage = () => {
   const mainRef = React.useRef(null);
@@ -40,9 +41,7 @@ const Homepage = () => {
       <Insight />
       <Technologies />
       <InfinitySliderContainer />
-
-      {/*<OurPresence />
-       */}
+      <OurPresence />
       <Testimonials />
       <OurClients />
       <Footer />
