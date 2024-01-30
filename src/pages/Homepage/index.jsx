@@ -8,6 +8,7 @@ import Technologies from "../../components/Technologies";
 import Insight from "../../components/Insight";
 import InfinitySliderContainer from "../../components/InfinitySliderContainers";
 import OurClients from "../../components/OurClient/OurClients";
+import Testimonials from "../../components/Testimonials";
 
 const Homepage = () => {
   const mainRef = React.useRef(null);
@@ -41,7 +42,8 @@ const Homepage = () => {
       <InfinitySliderContainer />
 
       {/*<OurPresence />
-      <Testimonials />*/}
+       */}
+      <Testimonials />
       <OurClients />
       <Footer />
     </Box>
