@@ -1,3 +1,7 @@
+.slick-slider {
+  display: flex !important;
+  align-items: center !important;
+}
 .topContainer {
   background-color: "#F8FBFF";
 }

@@ -6,8 +6,8 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { IMAGES } from "../../configs/OurClientsImages";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import * as classes from "./style.module.css";
 import { IconButton } from "@mui/material";
+import "./style.css";
 
 const OurClients = () => {
   const settings = {
@@ -83,20 +83,20 @@ const OurClients = () => {
   };
 
   return (
-    <Box className={classes["topContainer"]}>
-      <Box className={classes["clientsTitle"]}>
-        <Typography variant="h4" className={classes["ourClientsText"]}>
+    <Box className="topContainer">
+      <Box className="clientsTitle">
+        <Typography variant="h4" className="ourClientsText">
           Our Clients
         </Typography>
       </Box>
 
-      <Slider className={classes["clientSlider"]} {...settings}>
+      <Slider className="clientSlider" {...settings}>
         {IMAGES.map(({ image = "", alt = "" }, index) => {
           return index % 2 !== 0 ? (
             <div key={index}>
               <img
                 src={image}
-                className={classes["imageToResponsive"]}
+                className="imageToResponsive"
                 alt={alt}
                 key={index}
               />
@@ -105,8 +105,8 @@ const OurClients = () => {
             <div key={index}>
               <img
                 src={IMAGES[IMAGES.length - (index + 1)]?.image}
-                className={`${classes["imageToResponsive"]} 
-                  bottomImage`}
+                className="imageToResponsive
+                  bottomImage"
                 alt={alt}
                 key={index}
               />

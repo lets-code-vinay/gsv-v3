@@ -21,7 +21,7 @@ body {
 /* Scrollbar Style---*/
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
   border-radius: 5px;
 }
 

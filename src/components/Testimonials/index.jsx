@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import * as classes from "./style.module.css";
+import "./style.css";
 import "slick-carousel/slick/slick.css";
 import { Typography } from "@mui/material";
 import { responsive_client, responsive_slider } from "./configs";
@@ -79,16 +79,16 @@ const Testimonials = () => {
 
   return (
     <>
-      <Box className={classes["testimonials"]}>
-        <Box className={classes["testimonialLogo"]}>
-          <Typography variant="h4" className={classes["testimonialTitle"]}>
+      <Box className="testimonials">
+        <Box className="testimonialLogo">
+          <Typography variant="h4" className="testimonialTitle">
             What our customers are saying
           </Typography>
         </Box>
 
-        <Box className={classes["container-fluid containerClass"]}>
+        <Box className="container-fluid containerClass">
           <Slider
-            className={classes["sliderPadding"]}
+            className="sliderPadding"
             afterChange={(current, next) => {
               setActiveSlide(current);
             }}
@@ -97,16 +97,13 @@ const Testimonials = () => {
             slidesToScroll={1}
             centerMode={true}
             nextArrow={
-              <ArrowBackIosIcon
-                className={classes["rightArrow"]}
+              <ArrowForwardIosIcon
+                className="rightArrow"
                 onClick={handleClose}
               />
             }
             prevArrow={
-              <ArrowForwardIosIcon
-                className={classes["leftArrow"]}
-                onClick={handleClose}
-              />
+              <ArrowBackIosIcon className="leftArrow" onClick={handleClose} />
             }
             responsive={responsive_slider}
           >
@@ -115,7 +112,7 @@ const Testimonials = () => {
                 <Box key={`${value}-${index}`}>
                   <Typography
                     variant="h6"
-                    className={classes["clientTitle"]}
+                    className="clientTitle"
                     onClick={handleCurrentSlide(index)}
                     style={{
                       background: activeSlide === index && "#EDEDED",
@@ -132,9 +129,9 @@ const Testimonials = () => {
 
           {/* --- second slider------- */}
           {clientCount >= 3 ? (
-            <Box className={classes["testimonialDomainClientsSection"]}>
+            <Box className="testimonialDomainClientsSection">
               <Slider
-                className={classes["testimonialDomainClients"]}
+                className="testimonialDomainClients"
                 slidesToShow={3}
                 swipeToSlide={true}
                 focusOnSelect={true}
@@ -142,14 +139,14 @@ const Testimonials = () => {
                 infinite={true}
                 initialSlide={2}
                 nextArrow={
-                  <ArrowBackIosIcon
-                    className={classes["arrowRightClient"]}
+                  <ArrowForwardIosIcon
+                    className="arrowRightClient"
                     onClick={handleClose}
                   />
                 }
                 prevArrow={
-                  <ArrowForwardIosIcon
-                    className={classes["arrowLeftClient"]}
+                  <ArrowBackIosIcon
+                    className="arrowLeftClient"
                     onClick={handleClose}
                   />
                 }
@@ -176,7 +173,7 @@ const Testimonials = () => {
                         md={4}
                         lg={4}
                         key={`${value}-${index}`}
-                        className={classes["clientGrid"]}
+                        className="clientGrid"
                         onMouseEnter={handleReadTestimonial(
                           clientCount,
                           about,
@@ -189,7 +186,7 @@ const Testimonials = () => {
                         onMouseLeave={handleClose}
                       >
                         <Box
-                          className={classes["clientCard"]}
+                          className="clientCard"
                           style={{
                             maxWidth:
                               clientCount >= 1 && clientCount < 3
@@ -198,19 +195,19 @@ const Testimonials = () => {
                           }}
                         >
                           <img
-                            className={classes["testimonialImage"]}
+                            className="testimonialImage"
                             src={image}
                             alt={value}
                           />
                           <Typography
                             variant="h5"
-                            className={classes["testimonialCardMatter"]}
+                            className="testimonialCardMatter"
                           >
                             "{about}"
                           </Typography>
                           <Typography
                             variant="body1"
-                            className={classes["testimonialCardUser"]}
+                            className="testimonialCardUser"
                           >
                             <strong>{author},</strong> {designation}-{company}
                           </Typography>
@@ -222,9 +219,7 @@ const Testimonials = () => {
               </Slider>
             </Box>
           ) : (
-            <Box
-              className={classes["testimonialDomainClientsSectionLessThan3"]}
-            >
+            <Box className="testimonialDomainClientsSectionLessThan3">
               {Object.values(testimonialClient).map(
                 (
                   {
@@ -246,7 +241,7 @@ const Testimonials = () => {
                       md={4}
                       lg={4}
                       key={`${value}-${index}`}
-                      className={classes["clientGridLessThan3"]}
+                      className="clientGridLessThan3"
                       onMouseEnter={handleReadTestimonial(
                         clientCount,
                         about,
@@ -259,28 +254,28 @@ const Testimonials = () => {
                       onMouseLeave={handleClose}
                     >
                       <Box
-                        className={classes["clientCardLessThan3"]}
+                        className="clientCardLessThan3"
                         style={{
                           maxWidth:
                             clientCount >= 1 && clientCount < 3 ? "60%" : "75%",
                         }}
                       >
-                        <Box className={classes["lessThan3LogoContainer"]}>
+                        <Box className="lessThan3LogoContainer">
                           <img
-                            className={classes["testimonialImageLessThan3"]}
+                            className="testimonialImageLessThan3"
                             src={image}
                             alt={value}
                           />
                         </Box>
                         <Typography
                           variant="body1"
-                          className={classes["testimonialCardMatterLessThan3"]}
+                          className="testimonialCardMatterLessThan3"
                         >
                           "{about}"
                         </Typography>
                         <Typography
                           variant="body1"
-                          className={classes["testimonialCardUserLessThan3"]}
+                          className="testimonialCardUserLessThan3"
                         >
                           <strong>{author},</strong> {designation}-{company}
                         </Typography>
