@@ -33,7 +33,7 @@ const Footer = () => {
             />
           </Grid>
           <Grid item xs={6} sm={6} md={4} lg={3} id="grid">
-            <Typography variant={"h5"} className={classes["menuListTitle"]}>
+            <Typography variant={"h4"} className={classes["menuListTitle"]}>
               Menu
             </Typography>
             <Box className={classes["menuList"]}>
@@ -79,12 +79,11 @@ const Footer = () => {
           </Grid>
 
           <Grid item xs={6} sm={6} md={4} lg={3} id="grid">
-            <Typography variant={"h5"} className={classes["menuListTitle"]}>
+            <Typography variant={"h4"} className={classes["menuListTitle"]}>
               Support
             </Typography>
 
             <Box className={classes["menuList"]}>
-              {/* <FaQuestion className={classes["menuListIcon"]}  /> */}
               <a href="/contact-us" className={classes["menuListLink"]}>
                 <Typography
                   variant={"body1"}
@@ -117,7 +116,7 @@ const Footer = () => {
           </Grid>
 
           <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
-            <Typography variant={"h5"} className={classes["menuListTitle"]}>
+            <Typography variant={"h4"} className={classes["menuListTitle"]}>
               Contact Us
             </Typography>
             <Typography
@@ -197,7 +196,7 @@ const Footer = () => {
           </Grid>
           <Grid container style={{ marginTop: "2%" }}>
             <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
-              <Typography variant={"h5"} className={classes["menuListTitle"]}>
+              <Typography variant={"h4"} className={classes["menuListTitle"]}>
                 Himachal Pradesh
               </Typography>
               <Typography
@@ -222,7 +221,7 @@ const Footer = () => {
               <br />
             </Grid>
             <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
-              <Typography variant={"h5"} className={classes["menuListTitle"]}>
+              <Typography variant={"h4"} className={classes["menuListTitle"]}>
                 Jharkhand
               </Typography>
               <Typography
@@ -235,7 +234,7 @@ const Footer = () => {
               <br />
             </Grid>
             <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
-              <Typography variant={"h5"} className={classes["menuListTitle"]}>
+              <Typography variant={"h4"} className={classes["menuListTitle"]}>
                 USA
               </Typography>
               <Typography
@@ -246,7 +245,7 @@ const Footer = () => {
               </Typography>
             </Grid>
             <Grid item xs={12} sm={6} md={4} lg={3} id="grid">
-              <Typography variant={"h5"} className={classes["menuListTitle"]}>
+              <Typography variant={"h4"} className={classes["menuListTitle"]}>
                 Europe
               </Typography>
               <Typography
