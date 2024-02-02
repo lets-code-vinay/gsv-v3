@@ -139,7 +139,7 @@ class WorldMapWithIndia extends Component {
   render() {
     return (
       <>
-        <div id="chartdiv"></div>
+        <div id="chartdiv" className={classes["chartdiv"]}></div>
         <div className={classes["buttonContainer"]}>
           <Typography className={classes["county-name"]} id="select-us">
             United States

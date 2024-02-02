@@ -9,6 +9,9 @@
 }
 .gridLeft {
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .leftSideWorld {
   width: 80%;
@@ -80,6 +83,15 @@
   }
   .continents-tab .continents-tab span {
     font-size: 0.7rem !important;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .our-presence-title {
+    font-size: 4rem !important;
+  }
+  .our-presence-text {
+    font-size: 1.2rem !important;
   }
 }
 

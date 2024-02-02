@@ -45,10 +45,7 @@ export default function OurPresence() {
             className={classes["gridLeft"]}
           >
             <Box className={classes["leftSideWorld"]}>
-              <Typography
-                variant={"h2"}
-                className={classes["our-presence-title"]}
-              >
+              <Typography className={classes["our-presence-title"]}>
                 Worldwide Presence
               </Typography>
               <Typography
