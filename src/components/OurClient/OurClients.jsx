@@ -85,7 +85,7 @@ const OurClients = () => {
   return (
     <Box className="topContainer">
       <Box className="clientsTitle">
-        <Typography variant="h4" className="ourClientsText">
+        <Typography variant="h2" className="ourClientsText">
           Our Clients
         </Typography>
       </Box>

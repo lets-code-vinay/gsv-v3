@@ -81,7 +81,7 @@ const Testimonials = () => {
     <>
       <Box className="testimonials">
         <Box className="testimonialLogo">
-          <Typography variant="h4" className="testimonialTitle">
+          <Typography variant="h2" className="testimonialTitle">
             What our customers are saying
           </Typography>
         </Box>
