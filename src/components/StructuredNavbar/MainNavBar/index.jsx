@@ -53,6 +53,7 @@ const MainNavBar = ({
   };
 
   const handleMainNavbarClick = (menu) => (event) => {
+    console.log("/menu---", menu);
     navigate("/");
     onMoreOpen({ isMore: menu?.isMore });
 
@@ -62,6 +63,7 @@ const MainNavBar = ({
       event,
     });
     setActive(menu);
+    console.log("----", Object.values(menu?.menus)[0]);
     onNavMenus(Object.values(menu?.menus)[0]);
   };
 
