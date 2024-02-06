@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, Drawer, Typography } from "@material-ui/core";
-import { ArrowBack as ArrowBackIcon } from "@material-ui/icons";
+import { Box, Drawer, Typography } from "@mui/material";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { bool, shape, func, string } from "prop-types";
 
 import "./style.css";

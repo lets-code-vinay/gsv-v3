@@ -1,8 +1,8 @@
 import React from "react";
-import { Box } from "@material-ui/core";
-import { Close as CloseIcon, Search as SearchIcon } from "@material-ui/icons";
-
-import BlueLogo from "../../../Assets/Images/blueLogo.png";
+import { Box } from "@mui/material";
+import CloseIcon from '@mui/icons-material/Close';
+import SearchIcon from '@mui/icons-material/Search';
+import BlueLogo from "../../../assets/images/blueLogo.png";
 import { func } from "prop-types";
 
 const MobileMenuTopBar = ({ onCloseMobileMenu }) => {

@@ -1,0 +1,184 @@
+.backgroundColorWhite {
+  background-color: white;
+}
+
+.more {
+  position: fixed !important;
+}
+.more .closeNavBarBtn {
+  position: fixed;
+  bottom: 10%;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+.menuListing * {
+  padding-top: 2%;
+}
+.menuListing {
+  display: flex;
+  justify-content: space-around;
+}
+.commonClass {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 21px;
+  /* identical to box height */
+  padding: 20px 20px 0px 10px;
+  color: #000000;
+  text-align: start;
+}
+
+.sideBarOptions {
+  width: 100%;
+  cursor: pointer;
+}
+.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-item {
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+  margin: 0% auto;
+  background: #fff;
+  min-height: 90vh;
+  max-height: 100vh;
+}
+
+/* 320px — 480px: Mobile devices
+  481px — 768px: iPads, Tablets
+  769px — 1024px: Small screens, laptops
+  1025px — 1200px: Desktops, large screens
+  1201px and more —  Extra large screens, TV */
+@media screen and (min-width: 279px) and (max-width: 479px) {
+  .arrowBox {
+    display: none;
+  }
+  .sideBarMenus {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* TODO: Make responsive */
+  .menuListing,
+  .MuiBox-root.MuiBox-root-358.makeStyles-menuListing-353.commonClass.menuListing {
+    padding: 0 !important;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 0.175rem !important;
+    min-width: 0;
+    text-transform: uppercase;
+    overflow-x: auto;
+  }
+  .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-item {
+    top: 4.2rem !important;
+    background-position: top 4.2rem left 0%;
+    background-position-x: 4.2rem !important;
+    background-position-y: 0%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+  .arrowBox {
+    display: none;
+  }
+  .sideBarMenus {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* TODO: Make responsive */
+  .menuListing,
+  .MuiBox-root.MuiBox-root-358.makeStyles-menuListing-353.commonClass.menuListing {
+    padding: 0 !important;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 0.475rem;
+    text-transform: uppercase;
+    overflow-x: auto;
+  }
+  .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-item {
+    top: 4.2rem !important;
+    background-position: top 4.2rem left 0%;
+    background-position-x: 4.2rem;
+    background-position-y: 0%;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1023px) {
+  .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-item {
+    top: 4.2rem !important;
+    background-position: top 4.2rem left 0%;
+    background-position-x: 4.2rem;
+    background-position-y: 0%;
+  }
+  /* TODO: Make responsive */
+  .sideBarMenus {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* TODO: Make responsive */
+  .menuListing,
+  .MuiBox-root.MuiBox-root-358.makeStyles-menuListing-353.commonClass.menuListing {
+    padding: 0 !important;
+    color: rgba(0, 0, 0, 0.87);
+    text-transform: uppercase;
+    overflow-x: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-item {
+    top: 4rem;
+    background-position: top 4rem left 0%;
+    background-position-x: 4rem;
+    background-position-y: 0%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1919px) {
+  .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-item {
+    top: 4.1rem;
+    left: 0;
+    background-position: top 5.1rem left 0%;
+    background-position-x: 5.1rem;
+    background-position-y: 0%;
+  }
+  button.MuiButtonBase-root.MuiButton-root.makeStyles-sideBarOptions-338.sideBarOptions.border-0.backgroundColorWhite {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
+  .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.MuiGrid-item {
+    top: 4.5rem;
+    background-position: top 5.5rem left 0%;
+    background-position-x: 5.5rem;
+    background-position-y: 0%;
+  }
+  .sideBarOptions {
+    padding: 6px 0px;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1rem;
+  }
+
+  svg.rsm-svg {
+    height: 600px;
+  }
+  span.MuiButton-label {
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .more {
+    top: 7%;
+    background-position: top 7% left 0%;
+    background-position-x: 7%;
+    background-position-y: 0%;
+    height: 93vh;
+    position: fixed;
+  }
+}

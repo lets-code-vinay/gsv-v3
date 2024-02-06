@@ -5,8 +5,9 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
-} from "@material-ui/core";
-import { Add as AddIcon, Remove as RemoveIcon } from "@material-ui/icons";
+} from "@mui/material";
+import RemoveIcon from "@mui/icons-material/Remove";
+import AddIcon from "@mui/icons-material/Add";
 
 import "./style.css";
 import MobileNestedList from "./MobileNestedList";
