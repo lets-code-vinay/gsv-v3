@@ -1,5 +1,6 @@
 import React, { Suspense, lazy, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Shimmer from "./src/components/Shimmer";
 
 const Homepage = lazy(() => import("./src/pages/Homepage"));
 // import ContactUs from "./Views/ContactUs";
@@ -26,7 +27,7 @@ function App() {
             exact
             path="/"
             element={
-              <Suspense fallback={<h1>Still Loading…</h1>}>
+              <Suspense fallback={<Shimmer />}>
                 <Homepage />
               </Suspense>
             }

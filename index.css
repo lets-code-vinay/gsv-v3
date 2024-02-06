@@ -21,7 +21,8 @@ body {
 /* Scrollbar Style---*/
 /* width */
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 3px;
+  border-radius: 5px;
 }
 
 /* Track */

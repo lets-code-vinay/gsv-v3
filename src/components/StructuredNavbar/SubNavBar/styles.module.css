@@ -5,7 +5,7 @@
 .headBar {
   position: fixed;
   background-color: white;
-  top: 10%;
+  top: 8%;
   left: 0;
   width: 100%;
   z-index: 80;
@@ -107,7 +107,7 @@
 
 @media screen and (min-width: 1280px) and (max-width: 1919px) {
   .headBar {
-    top: 10%;
+    top: 8%;
     background-position: top 10% left 0;
     background-position-x: 10%;
     background-position-y: 0%;

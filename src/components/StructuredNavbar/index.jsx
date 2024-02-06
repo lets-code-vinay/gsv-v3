@@ -3,8 +3,7 @@ import { number } from "prop-types";
 
 import SubNavBar from "./SubNavBar";
 import MainNavBar from "./MainNavBar";
-// import SideBar from "../More/SideBarTab/index";
-import "./style.module.css";
+import SideBar from "../More/SideBarTab";
 
 const StructuredNavbar = ({ scrollPosition }) => {
   const [isSubNavbarOpened, setSubNavbarOpen] = useState(false);
@@ -96,13 +95,13 @@ const StructuredNavbar = ({ scrollPosition }) => {
         />
       )}
 
-      {/* {isMoreOpen && isSubNavbarOpened && (
+      {isMoreOpen && isSubNavbarOpened && (
         <SideBar
           isMoreOpen={isMoreOpen}
           onMoreClick={handleMoreClick}
           onCloseMenus={closeSubNavbar}
         />
-      )} */}
+      )}
     </>
   );
 };
