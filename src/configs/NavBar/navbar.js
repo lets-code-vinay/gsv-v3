@@ -5148,7 +5148,7 @@ export const NAVBAR_MENUS = {
     label: "More ",
     value: "More",
     isMore: true,
-    sideBarMenus: {
+    menus: {
       AboutUs: {
         label: "About Us",
         value: "AboutUs",

@@ -35,7 +35,7 @@ export default function OurPresence() {
           <img src={wave1} alt="wave 1" />
         </Box> */}
 
-        <Grid container className={classes["mainGrid"]}>
+        <Grid container>
           <Grid
             item
             xs={12}

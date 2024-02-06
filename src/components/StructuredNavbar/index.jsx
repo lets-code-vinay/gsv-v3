@@ -81,7 +81,7 @@ const StructuredNavbar = ({ scrollPosition }) => {
         nodeRef={nodeRef}
         scrollPosition={scrollPosition}
       />
-
+      {console.log("navMenus.menus", navMenus.menus)}
       {/* ---- Sub nav bar --- */}
       {isSubNavbarOpened && !isMoreOpen && (
         <SubNavBar

@@ -15,7 +15,6 @@ import * as classes from "./styles.module.css";
 
 const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
   const navigate = useNavigate();
-  // const scrollPosition = localStorage.getItem("scrollPosition");
 
   const [isPopularEnabled] = useState(
     Object.keys(navMenus?.menus).includes("POPULAR")
