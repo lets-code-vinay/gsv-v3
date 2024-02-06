@@ -7,9 +7,13 @@ import { validateInput } from "../../utils/validateInputFields";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
+import Box from "@mui/material/Box";
+
+import SendIcon from "@mui/icons-material/Send";
 
 import MainNavBar from "../../components/StructuredNavbar/MainNavBar";
 import Footer from "../../components/Footer";
+import ContactImage from "../../assets/images/contact-us.svg";
 
 const ContactUs = ({
   title = "",
