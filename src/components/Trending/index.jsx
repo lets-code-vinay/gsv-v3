@@ -12,7 +12,7 @@ import * as classes from "./style.module.css";
 import TRENDING_LOGO from "../../assets/icons/trending.svg";
 
 import CustomizedDialogs from "../CustomizedDialogs";
-import { TRENDING_CONFIGS } from "../../Configs/Trending";
+import { TRENDING_CONFIGS } from "../../configs/Trending";
 
 const Trending = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -44,7 +44,7 @@ const Trending = () => {
   /**
    * @description Handle click tab button
    */
-  const handleTabClick = () => {};
+  const handleTabClick = () => { };
 
   /**
    * @description Open dialog to read more
@@ -137,6 +137,8 @@ const Trending = () => {
                           className={classes["trendingTitle"]}
                           sx={{
                             margin: "5px 0 6%",
+                            fontSize: '1.5rem',
+                            fontWeight: 700
                           }}
                         >
                           {title}
@@ -179,7 +181,7 @@ const Trending = () => {
         onClose={handleClose}
         msg={dialogMSG}
       />
-    </main>
+    </main >
   );
 };
 

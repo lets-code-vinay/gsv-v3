@@ -72,7 +72,7 @@ const Insight = () => {
                 <Typography
                   variant={"h2"}
                   className={classes["pieTitle"]}
-                  style={{ color: color }}
+                  style={{ color: color, fontSize: '1.8rem' , fontWeight: 700}}
                 >
                   {title}
                 </Typography>

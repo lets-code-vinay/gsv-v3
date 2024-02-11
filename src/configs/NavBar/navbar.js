@@ -1435,3715 +1435,3715 @@ export const NAVBAR_MENUS = {
     },
   },
 
-  // ---------------------------
-  DND: {
-    label: "DevOps & Deployment ",
-    value: "DND",
-    isMore: false,
-    menus: {
-      NETWORKING: {
-        label: "NETWORK WIRED AND WIRELESS",
-        value: "NETWORKING",
-        menus: {
-          image: NETWORK_IMAGE,
-          mobile_image: MOBILE_NETWORK,
-          title: "NETWORK",
-          color: THEME_COLOR.color_4,
-          subtitle: `Implement enterprise-class connectivity for wired and wireless.Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
-          menus: {
-            // --LAN --
-            LAN: {
-              label: "LAN",
-              value: "LAN",
-              shaded: false,
-              icon: LAN_ICON,
-              image: LAN_ICON,
-              mobile_image: "",
-              menus: {
-                ROUTING: {
-                  label: "Routing",
-                  value: "ROUTING",
-                  path: "/lan/routing",
-                },
-                SWITCHING: {
-                  label: "Switching",
-                  value: "SWITCHING",
-                  path: "/lan/switching",
-                },
-                SDN: {
-                  label: "Software Defined Networking",
-                  value: "SDN",
-                  path: "/lan/software-Defined-networking",
-                },
-                CMN: {
-                  label: "Cloud Managed Network",
-                  value: "CMN",
-                  path: "/lan/Cloud-Managed-Network",
-                },
-                IBN: {
-                  label: "Intent-based Networking",
-                  value: "IBN",
-                  path: "/lan/Intent-based-Networking",
-                },
-                AI: {
-                  label: "Artificial Intelligence for IT Operations",
-                  value: "AI",
-                  path: "/lan/Cloud-Managed-Network",
-                },
-              },
-            },
-            // --Wan--
-            WAN: {
-              label: "WAN",
-              value: "WAN",
-              shaded: false,
-              icon: WAN_ICON,
-              image: WAN_ICON,
-              mobile_image: "",
-              menus: {
-                SD_WAN: {
-                  label: "SD WAN",
-                  value: "SD_WAN",
-                  path: "/wan/sd-wan",
-                },
-                SASE: {
-                  label: "SASE",
-                  value: "SASE",
-                  path: "/wan/SASE",
-                },
-                SDN: {
-                  label: "Software Defined Networking",
-                  value: "SDN",
-                  path: "/wan/software-Defined-networking",
-                },
-                VPN: {
-                  label: "Virtual Private Network",
-                  value: "VPN",
-                  path: "/wan/virtual-private-network",
-                },
-              },
-            },
-
-            //--Wireless and mobility --
-            WAM: {
-              label: "Wireless & Mobility",
-              value: "WAM",
-              shaded: false,
-              icon: WAM_ICON,
-              image: WAM_ICON,
-              mobile_image: "",
-              menus: {
-                WI_FI_6: {
-                  label: "Wi-Fi-6",
-                  value: "WI_FI_6",
-                  path: "/wireless-and-mobility/wi-fi-6",
-                },
-                UNIFIED_WIRELESS: {
-                  label: "Unified Wireless",
-                  value: "UNIFIED_WIRELESS",
-                  path: "/wireless-and-mobility/Unified-Wireless",
-                },
-                ENTERPRISE_WIRELESS: {
-                  label: "Enterprise Wireless",
-                  value: "ENTERPRISE_WIRELESS",
-                  path: "/wireless-and-mobility/Enterprise-Wireless",
-                },
-                LBS: {
-                  label: "Location Based Services",
-                  value: "LBS",
-                  path: "/wireless-and-mobility/Location-Based-Services",
-                },
-                CMW: {
-                  label: "Cloud Managed Wireless",
-                  value: "CMW",
-                  path: "/wireless-and-mobility/Cloud-Managed-wireless",
-                },
-              },
-            },
-
-            MISCELLANEOUS: {
-              label: "Miscellaneous",
-              value: "MISCELLANEOUS",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                OOB_MANAGEMENT: {
-                  label: "OOB Management",
-                  value: "OOB_MANAGEMENT",
-                  path: "/miscellaneous/OOB-Management",
-                },
-                AMH: {
-                  label: "Automated Monitoring & Helpdesk",
-                  value: "AMH",
-                  path: "/miscellaneous/Automated-Monitoring-Helpdesk",
-                },
-                TELEMETRY: {
-                  label: "Telemetry",
-                  value: "TELEMETRY",
-                  path: "/miscellaneous/Telemetry",
-                },
-                OA: {
-                  label: "Orchestration and Automation",
-                  value: "OA",
-                  path: "/miscellaneous/Orchestration-and-Automation",
-                },
-              },
-            },
-
-            // -- Popular ---
-            POPULAR: {
-              label: "POPULAR",
-              value: "POPULAR",
-              shaded: true,
-              icon: POPULAR_ICON,
-              image: POPULAR_ICON,
-              mobile_image: "",
-              menus: {
-                // -- Cisco DNA
-                CISCO_DNA: {
-                  label: "Cisco DNA Center",
-                  value: "CISCO_DNA",
-                  path: "/Cisco-DNA-Center",
-                },
-                // -- Cisco SD WAN
-                CISCO_SD_WAN: {
-                  label: "Cisco SD-WAN",
-                  value: "CISCO_SD_WAN",
-                  path: "/Cisco-SD-WAN",
-                },
-
-                // -- Cisco Cisco Unified Wireless
-                CUWNS: {
-                  label: "Cisco Unified Wireless Network Solution",
-                  value: "CUWNS",
-                  path: "/Cisco-Unified-Wireless-Network-Solution",
-                },
-                // -- Cisco  Enterprise NSV Infrastructure
-                CENIS: {
-                  label: "Cisco Enterprise NSV Infrastructure",
-                  value: "CENIS",
-                  path: "/Cisco-Enterprise-NSV-Infrastructure",
-                },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
-                // -- Cisco Aruba Centra
-                ARUBA_CENTRAL: {
-                  label: "Aruba Central",
-                  value: "ARUBA_CENTRAL",
-                  path: "/Aruba-Central",
-                },
-                // -- Cisco Velo Cloud
-                VWVC: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                //______
-                // -- Cisco DNA
-                CISCO_DNA_2: {
-                  label: "Cisco DNA Center",
-                  value: "CISCO_DNA_2",
-                  path: "/Cisco-DNA-Center",
-                },
-                // -- Cisco SD WAN
-                CISCO_SD_WAN_2: {
-                  label: "Cisco SD-WAN",
-                  value: "CISCO_SD_WAN_2",
-                  path: "/Cisco-SD-WAN",
-                },
-
-                // -- Cisco Cisco Unified Wireless
-                CUWNS_2: {
-                  label: "Cisco Unified Wireless Network Solution",
-                  value: "CUWNS_2",
-                  path: "/Cisco-Unified-Wireless-Network-Solution",
-                },
-                // -- Cisco  Enterprise NSV Infrastructure
-                CENIS_2: {
-                  label: "Cisco Enterprise NSV Infrastructure",
-                  value: "CENIS_2",
-                  path: "/Cisco-Enterprise-NSV-Infrastructure",
-                },
-                // -- Cisco meraki
-                CISCO_MERAKI_2: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI_2",
-                  path: "/Cisco-Meraki",
-                },
-                // -- Cisco Aruba Centra
-                ARUBA_CENTRAL_2: {
-                  label: "Aruba Central",
-                  value: "ARUBA_CENTRAL_2",
-                  path: "/Aruba-Central",
-                },
-                // -- Cisco Velo Cloud
-                VWVC_2: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC_2",
-                  path: "/vmware-velo-cloud",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN_2",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                //______
-              },
-            },
-          },
-        },
-      },
-
-      /**
-       * Security and cyber Security
-       */
-      SECURITY: {
-        label: "SECURITY AND CYBERSECURITY",
-        value: "SECURITY",
-        menus: {
-          image: SECURITY_MAIN_IMAGE,
-          mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "SECURITY",
-          color: THEME_COLOR.security_red,
-          subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
-          menus: {
-            // --SECURITY --
-            SECURITY: {
-              label: "Security",
-              value: "SECURITY",
-              shaded: false,
-              icon: LAN_ICON,
-              image: LAN_ICON,
-              mobile_image: "",
-              menus: {
-                NETWORK_SECURITY: {
-                  label: "Network Security",
-                  value: "NETWORK_SECURITY",
-                  path: "/security/network-security",
-                },
-                DATA_CENTER_SECURITY: {
-                  label: "Data Center Security",
-                  value: "DATA_CENTER_SECURITY",
-                  path: "/security/data-center-security",
-                },
-                CIS: {
-                  label: "Cloud Infrastructure Security",
-                  value: "CIS",
-                  path: "/security/Cloud-Infrastructure-Security",
-                },
-                WAAS: {
-                  label: "Web Application & API Security",
-                  value: "WAAS",
-                  path: "/security/Web-Application-API-Security",
-                },
-                EMAIL_SECURITY: {
-                  label: "Email Security",
-                  value: "EMAIL_SECURITY",
-                  path: "/security/Email Security",
-                },
-                RAVS: {
-                  label: "Remote Access VPN Security",
-                  value: "RAVS",
-                  path: "/security/Remote-Access-VPN-Security",
-                },
-                IAMM: {
-                  label: "Identity and Access Management/MFA",
-                  value: "IAMM",
-                  path: "/security/Identity-Access-Management",
-                },
-                DNS_SECURITY: {
-                  label: "DNS Security",
-                  value: "DNS_SECURITY",
-                  path: "/security/DNS-Security",
-                },
-                SECURITY_ANALYTICS: {
-                  label: "Security Analytics",
-                  value: "SECURITY_ANALYTICS",
-                  path: "/security/Security-Analytics",
-                },
-              },
-            },
-            CYBERSECURITY: {
-              label: "Cybersecurity",
-              value: "CYBERSECURITY",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CSC: {
-                  label: "Cybersecurity Consulting",
-                  value: "CSC",
-                  path: "/cybersecurity/Cybersecurity-Consulting",
-                },
-                PT: {
-                  label: "Penetration Testing",
-                  value: "PT",
-                  path: "/cybersecurity/Penetration Testing",
-                },
-                VA: {
-                  label: "Vulnerability Assessment",
-                  value: "VA",
-                  path: "/cybersecurity/Vulnerability-Assessment ",
-                },
-                RTR: {
-                  label: "Ransomeware Threat Response",
-                  value: "RTR",
-                  path: "/cybersecurity/Ransomeware-Threat-Response ",
-                },
-                FI: {
-                  label: "Forensic Investigation",
-                  value: "FI",
-                  path: "/cybersecurity/Forensic-Investigation ",
-                },
-                MDR: {
-                  label: "Managed Detection and Response",
-                  value: "MDR",
-                  path: "/cybersecurity/Managed-Detection-Response ",
-                },
-              },
-            },
-
-            BLANK: {
-              label: "",
-              value: "",
-              shaded: false,
-              icon: "",
-              image: "",
-              mobile_image: "",
-              menus: {},
-            },
-
-            MISCELLANEOUS: {
-              label: "Miscellaneous",
-              value: "MISCELLANEOUS",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CMS: {
-                  label: "Cloud Managed Security",
-                  value: "CMS",
-                  path: "/miscellaneous/Cloud-Managed-Security",
-                },
-                CDS: {
-                  label: "Cloud-Delivered Security(SASE))",
-                  value: "CDS",
-                  path: "/miscellaneous/Cloud-Delivered-Security",
-                },
-                SAAS_NOA: {
-                  label:
-                    "Security-as-a-Service for Networks Orchestration and Automation",
-                  value: "SAAS_NOA",
-                  path: "/miscellaneous/Security-as-a-Service-for-Networks",
-                },
-              },
-            },
-
-            // -- Popular ---
-            POPULAR: {
-              label: "POPULAR",
-              value: "POPULAR",
-              shaded: true,
-              icon: POPULAR_ICON,
-              image: POPULAR_ICON,
-              mobile_image: "",
-              menus: {
-                // -- Cisco ASA
-                CISCO_ASA: {
-                  label: "Cisco ASA",
-                  value: "CISCO_ASA",
-                  path: "/Cisco-ASA",
-                },
-                // -- Cisco FTD & FMC
-                CISCO_FTD_FMC: {
-                  label: "Cisco FTD & FMC",
-                  value: "CISCO_FTD_FMC",
-                  path: "/Cisco-FTD-FMC",
-                },
-                // -- Cisco SecureX
-                CISCO_SECURE_X: {
-                  label: "Cisco SecureX",
-                  value: "CISCO_SECURE_X",
-                  path: "/Cisco-SecureX",
-                },
-                // -- Cisco Secure Endpoint
-                CSE: {
-                  label: "Cisco Secure Endpoint(AMP)",
-                  value: "CSE",
-                  path: "/Cisco-Secure-Endpoint",
-                },
-                // -- Cisco Duo
-                CISCO_DUO: {
-                  label: "Cisco Duo",
-                  value: "CISCO_DUO",
-                  path: "/Cisco-Duo",
-                },
-                // -- Cisco Umbrella
-                CISCO_UMBRELLA: {
-                  label: "Cisco Umbrella",
-                  value: "CISCO_UMBRELLA",
-                  path: "/Cisco-Umbrella",
-                },
-                // -- Cisco Velo Cloud
-                VWVC: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN_2",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2N: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WA_2N",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-
-                // -- Cisco DNA
-                CISCO_DNA: {
-                  label: "Cisco DNA Center",
-                  value: "CISCO_DNA",
-                  path: "/Cisco-DNA-Center",
-                },
-                // -- Cisco SD WAN
-                CISCO_SD_WAN: {
-                  label: "Cisco SD-WAN",
-                  value: "CISCO_SD_WAN",
-                  path: "/Cisco-SD-WAN",
-                },
-
-                // -- Cisco Cisco Unified Wireless
-                CUWNS: {
-                  label: "Cisco Unified Wireless Network Solution",
-                  value: "CUWNS",
-                  path: "/Cisco-Unified-Wireless-Network-Solution",
-                },
-                // -- Cisco  Enterprise NSV Infrastructure
-                CENIS: {
-                  label: "Cisco Enterprise NSV Infrastructure",
-                  value: "CENIS",
-                  path: "/Cisco-Enterprise-NSV-Infrastructure",
-                },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
-                // -- Cisco Aruba Centra
-                ARUBA_CENTRAL: {
-                  label: "Aruba Central",
-                  value: "ARUBA_CENTRAL",
-                  path: "/Aruba-Central",
-                },
-
-                // -- Cisco Velo Cloud
-                VWVC_2: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-              },
-            },
-          },
-        },
-      },
-
-      /**
-       * DATA CENTER AND VIRTUALIZATION
-       */
-      DATA_CENTER: {
-        label: "DATA CENTER AND VIRTUALIZATION",
-        value: "DATA_CENTER",
-        menus: {
-          image: DATA_CENTER_SECURITY_IMAGE,
-          mobile_image: MOBILE_DATA_SECURITY_IMAGE,
-          title: "Data Center Security",
-          color: THEME_COLOR.data_center_security,
-          subtitle: `Data Center Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
-          menus: {
-            // --SECURITY --
-            SECURITY: {
-              label: "Security",
-              value: "SECURITY",
-              shaded: false,
-              icon: LAN_ICON,
-              image: LAN_ICON,
-              mobile_image: "",
-              menus: {
-                NETWORK_SECURITY: {
-                  label: "Network Security",
-                  value: "NETWORK_SECURITY",
-                  path: "/security/network-security",
-                },
-                DATA_CENTER_SECURITY: {
-                  label: "Data Center Security",
-                  value: "DATA_CENTER_SECURITY",
-                  path: "/security/data-center-security",
-                },
-                CIS: {
-                  label: "Cloud Infrastructure Security",
-                  value: "CIS",
-                  path: "/security/Cloud-Infrastructure-Security",
-                },
-                WAAS: {
-                  label: "Web Application & API Security",
-                  value: "WAAS",
-                  path: "/security/Web-Application-API-Security",
-                },
-                EMAIL_SECURITY: {
-                  label: "Email Security",
-                  value: "EMAIL_SECURITY",
-                  path: "/security/Email Security",
-                },
-                RAVS: {
-                  label: "Remote Access VPN Security",
-                  value: "RAVS",
-                  path: "/security/Remote-Access-VPN-Security",
-                },
-                IAMM: {
-                  label: "Identity and Access Management/MFA",
-                  value: "IAMM",
-                  path: "/security/Identity-Access-Management",
-                },
-                DNS_SECURITY: {
-                  label: "DNS Security",
-                  value: "DNS_SECURITY",
-                  path: "/security/DNS-Security",
-                },
-                SECURITY_ANALYTICS: {
-                  label: "Security Analytics",
-                  value: "SECURITY_ANALYTICS",
-                  path: "/security/Security-Analytics",
-                },
-              },
-            },
-
-            CYBERSECURITY: {
-              label: "Cybersecurity",
-              value: "CYBERSECURITY",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CSC: {
-                  label: "Cybersecurity Consulting",
-                  value: "CSC",
-                  path: "/cybersecurity/Cybersecurity-Consulting",
-                },
-                PT: {
-                  label: "Penetration Testing",
-                  value: "PT",
-                  path: "/cybersecurity/Penetration Testing",
-                },
-                VA: {
-                  label: "Vulnerability Assessment",
-                  value: "VA",
-                  path: "/cybersecurity/Vulnerability-Assessment ",
-                },
-                RTR: {
-                  label: "Ransomeware Threat Response",
-                  value: "RTR",
-                  path: "/cybersecurity/Ransomeware-Threat-Response ",
-                },
-                FI: {
-                  label: "Forensic Investigation",
-                  value: "FI",
-                  path: "/cybersecurity/Forensic-Investigation ",
-                },
-                MDR: {
-                  label: "Managed Detection and Response",
-                  value: "MDR",
-                  path: "/cybersecurity/Managed-Detection-Response ",
-                },
-              },
-            },
-
-            MISCELLANEOUS: {
-              label: "Miscellaneous",
-              value: "MISCELLANEOUS",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CMS: {
-                  label: "Cloud Managed Security",
-                  value: "CMS",
-                  path: "/miscellaneous/Cloud-Managed-Security",
-                },
-                CDS: {
-                  label: "Cloud-Delivered Security(SASE))",
-                  value: "CDS",
-                  path: "/miscellaneous/Cloud-Delivered-Security",
-                },
-                SAAS_NOA: {
-                  label:
-                    "Security-as-a-Service for Networks Orchestration and Automation",
-                  value: "SAAS_NOA",
-                  path: "/miscellaneous/Security-as-a-Service-for-Networks",
-                },
-              },
-            },
-
-            // -- Popular ---
-            POPULAR: {
-              label: "POPULAR",
-              value: "POPULAR",
-              shaded: true,
-              icon: POPULAR_ICON,
-              image: POPULAR_ICON,
-              mobile_image: "",
-              menus: {
-                // -- Cisco ASA
-                CISCO_ASA: {
-                  label: "Cisco ASA",
-                  value: "CISCO_ASA",
-                  path: "/Cisco-ASA",
-                },
-                // -- Cisco FTD & FMC
-                CISCO_FTD_FMC: {
-                  label: "Cisco FTD & FMC",
-                  value: "CISCO_FTD_FMC",
-                  path: "/Cisco-FTD-FMC",
-                },
-                // -- Cisco SecureX
-                CISCO_SECURE_X: {
-                  label: "Cisco SecureX",
-                  value: "CISCO_SECURE_X",
-                  path: "/Cisco-SecureX",
-                },
-                // -- Cisco Secure Endpoint
-                CSE: {
-                  label: "Cisco Secure Endpoint(AMP)",
-                  value: "CSE",
-                  path: "/Cisco-Secure-Endpoint",
-                },
-                // -- Cisco Duo
-                CISCO_DUO: {
-                  label: "Cisco Duo",
-                  value: "CISCO_DUO",
-                  path: "/Cisco-Duo",
-                },
-                // -- Cisco Umbrella
-                CISCO_UMBRELLA: {
-                  label: "Cisco Umbrella",
-                  value: "CISCO_UMBRELLA",
-                  path: "/Cisco-Umbrella",
-                },
-                // -- Cisco Velo Cloud
-                VWVC: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN_2",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2N: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WA_2N",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-
-                // -- Cisco DNA
-                CISCO_DNA: {
-                  label: "Cisco DNA Center",
-                  value: "CISCO_DNA",
-                  path: "/Cisco-DNA-Center",
-                },
-                // -- Cisco SD WAN
-                CISCO_SD_WAN: {
-                  label: "Cisco SD-WAN",
-                  value: "CISCO_SD_WAN",
-                  path: "/Cisco-SD-WAN",
-                },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
-                // -- Cisco Cisco Unified Wireless
-                CUWNS: {
-                  label: "Cisco Unified Wireless Network Solution",
-                  value: "CUWNS",
-                  path: "/Cisco-Unified-Wireless-Network-Solution",
-                },
-                // -- Cisco  Enterprise NSV Infrastructure
-                CENIS: {
-                  label: "Cisco Enterprise NSV Infrastructure",
-                  value: "CENIS",
-                  path: "/Cisco-Enterprise-NSV-Infrastructure",
-                },
-                // -- Cisco Aruba Centra
-                ARUBA_CENTRAL: {
-                  label: "Aruba Central",
-                  value: "ARUBA_CENTRAL",
-                  path: "/Aruba-Central",
-                },
-
-                // -- Cisco Velo Cloud
-                VWVC_2: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-              },
-            },
-          },
-        },
-      },
-
-      /**
-       * COLLABORATION AND PRODUCTIVITY
-       */
-      COLLABORATION: {
-        label: "COLLABORATION AND PRODUCTIVITY",
-        value: "COLLABORATION",
-        menus: {
-          image: SECURITY_MAIN_IMAGE,
-          mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "COLLABORATION",
-          color: THEME_COLOR.security_red,
-          subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
-          menus: {
-            // --SECURITY --
-            SECURITY: {
-              label: "Security",
-              value: "SECURITY",
-              shaded: false,
-              icon: LAN_ICON,
-              image: LAN_ICON,
-              mobile_image: "",
-              menus: {
-                NETWORK_SECURITY: {
-                  label: "Network Security",
-                  value: "NETWORK_SECURITY",
-                  path: "/security/network-security",
-                },
-                DATA_CENTER_SECURITY: {
-                  label: "Data Center Security",
-                  value: "DATA_CENTER_SECURITY",
-                  path: "/security/data-center-security",
-                },
-                CIS: {
-                  label: "Cloud Infrastructure Security",
-                  value: "CIS",
-                  path: "/security/Cloud-Infrastructure-Security",
-                },
-                WAAS: {
-                  label: "Web Application & API Security",
-                  value: "WAAS",
-                  path: "/security/Web-Application-API-Security",
-                },
-                EMAIL_SECURITY: {
-                  label: "Email Security",
-                  value: "EMAIL_SECURITY",
-                  path: "/security/Email Security",
-                },
-                RAVS: {
-                  label: "Remote Access VPN Security",
-                  value: "RAVS",
-                  path: "/security/Remote-Access-VPN-Security",
-                },
-                IAMM: {
-                  label: "Identity and Access Management/MFA",
-                  value: "IAMM",
-                  path: "/security/Identity-Access-Management",
-                },
-                DNS_SECURITY: {
-                  label: "DNS Security",
-                  value: "DNS_SECURITY",
-                  path: "/security/DNS-Security",
-                },
-                SECURITY_ANALYTICS: {
-                  label: "Security Analytics",
-                  value: "SECURITY_ANALYTICS",
-                  path: "/security/Security-Analytics",
-                },
-              },
-            },
-            CYBERSECURITY: {
-              label: "Cybersecurity",
-              value: "CYBERSECURITY",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CSC: {
-                  label: "Cybersecurity Consulting",
-                  value: "CSC",
-                  path: "/cybersecurity/Cybersecurity-Consulting",
-                },
-                PT: {
-                  label: "Penetration Testing",
-                  value: "PT",
-                  path: "/cybersecurity/Penetration Testing",
-                },
-                VA: {
-                  label: "Vulnerability Assessment",
-                  value: "VA",
-                  path: "/cybersecurity/Vulnerability-Assessment ",
-                },
-                RTR: {
-                  label: "Ransomeware Threat Response",
-                  value: "RTR",
-                  path: "/cybersecurity/Ransomeware-Threat-Response ",
-                },
-                FI: {
-                  label: "Forensic Investigation",
-                  value: "FI",
-                  path: "/cybersecurity/Forensic-Investigation ",
-                },
-                MDR: {
-                  label: "Managed Detection and Response",
-                  value: "MDR",
-                  path: "/cybersecurity/Managed-Detection-Response ",
-                },
-              },
-            },
-
-            BLANK: {
-              label: "",
-              value: "",
-              shaded: false,
-              icon: "",
-              image: "",
-              mobile_image: "",
-              menus: {},
-            },
-
-            MISCELLANEOUS: {
-              label: "Miscellaneous",
-              value: "MISCELLANEOUS",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CMS: {
-                  label: "Cloud Managed Security",
-                  value: "CMS",
-                  path: "/miscellaneous/Cloud-Managed-Security",
-                },
-                CDS: {
-                  label: "Cloud-Delivered Security(SASE))",
-                  value: "CDS",
-                  path: "/miscellaneous/Cloud-Delivered-Security",
-                },
-                SAAS_NOA: {
-                  label:
-                    "Security-as-a-Service for Networks Orchestration and Automation",
-                  value: "SAAS_NOA",
-                  path: "/miscellaneous/Security-as-a-Service-for-Networks",
-                },
-              },
-            },
-
-            // -- Popular ---
-            POPULAR: {
-              label: "POPULAR",
-              value: "POPULAR",
-              shaded: true,
-              icon: POPULAR_ICON,
-              image: POPULAR_ICON,
-              mobile_image: "",
-              menus: {
-                // -- Cisco ASA
-                CISCO_ASA: {
-                  label: "Cisco ASA",
-                  value: "CISCO_ASA",
-                  path: "/Cisco-ASA",
-                },
-                // -- Cisco FTD & FMC
-                CISCO_FTD_FMC: {
-                  label: "Cisco FTD & FMC",
-                  value: "CISCO_FTD_FMC",
-                  path: "/Cisco-FTD-FMC",
-                },
-                // -- Cisco SecureX
-                CISCO_SECURE_X: {
-                  label: "Cisco SecureX",
-                  value: "CISCO_SECURE_X",
-                  path: "/Cisco-SecureX",
-                },
-                // -- Cisco Secure Endpoint
-                CSE: {
-                  label: "Cisco Secure Endpoint(AMP)",
-                  value: "CSE",
-                  path: "/Cisco-Secure-Endpoint",
-                },
-                // -- Cisco Duo
-                CISCO_DUO: {
-                  label: "Cisco Duo",
-                  value: "CISCO_DUO",
-                  path: "/Cisco-Duo",
-                },
-                // -- Cisco Umbrella
-                CISCO_UMBRELLA: {
-                  label: "Cisco Umbrella",
-                  value: "CISCO_UMBRELLA",
-                  path: "/Cisco-Umbrella",
-                },
-                // -- Cisco Velo Cloud
-                VWVC: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN_2",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2N: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WA_2N",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-
-                // -- Cisco DNA
-                CISCO_DNA: {
-                  label: "Cisco DNA Center",
-                  value: "CISCO_DNA",
-                  path: "/Cisco-DNA-Center",
-                },
-                // -- Cisco SD WAN
-                CISCO_SD_WAN: {
-                  label: "Cisco SD-WAN",
-                  value: "CISCO_SD_WAN",
-                  path: "/Cisco-SD-WAN",
-                },
-                // -- Cisco Cisco Unified Wireless
-                CUWNS: {
-                  label: "Cisco Unified Wireless Network Solution",
-                  value: "CUWNS",
-                  path: "/Cisco-Unified-Wireless-Network-Solution",
-                },
-                // -- Cisco  Enterprise NSV Infrastructure
-                CENIS: {
-                  label: "Cisco Enterprise NSV Infrastructure",
-                  value: "CENIS",
-                  path: "/Cisco-Enterprise-NSV-Infrastructure",
-                },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
-                // -- Cisco Aruba Centra
-                ARUBA_CENTRAL: {
-                  label: "Aruba Central",
-                  value: "ARUBA_CENTRAL",
-                  path: "/Aruba-Central",
-                },
-
-                // -- Cisco Velo Cloud
-                VWVC_2: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-              },
-            },
-          },
-        },
-      },
-
-      /**
-       * SERVICE PROVIDER
-       */
-      SP: {
-        label: "SERVICE PROVIDER",
-        value: "SP",
-        menus: {
-          image: SECURITY_MAIN_IMAGE,
-          mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "SERVICE PROVIDER",
-          color: THEME_COLOR.security_red,
-          subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
-          menus: {
-            // --SECURITY --
-            SECURITY: {
-              label: "Security",
-              value: "SECURITY",
-              shaded: false,
-              icon: LAN_ICON,
-              image: LAN_ICON,
-              mobile_image: "",
-              menus: {
-                NETWORK_SECURITY: {
-                  label: "Network Security",
-                  value: "NETWORK_SECURITY",
-                  path: "/security/network-security",
-                },
-                DATA_CENTER_SECURITY: {
-                  label: "Data Center Security",
-                  value: "DATA_CENTER_SECURITY",
-                  path: "/security/data-center-security",
-                },
-                CIS: {
-                  label: "Cloud Infrastructure Security",
-                  value: "CIS",
-                  path: "/security/Cloud-Infrastructure-Security",
-                },
-                WAAS: {
-                  label: "Web Application & API Security",
-                  value: "WAAS",
-                  path: "/security/Web-Application-API-Security",
-                },
-                EMAIL_SECURITY: {
-                  label: "Email Security",
-                  value: "EMAIL_SECURITY",
-                  path: "/security/Email Security",
-                },
-                RAVS: {
-                  label: "Remote Access VPN Security",
-                  value: "RAVS",
-                  path: "/security/Remote-Access-VPN-Security",
-                },
-                IAMM: {
-                  label: "Identity and Access Management/MFA",
-                  value: "IAMM",
-                  path: "/security/Identity-Access-Management",
-                },
-                DNS_SECURITY: {
-                  label: "DNS Security",
-                  value: "DNS_SECURITY",
-                  path: "/security/DNS-Security",
-                },
-                SECURITY_ANALYTICS: {
-                  label: "Security Analytics",
-                  value: "SECURITY_ANALYTICS",
-                  path: "/security/Security-Analytics",
-                },
-              },
-            },
-            CYBERSECURITY: {
-              label: "Cybersecurity",
-              value: "CYBERSECURITY",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CSC: {
-                  label: "Cybersecurity Consulting",
-                  value: "CSC",
-                  path: "/cybersecurity/Cybersecurity-Consulting",
-                },
-                PT: {
-                  label: "Penetration Testing",
-                  value: "PT",
-                  path: "/cybersecurity/Penetration Testing",
-                },
-                VA: {
-                  label: "Vulnerability Assessment",
-                  value: "VA",
-                  path: "/cybersecurity/Vulnerability-Assessment ",
-                },
-                RTR: {
-                  label: "Ransomeware Threat Response",
-                  value: "RTR",
-                  path: "/cybersecurity/Ransomeware-Threat-Response ",
-                },
-                FI: {
-                  label: "Forensic Investigation",
-                  value: "FI",
-                  path: "/cybersecurity/Forensic-Investigation ",
-                },
-                MDR: {
-                  label: "Managed Detection and Response",
-                  value: "MDR",
-                  path: "/cybersecurity/Managed-Detection-Response ",
-                },
-              },
-            },
-
-            BLANK: {
-              label: "",
-              value: "",
-              shaded: false,
-              icon: "",
-              image: "",
-              mobile_image: "",
-              menus: {},
-            },
-
-            MISCELLANEOUS: {
-              label: "Miscellaneous",
-              value: "MISCELLANEOUS",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CMS: {
-                  label: "Cloud Managed Security",
-                  value: "CMS",
-                  path: "/miscellaneous/Cloud-Managed-Security",
-                },
-                CDS: {
-                  label: "Cloud-Delivered Security(SASE))",
-                  value: "CDS",
-                  path: "/miscellaneous/Cloud-Delivered-Security",
-                },
-                SAAS_NOA: {
-                  label:
-                    "Security-as-a-Service for Networks Orchestration and Automation",
-                  value: "SAAS_NOA",
-                  path: "/miscellaneous/Security-as-a-Service-for-Networks",
-                },
-              },
-            },
-
-            // -- Popular ---
-            POPULAR: {
-              label: "POPULAR",
-              value: "POPULAR",
-              shaded: true,
-              icon: POPULAR_ICON,
-              image: POPULAR_ICON,
-              mobile_image: "",
-              menus: {
-                // -- Cisco ASA
-                CISCO_ASA: {
-                  label: "Cisco ASA",
-                  value: "CISCO_ASA",
-                  path: "/Cisco-ASA",
-                },
-                // -- Cisco FTD & FMC
-                CISCO_FTD_FMC: {
-                  label: "Cisco FTD & FMC",
-                  value: "CISCO_FTD_FMC",
-                  path: "/Cisco-FTD-FMC",
-                },
-                // -- Cisco SecureX
-                CISCO_SECURE_X: {
-                  label: "Cisco SecureX",
-                  value: "CISCO_SECURE_X",
-                  path: "/Cisco-SecureX",
-                },
-                // -- Cisco Secure Endpoint
-                CSE: {
-                  label: "Cisco Secure Endpoint(AMP)",
-                  value: "CSE",
-                  path: "/Cisco-Secure-Endpoint",
-                },
-                // -- Cisco Duo
-                CISCO_DUO: {
-                  label: "Cisco Duo",
-                  value: "CISCO_DUO",
-                  path: "/Cisco-Duo",
-                },
-                // -- Cisco Umbrella
-                CISCO_UMBRELLA: {
-                  label: "Cisco Umbrella",
-                  value: "CISCO_UMBRELLA",
-                  path: "/Cisco-Umbrella",
-                },
-                // -- Cisco Velo Cloud
-                VWVC: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN_2",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2N: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WA_2N",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-
-                // -- Cisco DNA
-                CISCO_DNA: {
-                  label: "Cisco DNA Center",
-                  value: "CISCO_DNA",
-                  path: "/Cisco-DNA-Center",
-                },
-                // -- Cisco SD WAN
-                CISCO_SD_WAN: {
-                  label: "Cisco SD-WAN",
-                  value: "CISCO_SD_WAN",
-                  path: "/Cisco-SD-WAN",
-                },
-
-                // -- Cisco Cisco Unified Wireless
-                CUWNS: {
-                  label: "Cisco Unified Wireless Network Solution",
-                  value: "CUWNS",
-                  path: "/Cisco-Unified-Wireless-Network-Solution",
-                },
-                // -- Cisco  Enterprise NSV Infrastructure
-                CENIS: {
-                  label: "Cisco Enterprise NSV Infrastructure",
-                  value: "CENIS",
-                  path: "/Cisco-Enterprise-NSV-Infrastructure",
-                },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
-                // -- Cisco Aruba Centra
-                ARUBA_CENTRAL: {
-                  label: "Aruba Central",
-                  value: "ARUBA_CENTRAL",
-                  path: "/Aruba-Central",
-                },
-
-                // -- Cisco Velo Cloud
-                VWVC_2: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-              },
-            },
-          },
-        },
-      },
-      /**
-       * CLOUD & COMPUTING
-       */
-      CAC: {
-        label: "CLOUD & COMPUTING",
-        value: "CAC",
-        menus: {
-          image: SECURITY_MAIN_IMAGE,
-          mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "SECURITY",
-          color: THEME_COLOR.security_red,
-          subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
-          menus: {
-            // --SECURITY --
-            SECURITY: {
-              label: "Security",
-              value: "SECURITY",
-              shaded: false,
-              icon: LAN_ICON,
-              image: LAN_ICON,
-              mobile_image: "",
-              menus: {
-                NETWORK_SECURITY: {
-                  label: "Network Security",
-                  value: "NETWORK_SECURITY",
-                  path: "/security/network-security",
-                },
-                DATA_CENTER_SECURITY: {
-                  label: "Data Center Security",
-                  value: "DATA_CENTER_SECURITY",
-                  path: "/security/data-center-security",
-                },
-                CIS: {
-                  label: "Cloud Infrastructure Security",
-                  value: "CIS",
-                  path: "/security/Cloud-Infrastructure-Security",
-                },
-                WAAS: {
-                  label: "Web Application & API Security",
-                  value: "WAAS",
-                  path: "/security/Web-Application-API-Security",
-                },
-                EMAIL_SECURITY: {
-                  label: "Email Security",
-                  value: "EMAIL_SECURITY",
-                  path: "/security/Email Security",
-                },
-                RAVS: {
-                  label: "Remote Access VPN Security",
-                  value: "RAVS",
-                  path: "/security/Remote-Access-VPN-Security",
-                },
-                IAMM: {
-                  label: "Identity and Access Management/MFA",
-                  value: "IAMM",
-                  path: "/security/Identity-Access-Management",
-                },
-                DNS_SECURITY: {
-                  label: "DNS Security",
-                  value: "DNS_SECURITY",
-                  path: "/security/DNS-Security",
-                },
-                SECURITY_ANALYTICS: {
-                  label: "Security Analytics",
-                  value: "SECURITY_ANALYTICS",
-                  path: "/security/Security-Analytics",
-                },
-              },
-            },
-            CYBERSECURITY: {
-              label: "Cybersecurity",
-              value: "CYBERSECURITY",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CSC: {
-                  label: "Cybersecurity Consulting",
-                  value: "CSC",
-                  path: "/cybersecurity/Cybersecurity-Consulting",
-                },
-                PT: {
-                  label: "Penetration Testing",
-                  value: "PT",
-                  path: "/cybersecurity/Penetration Testing",
-                },
-                VA: {
-                  label: "Vulnerability Assessment",
-                  value: "VA",
-                  path: "/cybersecurity/Vulnerability-Assessment ",
-                },
-                RTR: {
-                  label: "Ransomeware Threat Response",
-                  value: "RTR",
-                  path: "/cybersecurity/Ransomeware-Threat-Response ",
-                },
-                FI: {
-                  label: "Forensic Investigation",
-                  value: "FI",
-                  path: "/cybersecurity/Forensic-Investigation ",
-                },
-                MDR: {
-                  label: "Managed Detection and Response",
-                  value: "MDR",
-                  path: "/cybersecurity/Managed-Detection-Response ",
-                },
-              },
-            },
-
-            BLANK: {
-              label: "",
-              value: "",
-              shaded: false,
-              icon: "",
-              image: "",
-              mobile_image: "",
-              menus: {},
-            },
-
-            MISCELLANEOUS: {
-              label: "Miscellaneous",
-              value: "MISCELLANEOUS",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CMS: {
-                  label: "Cloud Managed Security",
-                  value: "CMS",
-                  path: "/miscellaneous/Cloud-Managed-Security",
-                },
-                CDS: {
-                  label: "Cloud-Delivered Security(SASE))",
-                  value: "CDS",
-                  path: "/miscellaneous/Cloud-Delivered-Security",
-                },
-                SAAS_NOA: {
-                  label:
-                    "Security-as-a-Service for Networks Orchestration and Automation",
-                  value: "SAAS_NOA",
-                  path: "/miscellaneous/Security-as-a-Service-for-Networks",
-                },
-              },
-            },
-
-            // -- Popular ---
-            POPULAR: {
-              label: "POPULAR",
-              value: "POPULAR",
-              shaded: true,
-              icon: POPULAR_ICON,
-              image: POPULAR_ICON,
-              mobile_image: "",
-              menus: {
-                // -- Cisco ASA
-                CISCO_ASA: {
-                  label: "Cisco ASA",
-                  value: "CISCO_ASA",
-                  path: "/Cisco-ASA",
-                },
-                // -- Cisco FTD & FMC
-                CISCO_FTD_FMC: {
-                  label: "Cisco FTD & FMC",
-                  value: "CISCO_FTD_FMC",
-                  path: "/Cisco-FTD-FMC",
-                },
-                // -- Cisco SecureX
-                CISCO_SECURE_X: {
-                  label: "Cisco SecureX",
-                  value: "CISCO_SECURE_X",
-                  path: "/Cisco-SecureX",
-                },
-                // -- Cisco Secure Endpoint
-                CSE: {
-                  label: "Cisco Secure Endpoint(AMP)",
-                  value: "CSE",
-                  path: "/Cisco-Secure-Endpoint",
-                },
-                // -- Cisco Duo
-                CISCO_DUO: {
-                  label: "Cisco Duo",
-                  value: "CISCO_DUO",
-                  path: "/Cisco-Duo",
-                },
-                // -- Cisco Umbrella
-                CISCO_UMBRELLA: {
-                  label: "Cisco Umbrella",
-                  value: "CISCO_UMBRELLA",
-                  path: "/Cisco-Umbrella",
-                },
-                // -- Cisco Velo Cloud
-                VWVC: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN_2",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2N: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WA_2N",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-
-                // -- Cisco DNA
-                CISCO_DNA: {
-                  label: "Cisco DNA Center",
-                  value: "CISCO_DNA",
-                  path: "/Cisco-DNA-Center",
-                },
-                // -- Cisco SD WAN
-                CISCO_SD_WAN: {
-                  label: "Cisco SD-WAN",
-                  value: "CISCO_SD_WAN",
-                  path: "/Cisco-SD-WAN",
-                },
-
-                // -- Cisco Cisco Unified Wireless
-                CUWNS: {
-                  label: "Cisco Unified Wireless Network Solution",
-                  value: "CUWNS",
-                  path: "/Cisco-Unified-Wireless-Network-Solution",
-                },
-                // -- Cisco  Enterprise NSV Infrastructure
-                CENIS: {
-                  label: "Cisco Enterprise NSV Infrastructure",
-                  value: "CENIS",
-                  path: "/Cisco-Enterprise-NSV-Infrastructure",
-                },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
-                // -- Cisco Aruba Centra
-                ARUBA_CENTRAL: {
-                  label: "Aruba Central",
-                  value: "ARUBA_CENTRAL",
-                  path: "/Aruba-Central",
-                },
-
-                // -- Cisco Velo Cloud
-                VWVC_2: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-              },
-            },
-          },
-        },
-      },
-      /**
-       * INTERNET OF THINGS
-       */
-      IOT: {
-        label: "INTERNET OF THINGS (IoT)",
-        value: "IOT",
-        menus: {
-          image: SECURITY_MAIN_IMAGE,
-          mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "SECURITY",
-          color: THEME_COLOR.security_red,
-          subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
-          menus: {
-            // --SECURITY --
-            SECURITY: {
-              label: "Security",
-              value: "SECURITY",
-              shaded: false,
-              icon: LAN_ICON,
-              image: LAN_ICON,
-              mobile_image: "",
-              menus: {
-                NETWORK_SECURITY: {
-                  label: "Network Security",
-                  value: "NETWORK_SECURITY",
-                  path: "/security/network-security",
-                },
-                DATA_CENTER_SECURITY: {
-                  label: "Data Center Security",
-                  value: "DATA_CENTER_SECURITY",
-                  path: "/security/data-center-security",
-                },
-                CIS: {
-                  label: "Cloud Infrastructure Security",
-                  value: "CIS",
-                  path: "/security/Cloud-Infrastructure-Security",
-                },
-                WAAS: {
-                  label: "Web Application & API Security",
-                  value: "WAAS",
-                  path: "/security/Web-Application-API-Security",
-                },
-                EMAIL_SECURITY: {
-                  label: "Email Security",
-                  value: "EMAIL_SECURITY",
-                  path: "/security/Email Security",
-                },
-                RAVS: {
-                  label: "Remote Access VPN Security",
-                  value: "RAVS",
-                  path: "/security/Remote-Access-VPN-Security",
-                },
-                IAMM: {
-                  label: "Identity and Access Management/MFA",
-                  value: "IAMM",
-                  path: "/security/Identity-Access-Management",
-                },
-                DNS_SECURITY: {
-                  label: "DNS Security",
-                  value: "DNS_SECURITY",
-                  path: "/security/DNS-Security",
-                },
-                SECURITY_ANALYTICS: {
-                  label: "Security Analytics",
-                  value: "SECURITY_ANALYTICS",
-                  path: "/security/Security-Analytics",
-                },
-              },
-            },
-            CYBERSECURITY: {
-              label: "Cybersecurity",
-              value: "CYBERSECURITY",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CSC: {
-                  label: "Cybersecurity Consulting",
-                  value: "CSC",
-                  path: "/cybersecurity/Cybersecurity-Consulting",
-                },
-                PT: {
-                  label: "Penetration Testing",
-                  value: "PT",
-                  path: "/cybersecurity/Penetration Testing",
-                },
-                VA: {
-                  label: "Vulnerability Assessment",
-                  value: "VA",
-                  path: "/cybersecurity/Vulnerability-Assessment ",
-                },
-                RTR: {
-                  label: "Ransomeware Threat Response",
-                  value: "RTR",
-                  path: "/cybersecurity/Ransomeware-Threat-Response ",
-                },
-                FI: {
-                  label: "Forensic Investigation",
-                  value: "FI",
-                  path: "/cybersecurity/Forensic-Investigation ",
-                },
-                MDR: {
-                  label: "Managed Detection and Response",
-                  value: "MDR",
-                  path: "/cybersecurity/Managed-Detection-Response ",
-                },
-              },
-            },
-
-            BLANK: {
-              label: "",
-              value: "",
-              shaded: false,
-              icon: "",
-              image: "",
-              mobile_image: "",
-              menus: {},
-            },
-
-            MISCELLANEOUS: {
-              label: "Miscellaneous",
-              value: "MISCELLANEOUS",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CMS: {
-                  label: "Cloud Managed Security",
-                  value: "CMS",
-                  path: "/miscellaneous/Cloud-Managed-Security",
-                },
-                CDS: {
-                  label: "Cloud-Delivered Security(SASE))",
-                  value: "CDS",
-                  path: "/miscellaneous/Cloud-Delivered-Security",
-                },
-                SAAS_NOA: {
-                  label:
-                    "Security-as-a-Service for Networks Orchestration and Automation",
-                  value: "SAAS_NOA",
-                  path: "/miscellaneous/Security-as-a-Service-for-Networks",
-                },
-              },
-            },
-
-            // -- Popular ---
-            POPULAR: {
-              label: "POPULAR",
-              value: "POPULAR",
-              shaded: true,
-              icon: POPULAR_ICON,
-              image: POPULAR_ICON,
-              mobile_image: "",
-              menus: {
-                // -- Cisco ASA
-                CISCO_ASA: {
-                  label: "Cisco ASA",
-                  value: "CISCO_ASA",
-                  path: "/Cisco-ASA",
-                },
-                // -- Cisco FTD & FMC
-                CISCO_FTD_FMC: {
-                  label: "Cisco FTD & FMC",
-                  value: "CISCO_FTD_FMC",
-                  path: "/Cisco-FTD-FMC",
-                },
-                // -- Cisco SecureX
-                CISCO_SECURE_X: {
-                  label: "Cisco SecureX",
-                  value: "CISCO_SECURE_X",
-                  path: "/Cisco-SecureX",
-                },
-                // -- Cisco Secure Endpoint
-                CSE: {
-                  label: "Cisco Secure Endpoint(AMP)",
-                  value: "CSE",
-                  path: "/Cisco-Secure-Endpoint",
-                },
-                // -- Cisco Duo
-                CISCO_DUO: {
-                  label: "Cisco Duo",
-                  value: "CISCO_DUO",
-                  path: "/Cisco-Duo",
-                },
-                // -- Cisco Umbrella
-                CISCO_UMBRELLA: {
-                  label: "Cisco Umbrella",
-                  value: "CISCO_UMBRELLA",
-                  path: "/Cisco-Umbrella",
-                },
-                // -- Cisco Velo Cloud
-                VWVC: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN_2",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2N: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WA_2N",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-
-                // -- Cisco DNA
-                CISCO_DNA: {
-                  label: "Cisco DNA Center",
-                  value: "CISCO_DNA",
-                  path: "/Cisco-DNA-Center",
-                },
-                // -- Cisco SD WAN
-                CISCO_SD_WAN: {
-                  label: "Cisco SD-WAN",
-                  value: "CISCO_SD_WAN",
-                  path: "/Cisco-SD-WAN",
-                },
-
-                // -- Cisco Cisco Unified Wireless
-                CUWNS: {
-                  label: "Cisco Unified Wireless Network Solution",
-                  value: "CUWNS",
-                  path: "/Cisco-Unified-Wireless-Network-Solution",
-                },
-                // -- Cisco  Enterprise NSV Infrastructure
-                CENIS: {
-                  label: "Cisco Enterprise NSV Infrastructure",
-                  value: "CENIS",
-                  path: "/Cisco-Enterprise-NSV-Infrastructure",
-                },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
-                // -- Cisco Aruba Centra
-                ARUBA_CENTRAL: {
-                  label: "Aruba Central",
-                  value: "ARUBA_CENTRAL",
-                  path: "/Aruba-Central",
-                },
-
-                // -- Cisco Velo Cloud
-                VWVC_2: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-              },
-            },
-          },
-        },
-      },
-    },
-  },
-  SERVICES: {
-    label: "Services",
-    value: "SERVICES",
-    isMore: false,
-    menus: {
-      MANAGED_SERVICES: {
-        label: "MANAGED SERVICES",
-        value: "MANAGED_SERVICES",
-        menus: {
-          image: NETWORK_IMAGE,
-          mobile_image: MOBILE_NETWORK,
-          title: "NETWORK",
-          color: THEME_COLOR.color_4,
-          subtitle: `Implement enterprise-class connectivity for wired and wireless.Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
-          menus: {
-            // --LAN --
-            LAN: {
-              label: "LAN",
-              value: "LAN",
-              shaded: false,
-              icon: LAN_ICON,
-              image: LAN_ICON,
-              mobile_image: "",
-              menus: {
-                ROUTING: {
-                  label: "Routing",
-                  value: "ROUTING",
-                  path: "/lan/routing",
-                },
-                SWITCHING: {
-                  label: "Switching",
-                  value: "SWITCHING",
-                  path: "/lan/switching",
-                },
-                SDN: {
-                  label: "Software Defined Networking",
-                  value: "SDN",
-                  path: "/lan/software-Defined-networking",
-                },
-                CMN: {
-                  label: "Cloud Managed Network",
-                  value: "CMN",
-                  path: "/lan/Cloud-Managed-Network",
-                },
-                IBN: {
-                  label: "Intent-based Networking",
-                  value: "IBN",
-                  path: "/lan/Intent-based-Networking",
-                },
-                AI: {
-                  label: "Artificial Intelligence for IT Operations",
-                  value: "AI",
-                  path: "/lan/Cloud-Managed-Network",
-                },
-              },
-            },
-            // --Wan--
-            WAN: {
-              label: "WAN",
-              value: "WAN",
-              shaded: false,
-              icon: WAN_ICON,
-              image: WAN_ICON,
-              mobile_image: "",
-              menus: {
-                SD_WAN: {
-                  label: "SD WAN",
-                  value: "SD_WAN",
-                  path: "/wan/sd-wan",
-                },
-                SASE: {
-                  label: "SASE",
-                  value: "SASE",
-                  path: "/wan/SASE",
-                },
-                SDN: {
-                  label: "Software Defined Networking",
-                  value: "SDN",
-                  path: "/wan/software-Defined-networking",
-                },
-                VPN: {
-                  label: "Virtual Private Network",
-                  value: "VPN",
-                  path: "/wan/virtual-private-network",
-                },
-              },
-            },
-
-            //--Wireless and mobility --
-            WAM: {
-              label: "Wireless & Mobility",
-              value: "WAM",
-              shaded: false,
-              icon: WAM_ICON,
-              image: WAM_ICON,
-              mobile_image: "",
-              menus: {
-                WI_FI_6: {
-                  label: "Wi-Fi-6",
-                  value: "WI_FI_6",
-                  path: "/wireless-and-mobility/wi-fi-6",
-                },
-                UNIFIED_WIRELESS: {
-                  label: "Unified Wireless",
-                  value: "UNIFIED_WIRELESS",
-                  path: "/wireless-and-mobility/Unified-Wireless",
-                },
-                ENTERPRISE_WIRELESS: {
-                  label: "Enterprise Wireless",
-                  value: "ENTERPRISE_WIRELESS",
-                  path: "/wireless-and-mobility/Enterprise-Wireless",
-                },
-                LBS: {
-                  label: "Location Based Services",
-                  value: "LBS",
-                  path: "/wireless-and-mobility/Location-Based-Services",
-                },
-                CMW: {
-                  label: "Cloud Managed Wireless",
-                  value: "CMW",
-                  path: "/wireless-and-mobility/Cloud-Managed-wireless",
-                },
-              },
-            },
-
-            MISCELLANEOUS: {
-              label: "Miscellaneous",
-              value: "MISCELLANEOUS",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                OOB_MANAGEMENT: {
-                  label: "OOB Management",
-                  value: "OOB_MANAGEMENT",
-                  path: "/miscellaneous/OOB-Management",
-                },
-                AMH: {
-                  label: "Automated Monitoring & Helpdesk",
-                  value: "AMH",
-                  path: "/miscellaneous/Automated-Monitoring-Helpdesk",
-                },
-                TELEMETRY: {
-                  label: "Telemetry",
-                  value: "TELEMETRY",
-                  path: "/miscellaneous/Telemetry",
-                },
-                OA: {
-                  label: "Orchestration and Automation",
-                  value: "OA",
-                  path: "/miscellaneous/Orchestration-and-Automation",
-                },
-              },
-            },
-
-            // -- Popular ---
-            POPULAR: {
-              label: "POPULAR",
-              value: "POPULAR",
-              shaded: true,
-              icon: POPULAR_ICON,
-              image: POPULAR_ICON,
-              mobile_image: "",
-              menus: {
-                // -- Cisco DNA
-                CISCO_DNA: {
-                  label: "Cisco DNA Center",
-                  value: "CISCO_DNA",
-                  path: "/Cisco-DNA-Center",
-                },
-                // -- Cisco SD WAN
-                CISCO_SD_WAN: {
-                  label: "Cisco SD-WAN",
-                  value: "CISCO_SD_WAN",
-                  path: "/Cisco-SD-WAN",
-                },
-
-                // -- Cisco Cisco Unified Wireless
-                CUWNS: {
-                  label: "Cisco Unified Wireless Network Solution",
-                  value: "CUWNS",
-                  path: "/Cisco-Unified-Wireless-Network-Solution",
-                },
-                // -- Cisco  Enterprise NSV Infrastructure
-                CENIS: {
-                  label: "Cisco Enterprise NSV Infrastructure",
-                  value: "CENIS",
-                  path: "/Cisco-Enterprise-NSV-Infrastructure",
-                },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
-                // -- Cisco Aruba Centra
-                ARUBA_CENTRAL: {
-                  label: "Aruba Central",
-                  value: "ARUBA_CENTRAL",
-                  path: "/Aruba-Central",
-                },
-                // -- Cisco Velo Cloud
-                VWVC: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                //______
-                // -- Cisco DNA
-                CISCO_DNA_2: {
-                  label: "Cisco DNA Center",
-                  value: "CISCO_DNA_2",
-                  path: "/Cisco-DNA-Center",
-                },
-                // -- Cisco SD WAN
-                CISCO_SD_WAN_2: {
-                  label: "Cisco SD-WAN",
-                  value: "CISCO_SD_WAN_2",
-                  path: "/Cisco-SD-WAN",
-                },
-
-                // -- Cisco Cisco Unified Wireless
-                CUWNS_2: {
-                  label: "Cisco Unified Wireless Network Solution",
-                  value: "CUWNS_2",
-                  path: "/Cisco-Unified-Wireless-Network-Solution",
-                },
-                // -- Cisco  Enterprise NSV Infrastructure
-                CENIS_2: {
-                  label: "Cisco Enterprise NSV Infrastructure",
-                  value: "CENIS_2",
-                  path: "/Cisco-Enterprise-NSV-Infrastructure",
-                },
-                // -- Cisco meraki
-                CISCO_MERAKI_2: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI_2",
-                  path: "/Cisco-Meraki",
-                },
-                // -- Cisco Aruba Centra
-                ARUBA_CENTRAL_2: {
-                  label: "Aruba Central",
-                  value: "ARUBA_CENTRAL_2",
-                  path: "/Aruba-Central",
-                },
-                // -- Cisco Velo Cloud
-                VWVC_2: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC_2",
-                  path: "/vmware-velo-cloud",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN_2",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                //______
-              },
-            },
-          },
-        },
-      },
-
-      AACS: {
-        label: "ADVISORY AND CONSULTANCY SERVICES",
-        value: "AACS",
-        menus: {
-          image: SECURITY_MAIN_IMAGE,
-          mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "SECURITY",
-          color: THEME_COLOR.security_red,
-          subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
-          menus: {
-            // --SECURITY --
-            SECURITY: {
-              label: "Security",
-              value: "SECURITY",
-              shaded: false,
-              icon: LAN_ICON,
-              image: LAN_ICON,
-              mobile_image: "",
-              menus: {
-                NETWORK_SECURITY: {
-                  label: "Network Security",
-                  value: "NETWORK_SECURITY",
-                  path: "/security/network-security",
-                },
-                DATA_CENTER_SECURITY: {
-                  label: "Data Center Security",
-                  value: "DATA_CENTER_SECURITY",
-                  path: "/security/data-center-security",
-                },
-                CIS: {
-                  label: "Cloud Infrastructure Security",
-                  value: "CIS",
-                  path: "/security/Cloud-Infrastructure-Security",
-                },
-                WAAS: {
-                  label: "Web Application & API Security",
-                  value: "WAAS",
-                  path: "/security/Web-Application-API-Security",
-                },
-                EMAIL_SECURITY: {
-                  label: "Email Security",
-                  value: "EMAIL_SECURITY",
-                  path: "/security/Email Security",
-                },
-                RAVS: {
-                  label: "Remote Access VPN Security",
-                  value: "RAVS",
-                  path: "/security/Remote-Access-VPN-Security",
-                },
-                IAMM: {
-                  label: "Identity and Access Management/MFA",
-                  value: "IAMM",
-                  path: "/security/Identity-Access-Management",
-                },
-                DNS_SECURITY: {
-                  label: "DNS Security",
-                  value: "DNS_SECURITY",
-                  path: "/security/DNS-Security",
-                },
-                SECURITY_ANALYTICS: {
-                  label: "Security Analytics",
-                  value: "SECURITY_ANALYTICS",
-                  path: "/security/Security-Analytics",
-                },
-              },
-            },
-            CYBERSECURITY: {
-              label: "Cybersecurity",
-              value: "CYBERSECURITY",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CSC: {
-                  label: "Cybersecurity Consulting",
-                  value: "CSC",
-                  path: "/cybersecurity/Cybersecurity-Consulting",
-                },
-                PT: {
-                  label: "Penetration Testing",
-                  value: "PT",
-                  path: "/cybersecurity/Penetration Testing",
-                },
-                VA: {
-                  label: "Vulnerability Assessment",
-                  value: "VA",
-                  path: "/cybersecurity/Vulnerability-Assessment ",
-                },
-                RTR: {
-                  label: "Ransomeware Threat Response",
-                  value: "RTR",
-                  path: "/cybersecurity/Ransomeware-Threat-Response ",
-                },
-                FI: {
-                  label: "Forensic Investigation",
-                  value: "FI",
-                  path: "/cybersecurity/Forensic-Investigation ",
-                },
-                MDR: {
-                  label: "Managed Detection and Response",
-                  value: "MDR",
-                  path: "/cybersecurity/Managed-Detection-Response ",
-                },
-              },
-            },
-
-            BLANK: {
-              label: "",
-              value: "",
-              shaded: false,
-              icon: "",
-              image: "",
-              mobile_image: "",
-              menus: {},
-            },
-
-            MISCELLANEOUS: {
-              label: "Miscellaneous",
-              value: "MISCELLANEOUS",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CMS: {
-                  label: "Cloud Managed Security",
-                  value: "CMS",
-                  path: "/miscellaneous/Cloud-Managed-Security",
-                },
-                CDS: {
-                  label: "Cloud-Delivered Security(SASE))",
-                  value: "CDS",
-                  path: "/miscellaneous/Cloud-Delivered-Security",
-                },
-                SAAS_NOA: {
-                  label:
-                    "Security-as-a-Service for Networks Orchestration and Automation",
-                  value: "SAAS_NOA",
-                  path: "/miscellaneous/Security-as-a-Service-for-Networks",
-                },
-              },
-            },
-
-            // -- Popular ---
-            POPULAR: {
-              label: "POPULAR",
-              value: "POPULAR",
-              shaded: true,
-              icon: POPULAR_ICON,
-              image: POPULAR_ICON,
-              mobile_image: "",
-              menus: {
-                // -- Cisco ASA
-                CISCO_ASA: {
-                  label: "Cisco ASA",
-                  value: "CISCO_ASA",
-                  path: "/Cisco-ASA",
-                },
-                // -- Cisco FTD & FMC
-                CISCO_FTD_FMC: {
-                  label: "Cisco FTD & FMC",
-                  value: "CISCO_FTD_FMC",
-                  path: "/Cisco-FTD-FMC",
-                },
-                // -- Cisco SecureX
-                CISCO_SECURE_X: {
-                  label: "Cisco SecureX",
-                  value: "CISCO_SECURE_X",
-                  path: "/Cisco-SecureX",
-                },
-                // -- Cisco Secure Endpoint
-                CSE: {
-                  label: "Cisco Secure Endpoint(AMP)",
-                  value: "CSE",
-                  path: "/Cisco-Secure-Endpoint",
-                },
-                // -- Cisco Duo
-                CISCO_DUO: {
-                  label: "Cisco Duo",
-                  value: "CISCO_DUO",
-                  path: "/Cisco-Duo",
-                },
-                // -- Cisco Umbrella
-                CISCO_UMBRELLA: {
-                  label: "Cisco Umbrella",
-                  value: "CISCO_UMBRELLA",
-                  path: "/Cisco-Umbrella",
-                },
-                // -- Cisco Velo Cloud
-                VWVC: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN_2",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2N: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WA_2N",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-
-                // -- Cisco DNA
-                CISCO_DNA: {
-                  label: "Cisco DNA Center",
-                  value: "CISCO_DNA",
-                  path: "/Cisco-DNA-Center",
-                },
-                // -- Cisco SD WAN
-                CISCO_SD_WAN: {
-                  label: "Cisco SD-WAN",
-                  value: "CISCO_SD_WAN",
-                  path: "/Cisco-SD-WAN",
-                },
-
-                // -- Cisco Cisco Unified Wireless
-                CUWNS: {
-                  label: "Cisco Unified Wireless Network Solution",
-                  value: "CUWNS",
-                  path: "/Cisco-Unified-Wireless-Network-Solution",
-                },
-                // -- Cisco  Enterprise NSV Infrastructure
-                CENIS: {
-                  label: "Cisco Enterprise NSV Infrastructure",
-                  value: "CENIS",
-                  path: "/Cisco-Enterprise-NSV-Infrastructure",
-                },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
-                // -- Cisco Aruba Centra
-                ARUBA_CENTRAL: {
-                  label: "Aruba Central",
-                  value: "ARUBA_CENTRAL",
-                  path: "/Aruba-Central",
-                },
-
-                // -- Cisco Velo Cloud
-                VWVC_2: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-              },
-            },
-          },
-        },
-      },
-
-      PROFESSIONAL_SERVICES: {
-        label: "PROFESSIONAL SERVICES",
-        value: "PROFESSIONAL_SERVICES",
-        menus: {
-          image: DATA_CENTER_SECURITY_IMAGE,
-          mobile_image: MOBILE_DATA_SECURITY_IMAGE,
-          title: "Data Center Security",
-          color: THEME_COLOR.data_center_security,
-          subtitle: `Data Center Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
-          menus: {
-            // --SECURITY --
-            SECURITY: {
-              label: "Security",
-              value: "SECURITY",
-              shaded: false,
-              icon: LAN_ICON,
-              image: LAN_ICON,
-              mobile_image: "",
-              menus: {
-                NETWORK_SECURITY: {
-                  label: "Network Security",
-                  value: "NETWORK_SECURITY",
-                  path: "/security/network-security",
-                },
-                DATA_CENTER_SECURITY: {
-                  label: "Data Center Security",
-                  value: "DATA_CENTER_SECURITY",
-                  path: "/security/data-center-security",
-                },
-                CIS: {
-                  label: "Cloud Infrastructure Security",
-                  value: "CIS",
-                  path: "/security/Cloud-Infrastructure-Security",
-                },
-                WAAS: {
-                  label: "Web Application & API Security",
-                  value: "WAAS",
-                  path: "/security/Web-Application-API-Security",
-                },
-                EMAIL_SECURITY: {
-                  label: "Email Security",
-                  value: "EMAIL_SECURITY",
-                  path: "/security/Email Security",
-                },
-                RAVS: {
-                  label: "Remote Access VPN Security",
-                  value: "RAVS",
-                  path: "/security/Remote-Access-VPN-Security",
-                },
-                IAMM: {
-                  label: "Identity and Access Management/MFA",
-                  value: "IAMM",
-                  path: "/security/Identity-Access-Management",
-                },
-                DNS_SECURITY: {
-                  label: "DNS Security",
-                  value: "DNS_SECURITY",
-                  path: "/security/DNS-Security",
-                },
-                SECURITY_ANALYTICS: {
-                  label: "Security Analytics",
-                  value: "SECURITY_ANALYTICS",
-                  path: "/security/Security-Analytics",
-                },
-              },
-            },
-
-            CYBERSECURITY: {
-              label: "Cybersecurity",
-              value: "CYBERSECURITY",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CSC: {
-                  label: "Cybersecurity Consulting",
-                  value: "CSC",
-                  path: "/cybersecurity/Cybersecurity-Consulting",
-                },
-                PT: {
-                  label: "Penetration Testing",
-                  value: "PT",
-                  path: "/cybersecurity/Penetration Testing",
-                },
-                VA: {
-                  label: "Vulnerability Assessment",
-                  value: "VA",
-                  path: "/cybersecurity/Vulnerability-Assessment ",
-                },
-                RTR: {
-                  label: "Ransomeware Threat Response",
-                  value: "RTR",
-                  path: "/cybersecurity/Ransomeware-Threat-Response ",
-                },
-                FI: {
-                  label: "Forensic Investigation",
-                  value: "FI",
-                  path: "/cybersecurity/Forensic-Investigation ",
-                },
-                MDR: {
-                  label: "Managed Detection and Response",
-                  value: "MDR",
-                  path: "/cybersecurity/Managed-Detection-Response ",
-                },
-              },
-            },
-
-            MISCELLANEOUS: {
-              label: "Miscellaneous",
-              value: "MISCELLANEOUS",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CMS: {
-                  label: "Cloud Managed Security",
-                  value: "CMS",
-                  path: "/miscellaneous/Cloud-Managed-Security",
-                },
-                CDS: {
-                  label: "Cloud-Delivered Security(SASE))",
-                  value: "CDS",
-                  path: "/miscellaneous/Cloud-Delivered-Security",
-                },
-                SAAS_NOA: {
-                  label:
-                    "Security-as-a-Service for Networks Orchestration and Automation",
-                  value: "SAAS_NOA",
-                  path: "/miscellaneous/Security-as-a-Service-for-Networks",
-                },
-              },
-            },
-
-            // -- Popular ---
-            POPULAR: {
-              label: "POPULAR",
-              value: "POPULAR",
-              shaded: true,
-              icon: POPULAR_ICON,
-              image: POPULAR_ICON,
-              mobile_image: "",
-              menus: {
-                // -- Cisco ASA
-                CISCO_ASA: {
-                  label: "Cisco ASA",
-                  value: "CISCO_ASA",
-                  path: "/Cisco-ASA",
-                },
-                // -- Cisco FTD & FMC
-                CISCO_FTD_FMC: {
-                  label: "Cisco FTD & FMC",
-                  value: "CISCO_FTD_FMC",
-                  path: "/Cisco-FTD-FMC",
-                },
-                // -- Cisco SecureX
-                CISCO_SECURE_X: {
-                  label: "Cisco SecureX",
-                  value: "CISCO_SECURE_X",
-                  path: "/Cisco-SecureX",
-                },
-                // -- Cisco Secure Endpoint
-                CSE: {
-                  label: "Cisco Secure Endpoint(AMP)",
-                  value: "CSE",
-                  path: "/Cisco-Secure-Endpoint",
-                },
-                // -- Cisco Duo
-                CISCO_DUO: {
-                  label: "Cisco Duo",
-                  value: "CISCO_DUO",
-                  path: "/Cisco-Duo",
-                },
-                // -- Cisco Umbrella
-                CISCO_UMBRELLA: {
-                  label: "Cisco Umbrella",
-                  value: "CISCO_UMBRELLA",
-                  path: "/Cisco-Umbrella",
-                },
-                // -- Cisco Velo Cloud
-                VWVC: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN_2",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2N: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WA_2N",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-
-                // -- Cisco DNA
-                CISCO_DNA: {
-                  label: "Cisco DNA Center",
-                  value: "CISCO_DNA",
-                  path: "/Cisco-DNA-Center",
-                },
-                // -- Cisco SD WAN
-                CISCO_SD_WAN: {
-                  label: "Cisco SD-WAN",
-                  value: "CISCO_SD_WAN",
-                  path: "/Cisco-SD-WAN",
-                },
-
-                // -- Cisco Cisco Unified Wireless
-                CUWNS: {
-                  label: "Cisco Unified Wireless Network Solution",
-                  value: "CUWNS",
-                  path: "/Cisco-Unified-Wireless-Network-Solution",
-                },
-                // -- Cisco  Enterprise NSV Infrastructure
-                CENIS: {
-                  label: "Cisco Enterprise NSV Infrastructure",
-                  value: "CENIS",
-                  path: "/Cisco-Enterprise-NSV-Infrastructure",
-                },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
-                // -- Cisco Aruba Centra
-                ARUBA_CENTRAL: {
-                  label: "Aruba Central",
-                  value: "ARUBA_CENTRAL",
-                  path: "/Aruba-Central",
-                },
-
-                // -- Cisco Velo Cloud
-                VWVC_2: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-              },
-            },
-          },
-        },
-      },
-
-      CSS: {
-        label: "CUSTOMIZED SOLUTION SERVICES",
-        value: "CSS",
-        menus: {
-          image: SECURITY_MAIN_IMAGE,
-          mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "SECURITY",
-          color: THEME_COLOR.security_red,
-          subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
-          menus: {
-            // --SECURITY --
-            SECURITY: {
-              label: "Security",
-              value: "SECURITY",
-              shaded: false,
-              icon: LAN_ICON,
-              image: LAN_ICON,
-              mobile_image: "",
-              menus: {
-                NETWORK_SECURITY: {
-                  label: "Network Security",
-                  value: "NETWORK_SECURITY",
-                  path: "/security/network-security",
-                },
-                DATA_CENTER_SECURITY: {
-                  label: "Data Center Security",
-                  value: "DATA_CENTER_SECURITY",
-                  path: "/security/data-center-security",
-                },
-                CIS: {
-                  label: "Cloud Infrastructure Security",
-                  value: "CIS",
-                  path: "/security/Cloud-Infrastructure-Security",
-                },
-                WAAS: {
-                  label: "Web Application & API Security",
-                  value: "WAAS",
-                  path: "/security/Web-Application-API-Security",
-                },
-                EMAIL_SECURITY: {
-                  label: "Email Security",
-                  value: "EMAIL_SECURITY",
-                  path: "/security/Email Security",
-                },
-                RAVS: {
-                  label: "Remote Access VPN Security",
-                  value: "RAVS",
-                  path: "/security/Remote-Access-VPN-Security",
-                },
-                IAMM: {
-                  label: "Identity and Access Management/MFA",
-                  value: "IAMM",
-                  path: "/security/Identity-Access-Management",
-                },
-                DNS_SECURITY: {
-                  label: "DNS Security",
-                  value: "DNS_SECURITY",
-                  path: "/security/DNS-Security",
-                },
-                SECURITY_ANALYTICS: {
-                  label: "Security Analytics",
-                  value: "SECURITY_ANALYTICS",
-                  path: "/security/Security-Analytics",
-                },
-              },
-            },
-            CYBERSECURITY: {
-              label: "Cybersecurity",
-              value: "CYBERSECURITY",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CSC: {
-                  label: "Cybersecurity Consulting",
-                  value: "CSC",
-                  path: "/cybersecurity/Cybersecurity-Consulting",
-                },
-                PT: {
-                  label: "Penetration Testing",
-                  value: "PT",
-                  path: "/cybersecurity/Penetration Testing",
-                },
-                VA: {
-                  label: "Vulnerability Assessment",
-                  value: "VA",
-                  path: "/cybersecurity/Vulnerability-Assessment ",
-                },
-                RTR: {
-                  label: "Ransomeware Threat Response",
-                  value: "RTR",
-                  path: "/cybersecurity/Ransomeware-Threat-Response ",
-                },
-                FI: {
-                  label: "Forensic Investigation",
-                  value: "FI",
-                  path: "/cybersecurity/Forensic-Investigation ",
-                },
-                MDR: {
-                  label: "Managed Detection and Response",
-                  value: "MDR",
-                  path: "/cybersecurity/Managed-Detection-Response ",
-                },
-              },
-            },
-
-            BLANK: {
-              label: "",
-              value: "",
-              shaded: false,
-              icon: "",
-              image: "",
-              mobile_image: "",
-              menus: {},
-            },
-
-            MISCELLANEOUS: {
-              label: "Miscellaneous",
-              value: "MISCELLANEOUS",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CMS: {
-                  label: "Cloud Managed Security",
-                  value: "CMS",
-                  path: "/miscellaneous/Cloud-Managed-Security",
-                },
-                CDS: {
-                  label: "Cloud-Delivered Security(SASE))",
-                  value: "CDS",
-                  path: "/miscellaneous/Cloud-Delivered-Security",
-                },
-                SAAS_NOA: {
-                  label:
-                    "Security-as-a-Service for Networks Orchestration and Automation",
-                  value: "SAAS_NOA",
-                  path: "/miscellaneous/Security-as-a-Service-for-Networks",
-                },
-              },
-            },
-
-            // -- Popular ---
-            POPULAR: {
-              label: "POPULAR",
-              value: "POPULAR",
-              shaded: true,
-              icon: POPULAR_ICON,
-              image: POPULAR_ICON,
-              mobile_image: "",
-              menus: {
-                // -- Cisco ASA
-                CISCO_ASA: {
-                  label: "Cisco ASA",
-                  value: "CISCO_ASA",
-                  path: "/Cisco-ASA",
-                },
-                // -- Cisco FTD & FMC
-                CISCO_FTD_FMC: {
-                  label: "Cisco FTD & FMC",
-                  value: "CISCO_FTD_FMC",
-                  path: "/Cisco-FTD-FMC",
-                },
-                // -- Cisco SecureX
-                CISCO_SECURE_X: {
-                  label: "Cisco SecureX",
-                  value: "CISCO_SECURE_X",
-                  path: "/Cisco-SecureX",
-                },
-                // -- Cisco Secure Endpoint
-                CSE: {
-                  label: "Cisco Secure Endpoint(AMP)",
-                  value: "CSE",
-                  path: "/Cisco-Secure-Endpoint",
-                },
-                // -- Cisco Duo
-                CISCO_DUO: {
-                  label: "Cisco Duo",
-                  value: "CISCO_DUO",
-                  path: "/Cisco-Duo",
-                },
-                // -- Cisco Umbrella
-                CISCO_UMBRELLA: {
-                  label: "Cisco Umbrella",
-                  value: "CISCO_UMBRELLA",
-                  path: "/Cisco-Umbrella",
-                },
-                // -- Cisco Velo Cloud
-                VWVC: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN_2",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2N: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WA_2N",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-
-                // -- Cisco DNA
-                CISCO_DNA: {
-                  label: "Cisco DNA Center",
-                  value: "CISCO_DNA",
-                  path: "/Cisco-DNA-Center",
-                },
-                // -- Cisco SD WAN
-                CISCO_SD_WAN: {
-                  label: "Cisco SD-WAN",
-                  value: "CISCO_SD_WAN",
-                  path: "/Cisco-SD-WAN",
-                },
-
-                // -- Cisco Cisco Unified Wireless
-                CUWNS: {
-                  label: "Cisco Unified Wireless Network Solution",
-                  value: "CUWNS",
-                  path: "/Cisco-Unified-Wireless-Network-Solution",
-                },
-                // -- Cisco  Enterprise NSV Infrastructure
-                CENIS: {
-                  label: "Cisco Enterprise NSV Infrastructure",
-                  value: "CENIS",
-                  path: "/Cisco-Enterprise-NSV-Infrastructure",
-                },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
-                // -- Cisco Aruba Centra
-                ARUBA_CENTRAL: {
-                  label: "Aruba Central",
-                  value: "ARUBA_CENTRAL",
-                  path: "/Aruba-Central",
-                },
-
-                // -- Cisco Velo Cloud
-                VWVC_2: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-              },
-            },
-          },
-        },
-      },
-
-      TS: {
-        label: "TRANSFORMATION SERVICES",
-        value: "TS",
-        menus: {
-          image: SECURITY_MAIN_IMAGE,
-          mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "SECURITY",
-          color: THEME_COLOR.security_red,
-          subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
-          menus: {
-            // --SECURITY --
-            SECURITY: {
-              label: "Security",
-              value: "SECURITY",
-              shaded: false,
-              icon: LAN_ICON,
-              image: LAN_ICON,
-              mobile_image: "",
-              menus: {
-                NETWORK_SECURITY: {
-                  label: "Network Security",
-                  value: "NETWORK_SECURITY",
-                  path: "/security/network-security",
-                },
-                DATA_CENTER_SECURITY: {
-                  label: "Data Center Security",
-                  value: "DATA_CENTER_SECURITY",
-                  path: "/security/data-center-security",
-                },
-                CIS: {
-                  label: "Cloud Infrastructure Security",
-                  value: "CIS",
-                  path: "/security/Cloud-Infrastructure-Security",
-                },
-                WAAS: {
-                  label: "Web Application & API Security",
-                  value: "WAAS",
-                  path: "/security/Web-Application-API-Security",
-                },
-                EMAIL_SECURITY: {
-                  label: "Email Security",
-                  value: "EMAIL_SECURITY",
-                  path: "/security/Email Security",
-                },
-                RAVS: {
-                  label: "Remote Access VPN Security",
-                  value: "RAVS",
-                  path: "/security/Remote-Access-VPN-Security",
-                },
-                IAMM: {
-                  label: "Identity and Access Management/MFA",
-                  value: "IAMM",
-                  path: "/security/Identity-Access-Management",
-                },
-                DNS_SECURITY: {
-                  label: "DNS Security",
-                  value: "DNS_SECURITY",
-                  path: "/security/DNS-Security",
-                },
-                SECURITY_ANALYTICS: {
-                  label: "Security Analytics",
-                  value: "SECURITY_ANALYTICS",
-                  path: "/security/Security-Analytics",
-                },
-              },
-            },
-            CYBERSECURITY: {
-              label: "Cybersecurity",
-              value: "CYBERSECURITY",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CSC: {
-                  label: "Cybersecurity Consulting",
-                  value: "CSC",
-                  path: "/cybersecurity/Cybersecurity-Consulting",
-                },
-                PT: {
-                  label: "Penetration Testing",
-                  value: "PT",
-                  path: "/cybersecurity/Penetration Testing",
-                },
-                VA: {
-                  label: "Vulnerability Assessment",
-                  value: "VA",
-                  path: "/cybersecurity/Vulnerability-Assessment ",
-                },
-                RTR: {
-                  label: "Ransomeware Threat Response",
-                  value: "RTR",
-                  path: "/cybersecurity/Ransomeware-Threat-Response ",
-                },
-                FI: {
-                  label: "Forensic Investigation",
-                  value: "FI",
-                  path: "/cybersecurity/Forensic-Investigation ",
-                },
-                MDR: {
-                  label: "Managed Detection and Response",
-                  value: "MDR",
-                  path: "/cybersecurity/Managed-Detection-Response ",
-                },
-              },
-            },
-
-            BLANK: {
-              label: "",
-              value: "",
-              shaded: false,
-              icon: "",
-              image: "",
-              mobile_image: "",
-              menus: {},
-            },
-
-            MISCELLANEOUS: {
-              label: "Miscellaneous",
-              value: "MISCELLANEOUS",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CMS: {
-                  label: "Cloud Managed Security",
-                  value: "CMS",
-                  path: "/miscellaneous/Cloud-Managed-Security",
-                },
-                CDS: {
-                  label: "Cloud-Delivered Security(SASE))",
-                  value: "CDS",
-                  path: "/miscellaneous/Cloud-Delivered-Security",
-                },
-                SAAS_NOA: {
-                  label:
-                    "Security-as-a-Service for Networks Orchestration and Automation",
-                  value: "SAAS_NOA",
-                  path: "/miscellaneous/Security-as-a-Service-for-Networks",
-                },
-              },
-            },
-
-            // -- Popular ---
-            POPULAR: {
-              label: "POPULAR",
-              value: "POPULAR",
-              shaded: true,
-              icon: POPULAR_ICON,
-              image: POPULAR_ICON,
-              mobile_image: "",
-              menus: {
-                // -- Cisco ASA
-                CISCO_ASA: {
-                  label: "Cisco ASA",
-                  value: "CISCO_ASA",
-                  path: "/Cisco-ASA",
-                },
-                // -- Cisco FTD & FMC
-                CISCO_FTD_FMC: {
-                  label: "Cisco FTD & FMC",
-                  value: "CISCO_FTD_FMC",
-                  path: "/Cisco-FTD-FMC",
-                },
-                // -- Cisco SecureX
-                CISCO_SECURE_X: {
-                  label: "Cisco SecureX",
-                  value: "CISCO_SECURE_X",
-                  path: "/Cisco-SecureX",
-                },
-                // -- Cisco Secure Endpoint
-                CSE: {
-                  label: "Cisco Secure Endpoint(AMP)",
-                  value: "CSE",
-                  path: "/Cisco-Secure-Endpoint",
-                },
-                // -- Cisco Duo
-                CISCO_DUO: {
-                  label: "Cisco Duo",
-                  value: "CISCO_DUO",
-                  path: "/Cisco-Duo",
-                },
-                // -- Cisco Umbrella
-                CISCO_UMBRELLA: {
-                  label: "Cisco Umbrella",
-                  value: "CISCO_UMBRELLA",
-                  path: "/Cisco-Umbrella",
-                },
-                // -- Cisco Velo Cloud
-                VWVC: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN_2",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2N: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WA_2N",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-
-                // -- Cisco DNA
-                CISCO_DNA: {
-                  label: "Cisco DNA Center",
-                  value: "CISCO_DNA",
-                  path: "/Cisco-DNA-Center",
-                },
-                // -- Cisco SD WAN
-                CISCO_SD_WAN: {
-                  label: "Cisco SD-WAN",
-                  value: "CISCO_SD_WAN",
-                  path: "/Cisco-SD-WAN",
-                },
-
-                // -- Cisco Cisco Unified Wireless
-                CUWNS: {
-                  label: "Cisco Unified Wireless Network Solution",
-                  value: "CUWNS",
-                  path: "/Cisco-Unified-Wireless-Network-Solution",
-                },
-                // -- Cisco  Enterprise NSV Infrastructure
-                CENIS: {
-                  label: "Cisco Enterprise NSV Infrastructure",
-                  value: "CENIS",
-                  path: "/Cisco-Enterprise-NSV-Infrastructure",
-                },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
-                // -- Cisco Aruba Centra
-                ARUBA_CENTRAL: {
-                  label: "Aruba Central",
-                  value: "ARUBA_CENTRAL",
-                  path: "/Aruba-Central",
-                },
-
-                // -- Cisco Velo Cloud
-                VWVC_2: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-              },
-            },
-          },
-        },
-      },
-
-      SAMS: {
-        label: "SUPPORT AND MONITORING SERVICES",
-        value: "SAMS",
-        menus: {
-          image: SECURITY_MAIN_IMAGE,
-          mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "SECURITY",
-          color: THEME_COLOR.security_red,
-          subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
-          menus: {
-            // --SECURITY --
-            SECURITY: {
-              label: "Security",
-              value: "SECURITY",
-              shaded: false,
-              icon: LAN_ICON,
-              image: LAN_ICON,
-              mobile_image: "",
-              menus: {
-                NETWORK_SECURITY: {
-                  label: "Network Security",
-                  value: "NETWORK_SECURITY",
-                  path: "/security/network-security",
-                },
-                DATA_CENTER_SECURITY: {
-                  label: "Data Center Security",
-                  value: "DATA_CENTER_SECURITY",
-                  path: "/security/data-center-security",
-                },
-                CIS: {
-                  label: "Cloud Infrastructure Security",
-                  value: "CIS",
-                  path: "/security/Cloud-Infrastructure-Security",
-                },
-                WAAS: {
-                  label: "Web Application & API Security",
-                  value: "WAAS",
-                  path: "/security/Web-Application-API-Security",
-                },
-                EMAIL_SECURITY: {
-                  label: "Email Security",
-                  value: "EMAIL_SECURITY",
-                  path: "/security/Email Security",
-                },
-                RAVS: {
-                  label: "Remote Access VPN Security",
-                  value: "RAVS",
-                  path: "/security/Remote-Access-VPN-Security",
-                },
-                IAMM: {
-                  label: "Identity and Access Management/MFA",
-                  value: "IAMM",
-                  path: "/security/Identity-Access-Management",
-                },
-                DNS_SECURITY: {
-                  label: "DNS Security",
-                  value: "DNS_SECURITY",
-                  path: "/security/DNS-Security",
-                },
-                SECURITY_ANALYTICS: {
-                  label: "Security Analytics",
-                  value: "SECURITY_ANALYTICS",
-                  path: "/security/Security-Analytics",
-                },
-              },
-            },
-            CYBERSECURITY: {
-              label: "Cybersecurity",
-              value: "CYBERSECURITY",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CSC: {
-                  label: "Cybersecurity Consulting",
-                  value: "CSC",
-                  path: "/cybersecurity/Cybersecurity-Consulting",
-                },
-                PT: {
-                  label: "Penetration Testing",
-                  value: "PT",
-                  path: "/cybersecurity/Penetration Testing",
-                },
-                VA: {
-                  label: "Vulnerability Assessment",
-                  value: "VA",
-                  path: "/cybersecurity/Vulnerability-Assessment ",
-                },
-                RTR: {
-                  label: "Ransomeware Threat Response",
-                  value: "RTR",
-                  path: "/cybersecurity/Ransomeware-Threat-Response ",
-                },
-                FI: {
-                  label: "Forensic Investigation",
-                  value: "FI",
-                  path: "/cybersecurity/Forensic-Investigation ",
-                },
-                MDR: {
-                  label: "Managed Detection and Response",
-                  value: "MDR",
-                  path: "/cybersecurity/Managed-Detection-Response ",
-                },
-              },
-            },
-
-            BLANK: {
-              label: "",
-              value: "",
-              shaded: false,
-              icon: "",
-              image: "",
-              mobile_image: "",
-              menus: {},
-            },
-
-            MISCELLANEOUS: {
-              label: "Miscellaneous",
-              value: "MISCELLANEOUS",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CMS: {
-                  label: "Cloud Managed Security",
-                  value: "CMS",
-                  path: "/miscellaneous/Cloud-Managed-Security",
-                },
-                CDS: {
-                  label: "Cloud-Delivered Security(SASE))",
-                  value: "CDS",
-                  path: "/miscellaneous/Cloud-Delivered-Security",
-                },
-                SAAS_NOA: {
-                  label:
-                    "Security-as-a-Service for Networks Orchestration and Automation",
-                  value: "SAAS_NOA",
-                  path: "/miscellaneous/Security-as-a-Service-for-Networks",
-                },
-              },
-            },
-
-            // -- Popular ---
-            POPULAR: {
-              label: "POPULAR",
-              value: "POPULAR",
-              shaded: true,
-              icon: POPULAR_ICON,
-              image: POPULAR_ICON,
-              mobile_image: "",
-              menus: {
-                // -- Cisco ASA
-                CISCO_ASA: {
-                  label: "Cisco ASA",
-                  value: "CISCO_ASA",
-                  path: "/Cisco-ASA",
-                },
-                // -- Cisco FTD & FMC
-                CISCO_FTD_FMC: {
-                  label: "Cisco FTD & FMC",
-                  value: "CISCO_FTD_FMC",
-                  path: "/Cisco-FTD-FMC",
-                },
-                // -- Cisco SecureX
-                CISCO_SECURE_X: {
-                  label: "Cisco SecureX",
-                  value: "CISCO_SECURE_X",
-                  path: "/Cisco-SecureX",
-                },
-                // -- Cisco Secure Endpoint
-                CSE: {
-                  label: "Cisco Secure Endpoint(AMP)",
-                  value: "CSE",
-                  path: "/Cisco-Secure-Endpoint",
-                },
-                // -- Cisco Duo
-                CISCO_DUO: {
-                  label: "Cisco Duo",
-                  value: "CISCO_DUO",
-                  path: "/Cisco-Duo",
-                },
-                // -- Cisco Umbrella
-                CISCO_UMBRELLA: {
-                  label: "Cisco Umbrella",
-                  value: "CISCO_UMBRELLA",
-                  path: "/Cisco-Umbrella",
-                },
-                // -- Cisco Velo Cloud
-                VWVC: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN_2",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2N: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WA_2N",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-
-                // -- Cisco DNA
-                CISCO_DNA: {
-                  label: "Cisco DNA Center",
-                  value: "CISCO_DNA",
-                  path: "/Cisco-DNA-Center",
-                },
-                // -- Cisco SD WAN
-                CISCO_SD_WAN: {
-                  label: "Cisco SD-WAN",
-                  value: "CISCO_SD_WAN",
-                  path: "/Cisco-SD-WAN",
-                },
-
-                // -- Cisco Cisco Unified Wireless
-                CUWNS: {
-                  label: "Cisco Unified Wireless Network Solution",
-                  value: "CUWNS",
-                  path: "/Cisco-Unified-Wireless-Network-Solution",
-                },
-                // -- Cisco  Enterprise NSV Infrastructure
-                CENIS: {
-                  label: "Cisco Enterprise NSV Infrastructure",
-                  value: "CENIS",
-                  path: "/Cisco-Enterprise-NSV-Infrastructure",
-                },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
-                // -- Cisco Aruba Centra
-                ARUBA_CENTRAL: {
-                  label: "Aruba Central",
-                  value: "ARUBA_CENTRAL",
-                  path: "/Aruba-Central",
-                },
-
-                // -- Cisco Velo Cloud
-                VWVC_2: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-              },
-            },
-          },
-        },
-      },
-
-      MARKET_PLACE: {
-        label: "MARKET PLACE",
-        value: "MARKET_PLACE",
-        menus: {
-          image: SECURITY_MAIN_IMAGE,
-          mobile_image: MOBILE_SECURITY_IMAGE,
-          title: "SECURITY",
-          color: THEME_COLOR.security_red,
-          subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
-          menus: {
-            // --SECURITY --
-            SECURITY: {
-              label: "Security",
-              value: "SECURITY",
-              shaded: false,
-              icon: LAN_ICON,
-              image: LAN_ICON,
-              mobile_image: "",
-              menus: {
-                NETWORK_SECURITY: {
-                  label: "Network Security",
-                  value: "NETWORK_SECURITY",
-                  path: "/security/network-security",
-                },
-                DATA_CENTER_SECURITY: {
-                  label: "Data Center Security",
-                  value: "DATA_CENTER_SECURITY",
-                  path: "/security/data-center-security",
-                },
-                CIS: {
-                  label: "Cloud Infrastructure Security",
-                  value: "CIS",
-                  path: "/security/Cloud-Infrastructure-Security",
-                },
-                WAAS: {
-                  label: "Web Application & API Security",
-                  value: "WAAS",
-                  path: "/security/Web-Application-API-Security",
-                },
-                EMAIL_SECURITY: {
-                  label: "Email Security",
-                  value: "EMAIL_SECURITY",
-                  path: "/security/Email Security",
-                },
-                RAVS: {
-                  label: "Remote Access VPN Security",
-                  value: "RAVS",
-                  path: "/security/Remote-Access-VPN-Security",
-                },
-                IAMM: {
-                  label: "Identity and Access Management/MFA",
-                  value: "IAMM",
-                  path: "/security/Identity-Access-Management",
-                },
-                DNS_SECURITY: {
-                  label: "DNS Security",
-                  value: "DNS_SECURITY",
-                  path: "/security/DNS-Security",
-                },
-                SECURITY_ANALYTICS: {
-                  label: "Security Analytics",
-                  value: "SECURITY_ANALYTICS",
-                  path: "/security/Security-Analytics",
-                },
-              },
-            },
-            CYBERSECURITY: {
-              label: "Cybersecurity",
-              value: "CYBERSECURITY",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CSC: {
-                  label: "Cybersecurity Consulting",
-                  value: "CSC",
-                  path: "/cybersecurity/Cybersecurity-Consulting",
-                },
-                PT: {
-                  label: "Penetration Testing",
-                  value: "PT",
-                  path: "/cybersecurity/Penetration Testing",
-                },
-                VA: {
-                  label: "Vulnerability Assessment",
-                  value: "VA",
-                  path: "/cybersecurity/Vulnerability-Assessment ",
-                },
-                RTR: {
-                  label: "Ransomeware Threat Response",
-                  value: "RTR",
-                  path: "/cybersecurity/Ransomeware-Threat-Response ",
-                },
-                FI: {
-                  label: "Forensic Investigation",
-                  value: "FI",
-                  path: "/cybersecurity/Forensic-Investigation ",
-                },
-                MDR: {
-                  label: "Managed Detection and Response",
-                  value: "MDR",
-                  path: "/cybersecurity/Managed-Detection-Response ",
-                },
-              },
-            },
-
-            BLANK: {
-              label: "",
-              value: "",
-              shaded: false,
-              icon: "",
-              image: "",
-              mobile_image: "",
-              menus: {},
-            },
-
-            MISCELLANEOUS: {
-              label: "Miscellaneous",
-              value: "MISCELLANEOUS",
-              shaded: false,
-              icon: MISC_ICON,
-              image: MISC_ICON,
-              mobile_image: "",
-              menus: {
-                CMS: {
-                  label: "Cloud Managed Security",
-                  value: "CMS",
-                  path: "/miscellaneous/Cloud-Managed-Security",
-                },
-                CDS: {
-                  label: "Cloud-Delivered Security(SASE))",
-                  value: "CDS",
-                  path: "/miscellaneous/Cloud-Delivered-Security",
-                },
-                SAAS_NOA: {
-                  label:
-                    "Security-as-a-Service for Networks Orchestration and Automation",
-                  value: "SAAS_NOA",
-                  path: "/miscellaneous/Security-as-a-Service-for-Networks",
-                },
-              },
-            },
-
-            // -- Popular ---
-            POPULAR: {
-              label: "POPULAR",
-              value: "POPULAR",
-              shaded: true,
-              icon: POPULAR_ICON,
-              image: POPULAR_ICON,
-              mobile_image: "",
-              menus: {
-                // -- Cisco ASA
-                CISCO_ASA: {
-                  label: "Cisco ASA",
-                  value: "CISCO_ASA",
-                  path: "/Cisco-ASA",
-                },
-                // -- Cisco FTD & FMC
-                CISCO_FTD_FMC: {
-                  label: "Cisco FTD & FMC",
-                  value: "CISCO_FTD_FMC",
-                  path: "/Cisco-FTD-FMC",
-                },
-                // -- Cisco SecureX
-                CISCO_SECURE_X: {
-                  label: "Cisco SecureX",
-                  value: "CISCO_SECURE_X",
-                  path: "/Cisco-SecureX",
-                },
-                // -- Cisco Secure Endpoint
-                CSE: {
-                  label: "Cisco Secure Endpoint(AMP)",
-                  value: "CSE",
-                  path: "/Cisco-Secure-Endpoint",
-                },
-                // -- Cisco Duo
-                CISCO_DUO: {
-                  label: "Cisco Duo",
-                  value: "CISCO_DUO",
-                  path: "/Cisco-Duo",
-                },
-                // -- Cisco Umbrella
-                CISCO_UMBRELLA: {
-                  label: "Cisco Umbrella",
-                  value: "CISCO_UMBRELLA",
-                  path: "/Cisco-Umbrella",
-                },
-                // -- Cisco Velo Cloud
-                VWVC: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WAN_2",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-                // --SP_SD_WAN: {
-                SP_SD_WAN_2N: {
-                  label: "Silver Peak SD-WAN",
-                  value: "SP_SD_WA_2N",
-                  path: "/Silver-Peak-SD-WAN",
-                },
-
-                // -- Cisco DNA
-                CISCO_DNA: {
-                  label: "Cisco DNA Center",
-                  value: "CISCO_DNA",
-                  path: "/Cisco-DNA-Center",
-                },
-                // -- Cisco SD WAN
-                CISCO_SD_WAN: {
-                  label: "Cisco SD-WAN",
-                  value: "CISCO_SD_WAN",
-                  path: "/Cisco-SD-WAN",
-                },
-
-                // -- Cisco Cisco Unified Wireless
-                CUWNS: {
-                  label: "Cisco Unified Wireless Network Solution",
-                  value: "CUWNS",
-                  path: "/Cisco-Unified-Wireless-Network-Solution",
-                },
-                // -- Cisco  Enterprise NSV Infrastructure
-                CENIS: {
-                  label: "Cisco Enterprise NSV Infrastructure",
-                  value: "CENIS",
-                  path: "/Cisco-Enterprise-NSV-Infrastructure",
-                },
-                // -- Cisco meraki
-                CISCO_MERAKI: {
-                  label: "Cisco Meraki",
-                  value: "CISCO_MERAKI",
-                  path: "/Cisco-Meraki",
-                },
-                // -- Cisco Aruba Centra
-                ARUBA_CENTRAL: {
-                  label: "Aruba Central",
-                  value: "ARUBA_CENTRAL",
-                  path: "/Aruba-Central",
-                },
-
-                // -- Cisco Velo Cloud
-                VWVC_2: {
-                  label: "VmWare VeloCloud",
-                  value: "VWVC",
-                  path: "/vmware-velo-cloud",
-                },
-              },
-            },
-          },
-        },
-      },
-    },
-  },
+  // --------------------------- comment till further update ---
+  // DND: {
+  //   label: "DevOps & Deployment ",
+  //   value: "DND",
+  //   isMore: false,
+  //   menus: {
+  //     NETWORKING: {
+  //       label: "NETWORK WIRED AND WIRELESS",
+  //       value: "NETWORKING",
+  //       menus: {
+  //         image: NETWORK_IMAGE,
+  //         mobile_image: MOBILE_NETWORK,
+  //         title: "NETWORK",
+  //         color: THEME_COLOR.color_4,
+  //         subtitle: `Implement enterprise-class connectivity for wired and wireless.Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
+  //         menus: {
+  //           // --LAN --
+  //           LAN: {
+  //             label: "LAN",
+  //             value: "LAN",
+  //             shaded: false,
+  //             icon: LAN_ICON,
+  //             image: LAN_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               ROUTING: {
+  //                 label: "Routing",
+  //                 value: "ROUTING",
+  //                 path: "/lan/routing",
+  //               },
+  //               SWITCHING: {
+  //                 label: "Switching",
+  //                 value: "SWITCHING",
+  //                 path: "/lan/switching",
+  //               },
+  //               SDN: {
+  //                 label: "Software Defined Networking",
+  //                 value: "SDN",
+  //                 path: "/lan/software-Defined-networking",
+  //               },
+  //               CMN: {
+  //                 label: "Cloud Managed Network",
+  //                 value: "CMN",
+  //                 path: "/lan/Cloud-Managed-Network",
+  //               },
+  //               IBN: {
+  //                 label: "Intent-based Networking",
+  //                 value: "IBN",
+  //                 path: "/lan/Intent-based-Networking",
+  //               },
+  //               AI: {
+  //                 label: "Artificial Intelligence for IT Operations",
+  //                 value: "AI",
+  //                 path: "/lan/Cloud-Managed-Network",
+  //               },
+  //             },
+  //           },
+  //           // --Wan--
+  //           WAN: {
+  //             label: "WAN",
+  //             value: "WAN",
+  //             shaded: false,
+  //             icon: WAN_ICON,
+  //             image: WAN_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               SD_WAN: {
+  //                 label: "SD WAN",
+  //                 value: "SD_WAN",
+  //                 path: "/wan/sd-wan",
+  //               },
+  //               SASE: {
+  //                 label: "SASE",
+  //                 value: "SASE",
+  //                 path: "/wan/SASE",
+  //               },
+  //               SDN: {
+  //                 label: "Software Defined Networking",
+  //                 value: "SDN",
+  //                 path: "/wan/software-Defined-networking",
+  //               },
+  //               VPN: {
+  //                 label: "Virtual Private Network",
+  //                 value: "VPN",
+  //                 path: "/wan/virtual-private-network",
+  //               },
+  //             },
+  //           },
+
+  //           //--Wireless and mobility --
+  //           WAM: {
+  //             label: "Wireless & Mobility",
+  //             value: "WAM",
+  //             shaded: false,
+  //             icon: WAM_ICON,
+  //             image: WAM_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               WI_FI_6: {
+  //                 label: "Wi-Fi-6",
+  //                 value: "WI_FI_6",
+  //                 path: "/wireless-and-mobility/wi-fi-6",
+  //               },
+  //               UNIFIED_WIRELESS: {
+  //                 label: "Unified Wireless",
+  //                 value: "UNIFIED_WIRELESS",
+  //                 path: "/wireless-and-mobility/Unified-Wireless",
+  //               },
+  //               ENTERPRISE_WIRELESS: {
+  //                 label: "Enterprise Wireless",
+  //                 value: "ENTERPRISE_WIRELESS",
+  //                 path: "/wireless-and-mobility/Enterprise-Wireless",
+  //               },
+  //               LBS: {
+  //                 label: "Location Based Services",
+  //                 value: "LBS",
+  //                 path: "/wireless-and-mobility/Location-Based-Services",
+  //               },
+  //               CMW: {
+  //                 label: "Cloud Managed Wireless",
+  //                 value: "CMW",
+  //                 path: "/wireless-and-mobility/Cloud-Managed-wireless",
+  //               },
+  //             },
+  //           },
+
+  //           MISCELLANEOUS: {
+  //             label: "Miscellaneous",
+  //             value: "MISCELLANEOUS",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               OOB_MANAGEMENT: {
+  //                 label: "OOB Management",
+  //                 value: "OOB_MANAGEMENT",
+  //                 path: "/miscellaneous/OOB-Management",
+  //               },
+  //               AMH: {
+  //                 label: "Automated Monitoring & Helpdesk",
+  //                 value: "AMH",
+  //                 path: "/miscellaneous/Automated-Monitoring-Helpdesk",
+  //               },
+  //               TELEMETRY: {
+  //                 label: "Telemetry",
+  //                 value: "TELEMETRY",
+  //                 path: "/miscellaneous/Telemetry",
+  //               },
+  //               OA: {
+  //                 label: "Orchestration and Automation",
+  //                 value: "OA",
+  //                 path: "/miscellaneous/Orchestration-and-Automation",
+  //               },
+  //             },
+  //           },
+
+  //           // -- Popular ---
+  //           POPULAR: {
+  //             label: "POPULAR",
+  //             value: "POPULAR",
+  //             shaded: true,
+  //             icon: POPULAR_ICON,
+  //             image: POPULAR_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               // -- Cisco DNA
+  //               CISCO_DNA: {
+  //                 label: "Cisco DNA Center",
+  //                 value: "CISCO_DNA",
+  //                 path: "/Cisco-DNA-Center",
+  //               },
+  //               // -- Cisco SD WAN
+  //               CISCO_SD_WAN: {
+  //                 label: "Cisco SD-WAN",
+  //                 value: "CISCO_SD_WAN",
+  //                 path: "/Cisco-SD-WAN",
+  //               },
+
+  //               // -- Cisco Cisco Unified Wireless
+  //               CUWNS: {
+  //                 label: "Cisco Unified Wireless Network Solution",
+  //                 value: "CUWNS",
+  //                 path: "/Cisco-Unified-Wireless-Network-Solution",
+  //               },
+  //               // -- Cisco  Enterprise NSV Infrastructure
+  //               CENIS: {
+  //                 label: "Cisco Enterprise NSV Infrastructure",
+  //                 value: "CENIS",
+  //                 path: "/Cisco-Enterprise-NSV-Infrastructure",
+  //               },
+  //               // -- Cisco meraki
+  //               CISCO_MERAKI: {
+  //                 label: "Cisco Meraki",
+  //                 value: "CISCO_MERAKI",
+  //                 path: "/Cisco-Meraki",
+  //               },
+  //               // -- Cisco Aruba Centra
+  //               ARUBA_CENTRAL: {
+  //                 label: "Aruba Central",
+  //                 value: "ARUBA_CENTRAL",
+  //                 path: "/Aruba-Central",
+  //               },
+  //               // -- Cisco Velo Cloud
+  //               VWVC: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               //______
+  //               // -- Cisco DNA
+  //               CISCO_DNA_2: {
+  //                 label: "Cisco DNA Center",
+  //                 value: "CISCO_DNA_2",
+  //                 path: "/Cisco-DNA-Center",
+  //               },
+  //               // -- Cisco SD WAN
+  //               CISCO_SD_WAN_2: {
+  //                 label: "Cisco SD-WAN",
+  //                 value: "CISCO_SD_WAN_2",
+  //                 path: "/Cisco-SD-WAN",
+  //               },
+
+  //               // -- Cisco Cisco Unified Wireless
+  //               CUWNS_2: {
+  //                 label: "Cisco Unified Wireless Network Solution",
+  //                 value: "CUWNS_2",
+  //                 path: "/Cisco-Unified-Wireless-Network-Solution",
+  //               },
+  //               // -- Cisco  Enterprise NSV Infrastructure
+  //               CENIS_2: {
+  //                 label: "Cisco Enterprise NSV Infrastructure",
+  //                 value: "CENIS_2",
+  //                 path: "/Cisco-Enterprise-NSV-Infrastructure",
+  //               },
+  //               // -- Cisco meraki
+  //               CISCO_MERAKI_2: {
+  //                 label: "Cisco Meraki",
+  //                 value: "CISCO_MERAKI_2",
+  //                 path: "/Cisco-Meraki",
+  //               },
+  //               // -- Cisco Aruba Centra
+  //               ARUBA_CENTRAL_2: {
+  //                 label: "Aruba Central",
+  //                 value: "ARUBA_CENTRAL_2",
+  //                 path: "/Aruba-Central",
+  //               },
+  //               // -- Cisco Velo Cloud
+  //               VWVC_2: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC_2",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN_2",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               //______
+  //             },
+  //           },
+  //         },
+  //       },
+  //     },
+
+  //     /**
+  //      * Security and cyber Security
+  //      */
+  //     SECURITY: {
+  //       label: "SECURITY AND CYBERSECURITY",
+  //       value: "SECURITY",
+  //       menus: {
+  //         image: SECURITY_MAIN_IMAGE,
+  //         mobile_image: MOBILE_SECURITY_IMAGE,
+  //         title: "SECURITY",
+  //         color: THEME_COLOR.security_red,
+  //         subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
+  //         menus: {
+  //           // --SECURITY --
+  //           SECURITY: {
+  //             label: "Security",
+  //             value: "SECURITY",
+  //             shaded: false,
+  //             icon: LAN_ICON,
+  //             image: LAN_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               NETWORK_SECURITY: {
+  //                 label: "Network Security",
+  //                 value: "NETWORK_SECURITY",
+  //                 path: "/security/network-security",
+  //               },
+  //               DATA_CENTER_SECURITY: {
+  //                 label: "Data Center Security",
+  //                 value: "DATA_CENTER_SECURITY",
+  //                 path: "/security/data-center-security",
+  //               },
+  //               CIS: {
+  //                 label: "Cloud Infrastructure Security",
+  //                 value: "CIS",
+  //                 path: "/security/Cloud-Infrastructure-Security",
+  //               },
+  //               WAAS: {
+  //                 label: "Web Application & API Security",
+  //                 value: "WAAS",
+  //                 path: "/security/Web-Application-API-Security",
+  //               },
+  //               EMAIL_SECURITY: {
+  //                 label: "Email Security",
+  //                 value: "EMAIL_SECURITY",
+  //                 path: "/security/Email Security",
+  //               },
+  //               RAVS: {
+  //                 label: "Remote Access VPN Security",
+  //                 value: "RAVS",
+  //                 path: "/security/Remote-Access-VPN-Security",
+  //               },
+  //               IAMM: {
+  //                 label: "Identity and Access Management/MFA",
+  //                 value: "IAMM",
+  //                 path: "/security/Identity-Access-Management",
+  //               },
+  //               DNS_SECURITY: {
+  //                 label: "DNS Security",
+  //                 value: "DNS_SECURITY",
+  //                 path: "/security/DNS-Security",
+  //               },
+  //               SECURITY_ANALYTICS: {
+  //                 label: "Security Analytics",
+  //                 value: "SECURITY_ANALYTICS",
+  //                 path: "/security/Security-Analytics",
+  //               },
+  //             },
+  //           },
+  //           CYBERSECURITY: {
+  //             label: "Cybersecurity",
+  //             value: "CYBERSECURITY",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CSC: {
+  //                 label: "Cybersecurity Consulting",
+  //                 value: "CSC",
+  //                 path: "/cybersecurity/Cybersecurity-Consulting",
+  //               },
+  //               PT: {
+  //                 label: "Penetration Testing",
+  //                 value: "PT",
+  //                 path: "/cybersecurity/Penetration Testing",
+  //               },
+  //               VA: {
+  //                 label: "Vulnerability Assessment",
+  //                 value: "VA",
+  //                 path: "/cybersecurity/Vulnerability-Assessment ",
+  //               },
+  //               RTR: {
+  //                 label: "Ransomeware Threat Response",
+  //                 value: "RTR",
+  //                 path: "/cybersecurity/Ransomeware-Threat-Response ",
+  //               },
+  //               FI: {
+  //                 label: "Forensic Investigation",
+  //                 value: "FI",
+  //                 path: "/cybersecurity/Forensic-Investigation ",
+  //               },
+  //               MDR: {
+  //                 label: "Managed Detection and Response",
+  //                 value: "MDR",
+  //                 path: "/cybersecurity/Managed-Detection-Response ",
+  //               },
+  //             },
+  //           },
+
+  //           BLANK: {
+  //             label: "",
+  //             value: "",
+  //             shaded: false,
+  //             icon: "",
+  //             image: "",
+  //             mobile_image: "",
+  //             menus: {},
+  //           },
+
+  //           MISCELLANEOUS: {
+  //             label: "Miscellaneous",
+  //             value: "MISCELLANEOUS",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CMS: {
+  //                 label: "Cloud Managed Security",
+  //                 value: "CMS",
+  //                 path: "/miscellaneous/Cloud-Managed-Security",
+  //               },
+  //               CDS: {
+  //                 label: "Cloud-Delivered Security(SASE))",
+  //                 value: "CDS",
+  //                 path: "/miscellaneous/Cloud-Delivered-Security",
+  //               },
+  //               SAAS_NOA: {
+  //                 label:
+  //                   "Security-as-a-Service for Networks Orchestration and Automation",
+  //                 value: "SAAS_NOA",
+  //                 path: "/miscellaneous/Security-as-a-Service-for-Networks",
+  //               },
+  //             },
+  //           },
+
+  //           // -- Popular ---
+  //           POPULAR: {
+  //             label: "POPULAR",
+  //             value: "POPULAR",
+  //             shaded: true,
+  //             icon: POPULAR_ICON,
+  //             image: POPULAR_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               // -- Cisco ASA
+  //               CISCO_ASA: {
+  //                 label: "Cisco ASA",
+  //                 value: "CISCO_ASA",
+  //                 path: "/Cisco-ASA",
+  //               },
+  //               // -- Cisco FTD & FMC
+  //               CISCO_FTD_FMC: {
+  //                 label: "Cisco FTD & FMC",
+  //                 value: "CISCO_FTD_FMC",
+  //                 path: "/Cisco-FTD-FMC",
+  //               },
+  //               // -- Cisco SecureX
+  //               CISCO_SECURE_X: {
+  //                 label: "Cisco SecureX",
+  //                 value: "CISCO_SECURE_X",
+  //                 path: "/Cisco-SecureX",
+  //               },
+  //               // -- Cisco Secure Endpoint
+  //               CSE: {
+  //                 label: "Cisco Secure Endpoint(AMP)",
+  //                 value: "CSE",
+  //                 path: "/Cisco-Secure-Endpoint",
+  //               },
+  //               // -- Cisco Duo
+  //               CISCO_DUO: {
+  //                 label: "Cisco Duo",
+  //                 value: "CISCO_DUO",
+  //                 path: "/Cisco-Duo",
+  //               },
+  //               // -- Cisco Umbrella
+  //               CISCO_UMBRELLA: {
+  //                 label: "Cisco Umbrella",
+  //                 value: "CISCO_UMBRELLA",
+  //                 path: "/Cisco-Umbrella",
+  //               },
+  //               // -- Cisco Velo Cloud
+  //               VWVC: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN_2",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2N: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WA_2N",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+
+  //               // -- Cisco DNA
+  //               CISCO_DNA: {
+  //                 label: "Cisco DNA Center",
+  //                 value: "CISCO_DNA",
+  //                 path: "/Cisco-DNA-Center",
+  //               },
+  //               // -- Cisco SD WAN
+  //               CISCO_SD_WAN: {
+  //                 label: "Cisco SD-WAN",
+  //                 value: "CISCO_SD_WAN",
+  //                 path: "/Cisco-SD-WAN",
+  //               },
+
+  //               // -- Cisco Cisco Unified Wireless
+  //               CUWNS: {
+  //                 label: "Cisco Unified Wireless Network Solution",
+  //                 value: "CUWNS",
+  //                 path: "/Cisco-Unified-Wireless-Network-Solution",
+  //               },
+  //               // -- Cisco  Enterprise NSV Infrastructure
+  //               CENIS: {
+  //                 label: "Cisco Enterprise NSV Infrastructure",
+  //                 value: "CENIS",
+  //                 path: "/Cisco-Enterprise-NSV-Infrastructure",
+  //               },
+  //               // -- Cisco meraki
+  //               CISCO_MERAKI: {
+  //                 label: "Cisco Meraki",
+  //                 value: "CISCO_MERAKI",
+  //                 path: "/Cisco-Meraki",
+  //               },
+  //               // -- Cisco Aruba Centra
+  //               ARUBA_CENTRAL: {
+  //                 label: "Aruba Central",
+  //                 value: "ARUBA_CENTRAL",
+  //                 path: "/Aruba-Central",
+  //               },
+
+  //               // -- Cisco Velo Cloud
+  //               VWVC_2: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //             },
+  //           },
+  //         },
+  //       },
+  //     },
+
+  //     /**
+  //      * DATA CENTER AND VIRTUALIZATION
+  //      */
+  //     DATA_CENTER: {
+  //       label: "DATA CENTER AND VIRTUALIZATION",
+  //       value: "DATA_CENTER",
+  //       menus: {
+  //         image: DATA_CENTER_SECURITY_IMAGE,
+  //         mobile_image: MOBILE_DATA_SECURITY_IMAGE,
+  //         title: "Data Center Security",
+  //         color: THEME_COLOR.data_center_security,
+  //         subtitle: `Data Center Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
+  //         menus: {
+  //           // --SECURITY --
+  //           SECURITY: {
+  //             label: "Security",
+  //             value: "SECURITY",
+  //             shaded: false,
+  //             icon: LAN_ICON,
+  //             image: LAN_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               NETWORK_SECURITY: {
+  //                 label: "Network Security",
+  //                 value: "NETWORK_SECURITY",
+  //                 path: "/security/network-security",
+  //               },
+  //               DATA_CENTER_SECURITY: {
+  //                 label: "Data Center Security",
+  //                 value: "DATA_CENTER_SECURITY",
+  //                 path: "/security/data-center-security",
+  //               },
+  //               CIS: {
+  //                 label: "Cloud Infrastructure Security",
+  //                 value: "CIS",
+  //                 path: "/security/Cloud-Infrastructure-Security",
+  //               },
+  //               WAAS: {
+  //                 label: "Web Application & API Security",
+  //                 value: "WAAS",
+  //                 path: "/security/Web-Application-API-Security",
+  //               },
+  //               EMAIL_SECURITY: {
+  //                 label: "Email Security",
+  //                 value: "EMAIL_SECURITY",
+  //                 path: "/security/Email Security",
+  //               },
+  //               RAVS: {
+  //                 label: "Remote Access VPN Security",
+  //                 value: "RAVS",
+  //                 path: "/security/Remote-Access-VPN-Security",
+  //               },
+  //               IAMM: {
+  //                 label: "Identity and Access Management/MFA",
+  //                 value: "IAMM",
+  //                 path: "/security/Identity-Access-Management",
+  //               },
+  //               DNS_SECURITY: {
+  //                 label: "DNS Security",
+  //                 value: "DNS_SECURITY",
+  //                 path: "/security/DNS-Security",
+  //               },
+  //               SECURITY_ANALYTICS: {
+  //                 label: "Security Analytics",
+  //                 value: "SECURITY_ANALYTICS",
+  //                 path: "/security/Security-Analytics",
+  //               },
+  //             },
+  //           },
+
+  //           CYBERSECURITY: {
+  //             label: "Cybersecurity",
+  //             value: "CYBERSECURITY",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CSC: {
+  //                 label: "Cybersecurity Consulting",
+  //                 value: "CSC",
+  //                 path: "/cybersecurity/Cybersecurity-Consulting",
+  //               },
+  //               PT: {
+  //                 label: "Penetration Testing",
+  //                 value: "PT",
+  //                 path: "/cybersecurity/Penetration Testing",
+  //               },
+  //               VA: {
+  //                 label: "Vulnerability Assessment",
+  //                 value: "VA",
+  //                 path: "/cybersecurity/Vulnerability-Assessment ",
+  //               },
+  //               RTR: {
+  //                 label: "Ransomeware Threat Response",
+  //                 value: "RTR",
+  //                 path: "/cybersecurity/Ransomeware-Threat-Response ",
+  //               },
+  //               FI: {
+  //                 label: "Forensic Investigation",
+  //                 value: "FI",
+  //                 path: "/cybersecurity/Forensic-Investigation ",
+  //               },
+  //               MDR: {
+  //                 label: "Managed Detection and Response",
+  //                 value: "MDR",
+  //                 path: "/cybersecurity/Managed-Detection-Response ",
+  //               },
+  //             },
+  //           },
+
+  //           MISCELLANEOUS: {
+  //             label: "Miscellaneous",
+  //             value: "MISCELLANEOUS",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CMS: {
+  //                 label: "Cloud Managed Security",
+  //                 value: "CMS",
+  //                 path: "/miscellaneous/Cloud-Managed-Security",
+  //               },
+  //               CDS: {
+  //                 label: "Cloud-Delivered Security(SASE))",
+  //                 value: "CDS",
+  //                 path: "/miscellaneous/Cloud-Delivered-Security",
+  //               },
+  //               SAAS_NOA: {
+  //                 label:
+  //                   "Security-as-a-Service for Networks Orchestration and Automation",
+  //                 value: "SAAS_NOA",
+  //                 path: "/miscellaneous/Security-as-a-Service-for-Networks",
+  //               },
+  //             },
+  //           },
+
+  //           // -- Popular ---
+  //           POPULAR: {
+  //             label: "POPULAR",
+  //             value: "POPULAR",
+  //             shaded: true,
+  //             icon: POPULAR_ICON,
+  //             image: POPULAR_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               // -- Cisco ASA
+  //               CISCO_ASA: {
+  //                 label: "Cisco ASA",
+  //                 value: "CISCO_ASA",
+  //                 path: "/Cisco-ASA",
+  //               },
+  //               // -- Cisco FTD & FMC
+  //               CISCO_FTD_FMC: {
+  //                 label: "Cisco FTD & FMC",
+  //                 value: "CISCO_FTD_FMC",
+  //                 path: "/Cisco-FTD-FMC",
+  //               },
+  //               // -- Cisco SecureX
+  //               CISCO_SECURE_X: {
+  //                 label: "Cisco SecureX",
+  //                 value: "CISCO_SECURE_X",
+  //                 path: "/Cisco-SecureX",
+  //               },
+  //               // -- Cisco Secure Endpoint
+  //               CSE: {
+  //                 label: "Cisco Secure Endpoint(AMP)",
+  //                 value: "CSE",
+  //                 path: "/Cisco-Secure-Endpoint",
+  //               },
+  //               // -- Cisco Duo
+  //               CISCO_DUO: {
+  //                 label: "Cisco Duo",
+  //                 value: "CISCO_DUO",
+  //                 path: "/Cisco-Duo",
+  //               },
+  //               // -- Cisco Umbrella
+  //               CISCO_UMBRELLA: {
+  //                 label: "Cisco Umbrella",
+  //                 value: "CISCO_UMBRELLA",
+  //                 path: "/Cisco-Umbrella",
+  //               },
+  //               // -- Cisco Velo Cloud
+  //               VWVC: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN_2",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2N: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WA_2N",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+
+  //               // -- Cisco DNA
+  //               CISCO_DNA: {
+  //                 label: "Cisco DNA Center",
+  //                 value: "CISCO_DNA",
+  //                 path: "/Cisco-DNA-Center",
+  //               },
+  //               // -- Cisco SD WAN
+  //               CISCO_SD_WAN: {
+  //                 label: "Cisco SD-WAN",
+  //                 value: "CISCO_SD_WAN",
+  //                 path: "/Cisco-SD-WAN",
+  //               },
+  //               // -- Cisco meraki
+  //               CISCO_MERAKI: {
+  //                 label: "Cisco Meraki",
+  //                 value: "CISCO_MERAKI",
+  //                 path: "/Cisco-Meraki",
+  //               },
+  //               // -- Cisco Cisco Unified Wireless
+  //               CUWNS: {
+  //                 label: "Cisco Unified Wireless Network Solution",
+  //                 value: "CUWNS",
+  //                 path: "/Cisco-Unified-Wireless-Network-Solution",
+  //               },
+  //               // -- Cisco  Enterprise NSV Infrastructure
+  //               CENIS: {
+  //                 label: "Cisco Enterprise NSV Infrastructure",
+  //                 value: "CENIS",
+  //                 path: "/Cisco-Enterprise-NSV-Infrastructure",
+  //               },
+  //               // -- Cisco Aruba Centra
+  //               ARUBA_CENTRAL: {
+  //                 label: "Aruba Central",
+  //                 value: "ARUBA_CENTRAL",
+  //                 path: "/Aruba-Central",
+  //               },
+
+  //               // -- Cisco Velo Cloud
+  //               VWVC_2: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //             },
+  //           },
+  //         },
+  //       },
+  //     },
+
+  //     /**
+  //      * COLLABORATION AND PRODUCTIVITY
+  //      */
+  //     COLLABORATION: {
+  //       label: "COLLABORATION AND PRODUCTIVITY",
+  //       value: "COLLABORATION",
+  //       menus: {
+  //         image: SECURITY_MAIN_IMAGE,
+  //         mobile_image: MOBILE_SECURITY_IMAGE,
+  //         title: "COLLABORATION",
+  //         color: THEME_COLOR.security_red,
+  //         subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
+  //         menus: {
+  //           // --SECURITY --
+  //           SECURITY: {
+  //             label: "Security",
+  //             value: "SECURITY",
+  //             shaded: false,
+  //             icon: LAN_ICON,
+  //             image: LAN_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               NETWORK_SECURITY: {
+  //                 label: "Network Security",
+  //                 value: "NETWORK_SECURITY",
+  //                 path: "/security/network-security",
+  //               },
+  //               DATA_CENTER_SECURITY: {
+  //                 label: "Data Center Security",
+  //                 value: "DATA_CENTER_SECURITY",
+  //                 path: "/security/data-center-security",
+  //               },
+  //               CIS: {
+  //                 label: "Cloud Infrastructure Security",
+  //                 value: "CIS",
+  //                 path: "/security/Cloud-Infrastructure-Security",
+  //               },
+  //               WAAS: {
+  //                 label: "Web Application & API Security",
+  //                 value: "WAAS",
+  //                 path: "/security/Web-Application-API-Security",
+  //               },
+  //               EMAIL_SECURITY: {
+  //                 label: "Email Security",
+  //                 value: "EMAIL_SECURITY",
+  //                 path: "/security/Email Security",
+  //               },
+  //               RAVS: {
+  //                 label: "Remote Access VPN Security",
+  //                 value: "RAVS",
+  //                 path: "/security/Remote-Access-VPN-Security",
+  //               },
+  //               IAMM: {
+  //                 label: "Identity and Access Management/MFA",
+  //                 value: "IAMM",
+  //                 path: "/security/Identity-Access-Management",
+  //               },
+  //               DNS_SECURITY: {
+  //                 label: "DNS Security",
+  //                 value: "DNS_SECURITY",
+  //                 path: "/security/DNS-Security",
+  //               },
+  //               SECURITY_ANALYTICS: {
+  //                 label: "Security Analytics",
+  //                 value: "SECURITY_ANALYTICS",
+  //                 path: "/security/Security-Analytics",
+  //               },
+  //             },
+  //           },
+  //           CYBERSECURITY: {
+  //             label: "Cybersecurity",
+  //             value: "CYBERSECURITY",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CSC: {
+  //                 label: "Cybersecurity Consulting",
+  //                 value: "CSC",
+  //                 path: "/cybersecurity/Cybersecurity-Consulting",
+  //               },
+  //               PT: {
+  //                 label: "Penetration Testing",
+  //                 value: "PT",
+  //                 path: "/cybersecurity/Penetration Testing",
+  //               },
+  //               VA: {
+  //                 label: "Vulnerability Assessment",
+  //                 value: "VA",
+  //                 path: "/cybersecurity/Vulnerability-Assessment ",
+  //               },
+  //               RTR: {
+  //                 label: "Ransomeware Threat Response",
+  //                 value: "RTR",
+  //                 path: "/cybersecurity/Ransomeware-Threat-Response ",
+  //               },
+  //               FI: {
+  //                 label: "Forensic Investigation",
+  //                 value: "FI",
+  //                 path: "/cybersecurity/Forensic-Investigation ",
+  //               },
+  //               MDR: {
+  //                 label: "Managed Detection and Response",
+  //                 value: "MDR",
+  //                 path: "/cybersecurity/Managed-Detection-Response ",
+  //               },
+  //             },
+  //           },
+
+  //           BLANK: {
+  //             label: "",
+  //             value: "",
+  //             shaded: false,
+  //             icon: "",
+  //             image: "",
+  //             mobile_image: "",
+  //             menus: {},
+  //           },
+
+  //           MISCELLANEOUS: {
+  //             label: "Miscellaneous",
+  //             value: "MISCELLANEOUS",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CMS: {
+  //                 label: "Cloud Managed Security",
+  //                 value: "CMS",
+  //                 path: "/miscellaneous/Cloud-Managed-Security",
+  //               },
+  //               CDS: {
+  //                 label: "Cloud-Delivered Security(SASE))",
+  //                 value: "CDS",
+  //                 path: "/miscellaneous/Cloud-Delivered-Security",
+  //               },
+  //               SAAS_NOA: {
+  //                 label:
+  //                   "Security-as-a-Service for Networks Orchestration and Automation",
+  //                 value: "SAAS_NOA",
+  //                 path: "/miscellaneous/Security-as-a-Service-for-Networks",
+  //               },
+  //             },
+  //           },
+
+  //           // -- Popular ---
+  //           POPULAR: {
+  //             label: "POPULAR",
+  //             value: "POPULAR",
+  //             shaded: true,
+  //             icon: POPULAR_ICON,
+  //             image: POPULAR_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               // -- Cisco ASA
+  //               CISCO_ASA: {
+  //                 label: "Cisco ASA",
+  //                 value: "CISCO_ASA",
+  //                 path: "/Cisco-ASA",
+  //               },
+  //               // -- Cisco FTD & FMC
+  //               CISCO_FTD_FMC: {
+  //                 label: "Cisco FTD & FMC",
+  //                 value: "CISCO_FTD_FMC",
+  //                 path: "/Cisco-FTD-FMC",
+  //               },
+  //               // -- Cisco SecureX
+  //               CISCO_SECURE_X: {
+  //                 label: "Cisco SecureX",
+  //                 value: "CISCO_SECURE_X",
+  //                 path: "/Cisco-SecureX",
+  //               },
+  //               // -- Cisco Secure Endpoint
+  //               CSE: {
+  //                 label: "Cisco Secure Endpoint(AMP)",
+  //                 value: "CSE",
+  //                 path: "/Cisco-Secure-Endpoint",
+  //               },
+  //               // -- Cisco Duo
+  //               CISCO_DUO: {
+  //                 label: "Cisco Duo",
+  //                 value: "CISCO_DUO",
+  //                 path: "/Cisco-Duo",
+  //               },
+  //               // -- Cisco Umbrella
+  //               CISCO_UMBRELLA: {
+  //                 label: "Cisco Umbrella",
+  //                 value: "CISCO_UMBRELLA",
+  //                 path: "/Cisco-Umbrella",
+  //               },
+  //               // -- Cisco Velo Cloud
+  //               VWVC: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN_2",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2N: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WA_2N",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+
+  //               // -- Cisco DNA
+  //               CISCO_DNA: {
+  //                 label: "Cisco DNA Center",
+  //                 value: "CISCO_DNA",
+  //                 path: "/Cisco-DNA-Center",
+  //               },
+  //               // -- Cisco SD WAN
+  //               CISCO_SD_WAN: {
+  //                 label: "Cisco SD-WAN",
+  //                 value: "CISCO_SD_WAN",
+  //                 path: "/Cisco-SD-WAN",
+  //               },
+  //               // -- Cisco Cisco Unified Wireless
+  //               CUWNS: {
+  //                 label: "Cisco Unified Wireless Network Solution",
+  //                 value: "CUWNS",
+  //                 path: "/Cisco-Unified-Wireless-Network-Solution",
+  //               },
+  //               // -- Cisco  Enterprise NSV Infrastructure
+  //               CENIS: {
+  //                 label: "Cisco Enterprise NSV Infrastructure",
+  //                 value: "CENIS",
+  //                 path: "/Cisco-Enterprise-NSV-Infrastructure",
+  //               },
+  //               // -- Cisco meraki
+  //               CISCO_MERAKI: {
+  //                 label: "Cisco Meraki",
+  //                 value: "CISCO_MERAKI",
+  //                 path: "/Cisco-Meraki",
+  //               },
+  //               // -- Cisco Aruba Centra
+  //               ARUBA_CENTRAL: {
+  //                 label: "Aruba Central",
+  //                 value: "ARUBA_CENTRAL",
+  //                 path: "/Aruba-Central",
+  //               },
+
+  //               // -- Cisco Velo Cloud
+  //               VWVC_2: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //             },
+  //           },
+  //         },
+  //       },
+  //     },
+
+  //     /**
+  //      * SERVICE PROVIDER
+  //      */
+  //     SP: {
+  //       label: "SERVICE PROVIDER",
+  //       value: "SP",
+  //       menus: {
+  //         image: SECURITY_MAIN_IMAGE,
+  //         mobile_image: MOBILE_SECURITY_IMAGE,
+  //         title: "SERVICE PROVIDER",
+  //         color: THEME_COLOR.security_red,
+  //         subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
+  //         menus: {
+  //           // --SECURITY --
+  //           SECURITY: {
+  //             label: "Security",
+  //             value: "SECURITY",
+  //             shaded: false,
+  //             icon: LAN_ICON,
+  //             image: LAN_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               NETWORK_SECURITY: {
+  //                 label: "Network Security",
+  //                 value: "NETWORK_SECURITY",
+  //                 path: "/security/network-security",
+  //               },
+  //               DATA_CENTER_SECURITY: {
+  //                 label: "Data Center Security",
+  //                 value: "DATA_CENTER_SECURITY",
+  //                 path: "/security/data-center-security",
+  //               },
+  //               CIS: {
+  //                 label: "Cloud Infrastructure Security",
+  //                 value: "CIS",
+  //                 path: "/security/Cloud-Infrastructure-Security",
+  //               },
+  //               WAAS: {
+  //                 label: "Web Application & API Security",
+  //                 value: "WAAS",
+  //                 path: "/security/Web-Application-API-Security",
+  //               },
+  //               EMAIL_SECURITY: {
+  //                 label: "Email Security",
+  //                 value: "EMAIL_SECURITY",
+  //                 path: "/security/Email Security",
+  //               },
+  //               RAVS: {
+  //                 label: "Remote Access VPN Security",
+  //                 value: "RAVS",
+  //                 path: "/security/Remote-Access-VPN-Security",
+  //               },
+  //               IAMM: {
+  //                 label: "Identity and Access Management/MFA",
+  //                 value: "IAMM",
+  //                 path: "/security/Identity-Access-Management",
+  //               },
+  //               DNS_SECURITY: {
+  //                 label: "DNS Security",
+  //                 value: "DNS_SECURITY",
+  //                 path: "/security/DNS-Security",
+  //               },
+  //               SECURITY_ANALYTICS: {
+  //                 label: "Security Analytics",
+  //                 value: "SECURITY_ANALYTICS",
+  //                 path: "/security/Security-Analytics",
+  //               },
+  //             },
+  //           },
+  //           CYBERSECURITY: {
+  //             label: "Cybersecurity",
+  //             value: "CYBERSECURITY",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CSC: {
+  //                 label: "Cybersecurity Consulting",
+  //                 value: "CSC",
+  //                 path: "/cybersecurity/Cybersecurity-Consulting",
+  //               },
+  //               PT: {
+  //                 label: "Penetration Testing",
+  //                 value: "PT",
+  //                 path: "/cybersecurity/Penetration Testing",
+  //               },
+  //               VA: {
+  //                 label: "Vulnerability Assessment",
+  //                 value: "VA",
+  //                 path: "/cybersecurity/Vulnerability-Assessment ",
+  //               },
+  //               RTR: {
+  //                 label: "Ransomeware Threat Response",
+  //                 value: "RTR",
+  //                 path: "/cybersecurity/Ransomeware-Threat-Response ",
+  //               },
+  //               FI: {
+  //                 label: "Forensic Investigation",
+  //                 value: "FI",
+  //                 path: "/cybersecurity/Forensic-Investigation ",
+  //               },
+  //               MDR: {
+  //                 label: "Managed Detection and Response",
+  //                 value: "MDR",
+  //                 path: "/cybersecurity/Managed-Detection-Response ",
+  //               },
+  //             },
+  //           },
+
+  //           BLANK: {
+  //             label: "",
+  //             value: "",
+  //             shaded: false,
+  //             icon: "",
+  //             image: "",
+  //             mobile_image: "",
+  //             menus: {},
+  //           },
+
+  //           MISCELLANEOUS: {
+  //             label: "Miscellaneous",
+  //             value: "MISCELLANEOUS",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CMS: {
+  //                 label: "Cloud Managed Security",
+  //                 value: "CMS",
+  //                 path: "/miscellaneous/Cloud-Managed-Security",
+  //               },
+  //               CDS: {
+  //                 label: "Cloud-Delivered Security(SASE))",
+  //                 value: "CDS",
+  //                 path: "/miscellaneous/Cloud-Delivered-Security",
+  //               },
+  //               SAAS_NOA: {
+  //                 label:
+  //                   "Security-as-a-Service for Networks Orchestration and Automation",
+  //                 value: "SAAS_NOA",
+  //                 path: "/miscellaneous/Security-as-a-Service-for-Networks",
+  //               },
+  //             },
+  //           },
+
+  //           // -- Popular ---
+  //           POPULAR: {
+  //             label: "POPULAR",
+  //             value: "POPULAR",
+  //             shaded: true,
+  //             icon: POPULAR_ICON,
+  //             image: POPULAR_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               // -- Cisco ASA
+  //               CISCO_ASA: {
+  //                 label: "Cisco ASA",
+  //                 value: "CISCO_ASA",
+  //                 path: "/Cisco-ASA",
+  //               },
+  //               // -- Cisco FTD & FMC
+  //               CISCO_FTD_FMC: {
+  //                 label: "Cisco FTD & FMC",
+  //                 value: "CISCO_FTD_FMC",
+  //                 path: "/Cisco-FTD-FMC",
+  //               },
+  //               // -- Cisco SecureX
+  //               CISCO_SECURE_X: {
+  //                 label: "Cisco SecureX",
+  //                 value: "CISCO_SECURE_X",
+  //                 path: "/Cisco-SecureX",
+  //               },
+  //               // -- Cisco Secure Endpoint
+  //               CSE: {
+  //                 label: "Cisco Secure Endpoint(AMP)",
+  //                 value: "CSE",
+  //                 path: "/Cisco-Secure-Endpoint",
+  //               },
+  //               // -- Cisco Duo
+  //               CISCO_DUO: {
+  //                 label: "Cisco Duo",
+  //                 value: "CISCO_DUO",
+  //                 path: "/Cisco-Duo",
+  //               },
+  //               // -- Cisco Umbrella
+  //               CISCO_UMBRELLA: {
+  //                 label: "Cisco Umbrella",
+  //                 value: "CISCO_UMBRELLA",
+  //                 path: "/Cisco-Umbrella",
+  //               },
+  //               // -- Cisco Velo Cloud
+  //               VWVC: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN_2",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2N: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WA_2N",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+
+  //               // -- Cisco DNA
+  //               CISCO_DNA: {
+  //                 label: "Cisco DNA Center",
+  //                 value: "CISCO_DNA",
+  //                 path: "/Cisco-DNA-Center",
+  //               },
+  //               // -- Cisco SD WAN
+  //               CISCO_SD_WAN: {
+  //                 label: "Cisco SD-WAN",
+  //                 value: "CISCO_SD_WAN",
+  //                 path: "/Cisco-SD-WAN",
+  //               },
+
+  //               // -- Cisco Cisco Unified Wireless
+  //               CUWNS: {
+  //                 label: "Cisco Unified Wireless Network Solution",
+  //                 value: "CUWNS",
+  //                 path: "/Cisco-Unified-Wireless-Network-Solution",
+  //               },
+  //               // -- Cisco  Enterprise NSV Infrastructure
+  //               CENIS: {
+  //                 label: "Cisco Enterprise NSV Infrastructure",
+  //                 value: "CENIS",
+  //                 path: "/Cisco-Enterprise-NSV-Infrastructure",
+  //               },
+  //               // -- Cisco meraki
+  //               CISCO_MERAKI: {
+  //                 label: "Cisco Meraki",
+  //                 value: "CISCO_MERAKI",
+  //                 path: "/Cisco-Meraki",
+  //               },
+  //               // -- Cisco Aruba Centra
+  //               ARUBA_CENTRAL: {
+  //                 label: "Aruba Central",
+  //                 value: "ARUBA_CENTRAL",
+  //                 path: "/Aruba-Central",
+  //               },
+
+  //               // -- Cisco Velo Cloud
+  //               VWVC_2: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //             },
+  //           },
+  //         },
+  //       },
+  //     },
+  //     /**
+  //      * CLOUD & COMPUTING
+  //      */
+  //     CAC: {
+  //       label: "CLOUD & COMPUTING",
+  //       value: "CAC",
+  //       menus: {
+  //         image: SECURITY_MAIN_IMAGE,
+  //         mobile_image: MOBILE_SECURITY_IMAGE,
+  //         title: "SECURITY",
+  //         color: THEME_COLOR.security_red,
+  //         subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
+  //         menus: {
+  //           // --SECURITY --
+  //           SECURITY: {
+  //             label: "Security",
+  //             value: "SECURITY",
+  //             shaded: false,
+  //             icon: LAN_ICON,
+  //             image: LAN_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               NETWORK_SECURITY: {
+  //                 label: "Network Security",
+  //                 value: "NETWORK_SECURITY",
+  //                 path: "/security/network-security",
+  //               },
+  //               DATA_CENTER_SECURITY: {
+  //                 label: "Data Center Security",
+  //                 value: "DATA_CENTER_SECURITY",
+  //                 path: "/security/data-center-security",
+  //               },
+  //               CIS: {
+  //                 label: "Cloud Infrastructure Security",
+  //                 value: "CIS",
+  //                 path: "/security/Cloud-Infrastructure-Security",
+  //               },
+  //               WAAS: {
+  //                 label: "Web Application & API Security",
+  //                 value: "WAAS",
+  //                 path: "/security/Web-Application-API-Security",
+  //               },
+  //               EMAIL_SECURITY: {
+  //                 label: "Email Security",
+  //                 value: "EMAIL_SECURITY",
+  //                 path: "/security/Email Security",
+  //               },
+  //               RAVS: {
+  //                 label: "Remote Access VPN Security",
+  //                 value: "RAVS",
+  //                 path: "/security/Remote-Access-VPN-Security",
+  //               },
+  //               IAMM: {
+  //                 label: "Identity and Access Management/MFA",
+  //                 value: "IAMM",
+  //                 path: "/security/Identity-Access-Management",
+  //               },
+  //               DNS_SECURITY: {
+  //                 label: "DNS Security",
+  //                 value: "DNS_SECURITY",
+  //                 path: "/security/DNS-Security",
+  //               },
+  //               SECURITY_ANALYTICS: {
+  //                 label: "Security Analytics",
+  //                 value: "SECURITY_ANALYTICS",
+  //                 path: "/security/Security-Analytics",
+  //               },
+  //             },
+  //           },
+  //           CYBERSECURITY: {
+  //             label: "Cybersecurity",
+  //             value: "CYBERSECURITY",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CSC: {
+  //                 label: "Cybersecurity Consulting",
+  //                 value: "CSC",
+  //                 path: "/cybersecurity/Cybersecurity-Consulting",
+  //               },
+  //               PT: {
+  //                 label: "Penetration Testing",
+  //                 value: "PT",
+  //                 path: "/cybersecurity/Penetration Testing",
+  //               },
+  //               VA: {
+  //                 label: "Vulnerability Assessment",
+  //                 value: "VA",
+  //                 path: "/cybersecurity/Vulnerability-Assessment ",
+  //               },
+  //               RTR: {
+  //                 label: "Ransomeware Threat Response",
+  //                 value: "RTR",
+  //                 path: "/cybersecurity/Ransomeware-Threat-Response ",
+  //               },
+  //               FI: {
+  //                 label: "Forensic Investigation",
+  //                 value: "FI",
+  //                 path: "/cybersecurity/Forensic-Investigation ",
+  //               },
+  //               MDR: {
+  //                 label: "Managed Detection and Response",
+  //                 value: "MDR",
+  //                 path: "/cybersecurity/Managed-Detection-Response ",
+  //               },
+  //             },
+  //           },
+
+  //           BLANK: {
+  //             label: "",
+  //             value: "",
+  //             shaded: false,
+  //             icon: "",
+  //             image: "",
+  //             mobile_image: "",
+  //             menus: {},
+  //           },
+
+  //           MISCELLANEOUS: {
+  //             label: "Miscellaneous",
+  //             value: "MISCELLANEOUS",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CMS: {
+  //                 label: "Cloud Managed Security",
+  //                 value: "CMS",
+  //                 path: "/miscellaneous/Cloud-Managed-Security",
+  //               },
+  //               CDS: {
+  //                 label: "Cloud-Delivered Security(SASE))",
+  //                 value: "CDS",
+  //                 path: "/miscellaneous/Cloud-Delivered-Security",
+  //               },
+  //               SAAS_NOA: {
+  //                 label:
+  //                   "Security-as-a-Service for Networks Orchestration and Automation",
+  //                 value: "SAAS_NOA",
+  //                 path: "/miscellaneous/Security-as-a-Service-for-Networks",
+  //               },
+  //             },
+  //           },
+
+  //           // -- Popular ---
+  //           POPULAR: {
+  //             label: "POPULAR",
+  //             value: "POPULAR",
+  //             shaded: true,
+  //             icon: POPULAR_ICON,
+  //             image: POPULAR_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               // -- Cisco ASA
+  //               CISCO_ASA: {
+  //                 label: "Cisco ASA",
+  //                 value: "CISCO_ASA",
+  //                 path: "/Cisco-ASA",
+  //               },
+  //               // -- Cisco FTD & FMC
+  //               CISCO_FTD_FMC: {
+  //                 label: "Cisco FTD & FMC",
+  //                 value: "CISCO_FTD_FMC",
+  //                 path: "/Cisco-FTD-FMC",
+  //               },
+  //               // -- Cisco SecureX
+  //               CISCO_SECURE_X: {
+  //                 label: "Cisco SecureX",
+  //                 value: "CISCO_SECURE_X",
+  //                 path: "/Cisco-SecureX",
+  //               },
+  //               // -- Cisco Secure Endpoint
+  //               CSE: {
+  //                 label: "Cisco Secure Endpoint(AMP)",
+  //                 value: "CSE",
+  //                 path: "/Cisco-Secure-Endpoint",
+  //               },
+  //               // -- Cisco Duo
+  //               CISCO_DUO: {
+  //                 label: "Cisco Duo",
+  //                 value: "CISCO_DUO",
+  //                 path: "/Cisco-Duo",
+  //               },
+  //               // -- Cisco Umbrella
+  //               CISCO_UMBRELLA: {
+  //                 label: "Cisco Umbrella",
+  //                 value: "CISCO_UMBRELLA",
+  //                 path: "/Cisco-Umbrella",
+  //               },
+  //               // -- Cisco Velo Cloud
+  //               VWVC: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN_2",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2N: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WA_2N",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+
+  //               // -- Cisco DNA
+  //               CISCO_DNA: {
+  //                 label: "Cisco DNA Center",
+  //                 value: "CISCO_DNA",
+  //                 path: "/Cisco-DNA-Center",
+  //               },
+  //               // -- Cisco SD WAN
+  //               CISCO_SD_WAN: {
+  //                 label: "Cisco SD-WAN",
+  //                 value: "CISCO_SD_WAN",
+  //                 path: "/Cisco-SD-WAN",
+  //               },
+
+  //               // -- Cisco Cisco Unified Wireless
+  //               CUWNS: {
+  //                 label: "Cisco Unified Wireless Network Solution",
+  //                 value: "CUWNS",
+  //                 path: "/Cisco-Unified-Wireless-Network-Solution",
+  //               },
+  //               // -- Cisco  Enterprise NSV Infrastructure
+  //               CENIS: {
+  //                 label: "Cisco Enterprise NSV Infrastructure",
+  //                 value: "CENIS",
+  //                 path: "/Cisco-Enterprise-NSV-Infrastructure",
+  //               },
+  //               // -- Cisco meraki
+  //               CISCO_MERAKI: {
+  //                 label: "Cisco Meraki",
+  //                 value: "CISCO_MERAKI",
+  //                 path: "/Cisco-Meraki",
+  //               },
+  //               // -- Cisco Aruba Centra
+  //               ARUBA_CENTRAL: {
+  //                 label: "Aruba Central",
+  //                 value: "ARUBA_CENTRAL",
+  //                 path: "/Aruba-Central",
+  //               },
+
+  //               // -- Cisco Velo Cloud
+  //               VWVC_2: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //             },
+  //           },
+  //         },
+  //       },
+  //     },
+  //     /**
+  //      * INTERNET OF THINGS
+  //      */
+  //     IOT: {
+  //       label: "INTERNET OF THINGS (IoT)",
+  //       value: "IOT",
+  //       menus: {
+  //         image: SECURITY_MAIN_IMAGE,
+  //         mobile_image: MOBILE_SECURITY_IMAGE,
+  //         title: "SECURITY",
+  //         color: THEME_COLOR.security_red,
+  //         subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
+  //         menus: {
+  //           // --SECURITY --
+  //           SECURITY: {
+  //             label: "Security",
+  //             value: "SECURITY",
+  //             shaded: false,
+  //             icon: LAN_ICON,
+  //             image: LAN_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               NETWORK_SECURITY: {
+  //                 label: "Network Security",
+  //                 value: "NETWORK_SECURITY",
+  //                 path: "/security/network-security",
+  //               },
+  //               DATA_CENTER_SECURITY: {
+  //                 label: "Data Center Security",
+  //                 value: "DATA_CENTER_SECURITY",
+  //                 path: "/security/data-center-security",
+  //               },
+  //               CIS: {
+  //                 label: "Cloud Infrastructure Security",
+  //                 value: "CIS",
+  //                 path: "/security/Cloud-Infrastructure-Security",
+  //               },
+  //               WAAS: {
+  //                 label: "Web Application & API Security",
+  //                 value: "WAAS",
+  //                 path: "/security/Web-Application-API-Security",
+  //               },
+  //               EMAIL_SECURITY: {
+  //                 label: "Email Security",
+  //                 value: "EMAIL_SECURITY",
+  //                 path: "/security/Email Security",
+  //               },
+  //               RAVS: {
+  //                 label: "Remote Access VPN Security",
+  //                 value: "RAVS",
+  //                 path: "/security/Remote-Access-VPN-Security",
+  //               },
+  //               IAMM: {
+  //                 label: "Identity and Access Management/MFA",
+  //                 value: "IAMM",
+  //                 path: "/security/Identity-Access-Management",
+  //               },
+  //               DNS_SECURITY: {
+  //                 label: "DNS Security",
+  //                 value: "DNS_SECURITY",
+  //                 path: "/security/DNS-Security",
+  //               },
+  //               SECURITY_ANALYTICS: {
+  //                 label: "Security Analytics",
+  //                 value: "SECURITY_ANALYTICS",
+  //                 path: "/security/Security-Analytics",
+  //               },
+  //             },
+  //           },
+  //           CYBERSECURITY: {
+  //             label: "Cybersecurity",
+  //             value: "CYBERSECURITY",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CSC: {
+  //                 label: "Cybersecurity Consulting",
+  //                 value: "CSC",
+  //                 path: "/cybersecurity/Cybersecurity-Consulting",
+  //               },
+  //               PT: {
+  //                 label: "Penetration Testing",
+  //                 value: "PT",
+  //                 path: "/cybersecurity/Penetration Testing",
+  //               },
+  //               VA: {
+  //                 label: "Vulnerability Assessment",
+  //                 value: "VA",
+  //                 path: "/cybersecurity/Vulnerability-Assessment ",
+  //               },
+  //               RTR: {
+  //                 label: "Ransomeware Threat Response",
+  //                 value: "RTR",
+  //                 path: "/cybersecurity/Ransomeware-Threat-Response ",
+  //               },
+  //               FI: {
+  //                 label: "Forensic Investigation",
+  //                 value: "FI",
+  //                 path: "/cybersecurity/Forensic-Investigation ",
+  //               },
+  //               MDR: {
+  //                 label: "Managed Detection and Response",
+  //                 value: "MDR",
+  //                 path: "/cybersecurity/Managed-Detection-Response ",
+  //               },
+  //             },
+  //           },
+
+  //           BLANK: {
+  //             label: "",
+  //             value: "",
+  //             shaded: false,
+  //             icon: "",
+  //             image: "",
+  //             mobile_image: "",
+  //             menus: {},
+  //           },
+
+  //           MISCELLANEOUS: {
+  //             label: "Miscellaneous",
+  //             value: "MISCELLANEOUS",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CMS: {
+  //                 label: "Cloud Managed Security",
+  //                 value: "CMS",
+  //                 path: "/miscellaneous/Cloud-Managed-Security",
+  //               },
+  //               CDS: {
+  //                 label: "Cloud-Delivered Security(SASE))",
+  //                 value: "CDS",
+  //                 path: "/miscellaneous/Cloud-Delivered-Security",
+  //               },
+  //               SAAS_NOA: {
+  //                 label:
+  //                   "Security-as-a-Service for Networks Orchestration and Automation",
+  //                 value: "SAAS_NOA",
+  //                 path: "/miscellaneous/Security-as-a-Service-for-Networks",
+  //               },
+  //             },
+  //           },
+
+  //           // -- Popular ---
+  //           POPULAR: {
+  //             label: "POPULAR",
+  //             value: "POPULAR",
+  //             shaded: true,
+  //             icon: POPULAR_ICON,
+  //             image: POPULAR_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               // -- Cisco ASA
+  //               CISCO_ASA: {
+  //                 label: "Cisco ASA",
+  //                 value: "CISCO_ASA",
+  //                 path: "/Cisco-ASA",
+  //               },
+  //               // -- Cisco FTD & FMC
+  //               CISCO_FTD_FMC: {
+  //                 label: "Cisco FTD & FMC",
+  //                 value: "CISCO_FTD_FMC",
+  //                 path: "/Cisco-FTD-FMC",
+  //               },
+  //               // -- Cisco SecureX
+  //               CISCO_SECURE_X: {
+  //                 label: "Cisco SecureX",
+  //                 value: "CISCO_SECURE_X",
+  //                 path: "/Cisco-SecureX",
+  //               },
+  //               // -- Cisco Secure Endpoint
+  //               CSE: {
+  //                 label: "Cisco Secure Endpoint(AMP)",
+  //                 value: "CSE",
+  //                 path: "/Cisco-Secure-Endpoint",
+  //               },
+  //               // -- Cisco Duo
+  //               CISCO_DUO: {
+  //                 label: "Cisco Duo",
+  //                 value: "CISCO_DUO",
+  //                 path: "/Cisco-Duo",
+  //               },
+  //               // -- Cisco Umbrella
+  //               CISCO_UMBRELLA: {
+  //                 label: "Cisco Umbrella",
+  //                 value: "CISCO_UMBRELLA",
+  //                 path: "/Cisco-Umbrella",
+  //               },
+  //               // -- Cisco Velo Cloud
+  //               VWVC: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN_2",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2N: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WA_2N",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+
+  //               // -- Cisco DNA
+  //               CISCO_DNA: {
+  //                 label: "Cisco DNA Center",
+  //                 value: "CISCO_DNA",
+  //                 path: "/Cisco-DNA-Center",
+  //               },
+  //               // -- Cisco SD WAN
+  //               CISCO_SD_WAN: {
+  //                 label: "Cisco SD-WAN",
+  //                 value: "CISCO_SD_WAN",
+  //                 path: "/Cisco-SD-WAN",
+  //               },
+
+  //               // -- Cisco Cisco Unified Wireless
+  //               CUWNS: {
+  //                 label: "Cisco Unified Wireless Network Solution",
+  //                 value: "CUWNS",
+  //                 path: "/Cisco-Unified-Wireless-Network-Solution",
+  //               },
+  //               // -- Cisco  Enterprise NSV Infrastructure
+  //               CENIS: {
+  //                 label: "Cisco Enterprise NSV Infrastructure",
+  //                 value: "CENIS",
+  //                 path: "/Cisco-Enterprise-NSV-Infrastructure",
+  //               },
+  //               // -- Cisco meraki
+  //               CISCO_MERAKI: {
+  //                 label: "Cisco Meraki",
+  //                 value: "CISCO_MERAKI",
+  //                 path: "/Cisco-Meraki",
+  //               },
+  //               // -- Cisco Aruba Centra
+  //               ARUBA_CENTRAL: {
+  //                 label: "Aruba Central",
+  //                 value: "ARUBA_CENTRAL",
+  //                 path: "/Aruba-Central",
+  //               },
+
+  //               // -- Cisco Velo Cloud
+  //               VWVC_2: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //             },
+  //           },
+  //         },
+  //       },
+  //     },
+  //   },
+  // },
+  // SERVICES: {
+  //   label: "Services",
+  //   value: "SERVICES",
+  //   isMore: false,
+  //   menus: {
+  //     MANAGED_SERVICES: {
+  //       label: "MANAGED SERVICES",
+  //       value: "MANAGED_SERVICES",
+  //       menus: {
+  //         image: NETWORK_IMAGE,
+  //         mobile_image: MOBILE_NETWORK,
+  //         title: "NETWORK",
+  //         color: THEME_COLOR.color_4,
+  //         subtitle: `Implement enterprise-class connectivity for wired and wireless.Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
+  //         menus: {
+  //           // --LAN --
+  //           LAN: {
+  //             label: "LAN",
+  //             value: "LAN",
+  //             shaded: false,
+  //             icon: LAN_ICON,
+  //             image: LAN_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               ROUTING: {
+  //                 label: "Routing",
+  //                 value: "ROUTING",
+  //                 path: "/lan/routing",
+  //               },
+  //               SWITCHING: {
+  //                 label: "Switching",
+  //                 value: "SWITCHING",
+  //                 path: "/lan/switching",
+  //               },
+  //               SDN: {
+  //                 label: "Software Defined Networking",
+  //                 value: "SDN",
+  //                 path: "/lan/software-Defined-networking",
+  //               },
+  //               CMN: {
+  //                 label: "Cloud Managed Network",
+  //                 value: "CMN",
+  //                 path: "/lan/Cloud-Managed-Network",
+  //               },
+  //               IBN: {
+  //                 label: "Intent-based Networking",
+  //                 value: "IBN",
+  //                 path: "/lan/Intent-based-Networking",
+  //               },
+  //               AI: {
+  //                 label: "Artificial Intelligence for IT Operations",
+  //                 value: "AI",
+  //                 path: "/lan/Cloud-Managed-Network",
+  //               },
+  //             },
+  //           },
+  //           // --Wan--
+  //           WAN: {
+  //             label: "WAN",
+  //             value: "WAN",
+  //             shaded: false,
+  //             icon: WAN_ICON,
+  //             image: WAN_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               SD_WAN: {
+  //                 label: "SD WAN",
+  //                 value: "SD_WAN",
+  //                 path: "/wan/sd-wan",
+  //               },
+  //               SASE: {
+  //                 label: "SASE",
+  //                 value: "SASE",
+  //                 path: "/wan/SASE",
+  //               },
+  //               SDN: {
+  //                 label: "Software Defined Networking",
+  //                 value: "SDN",
+  //                 path: "/wan/software-Defined-networking",
+  //               },
+  //               VPN: {
+  //                 label: "Virtual Private Network",
+  //                 value: "VPN",
+  //                 path: "/wan/virtual-private-network",
+  //               },
+  //             },
+  //           },
+
+  //           //--Wireless and mobility --
+  //           WAM: {
+  //             label: "Wireless & Mobility",
+  //             value: "WAM",
+  //             shaded: false,
+  //             icon: WAM_ICON,
+  //             image: WAM_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               WI_FI_6: {
+  //                 label: "Wi-Fi-6",
+  //                 value: "WI_FI_6",
+  //                 path: "/wireless-and-mobility/wi-fi-6",
+  //               },
+  //               UNIFIED_WIRELESS: {
+  //                 label: "Unified Wireless",
+  //                 value: "UNIFIED_WIRELESS",
+  //                 path: "/wireless-and-mobility/Unified-Wireless",
+  //               },
+  //               ENTERPRISE_WIRELESS: {
+  //                 label: "Enterprise Wireless",
+  //                 value: "ENTERPRISE_WIRELESS",
+  //                 path: "/wireless-and-mobility/Enterprise-Wireless",
+  //               },
+  //               LBS: {
+  //                 label: "Location Based Services",
+  //                 value: "LBS",
+  //                 path: "/wireless-and-mobility/Location-Based-Services",
+  //               },
+  //               CMW: {
+  //                 label: "Cloud Managed Wireless",
+  //                 value: "CMW",
+  //                 path: "/wireless-and-mobility/Cloud-Managed-wireless",
+  //               },
+  //             },
+  //           },
+
+  //           MISCELLANEOUS: {
+  //             label: "Miscellaneous",
+  //             value: "MISCELLANEOUS",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               OOB_MANAGEMENT: {
+  //                 label: "OOB Management",
+  //                 value: "OOB_MANAGEMENT",
+  //                 path: "/miscellaneous/OOB-Management",
+  //               },
+  //               AMH: {
+  //                 label: "Automated Monitoring & Helpdesk",
+  //                 value: "AMH",
+  //                 path: "/miscellaneous/Automated-Monitoring-Helpdesk",
+  //               },
+  //               TELEMETRY: {
+  //                 label: "Telemetry",
+  //                 value: "TELEMETRY",
+  //                 path: "/miscellaneous/Telemetry",
+  //               },
+  //               OA: {
+  //                 label: "Orchestration and Automation",
+  //                 value: "OA",
+  //                 path: "/miscellaneous/Orchestration-and-Automation",
+  //               },
+  //             },
+  //           },
+
+  //           // -- Popular ---
+  //           POPULAR: {
+  //             label: "POPULAR",
+  //             value: "POPULAR",
+  //             shaded: true,
+  //             icon: POPULAR_ICON,
+  //             image: POPULAR_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               // -- Cisco DNA
+  //               CISCO_DNA: {
+  //                 label: "Cisco DNA Center",
+  //                 value: "CISCO_DNA",
+  //                 path: "/Cisco-DNA-Center",
+  //               },
+  //               // -- Cisco SD WAN
+  //               CISCO_SD_WAN: {
+  //                 label: "Cisco SD-WAN",
+  //                 value: "CISCO_SD_WAN",
+  //                 path: "/Cisco-SD-WAN",
+  //               },
+
+  //               // -- Cisco Cisco Unified Wireless
+  //               CUWNS: {
+  //                 label: "Cisco Unified Wireless Network Solution",
+  //                 value: "CUWNS",
+  //                 path: "/Cisco-Unified-Wireless-Network-Solution",
+  //               },
+  //               // -- Cisco  Enterprise NSV Infrastructure
+  //               CENIS: {
+  //                 label: "Cisco Enterprise NSV Infrastructure",
+  //                 value: "CENIS",
+  //                 path: "/Cisco-Enterprise-NSV-Infrastructure",
+  //               },
+  //               // -- Cisco meraki
+  //               CISCO_MERAKI: {
+  //                 label: "Cisco Meraki",
+  //                 value: "CISCO_MERAKI",
+  //                 path: "/Cisco-Meraki",
+  //               },
+  //               // -- Cisco Aruba Centra
+  //               ARUBA_CENTRAL: {
+  //                 label: "Aruba Central",
+  //                 value: "ARUBA_CENTRAL",
+  //                 path: "/Aruba-Central",
+  //               },
+  //               // -- Cisco Velo Cloud
+  //               VWVC: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               //______
+  //               // -- Cisco DNA
+  //               CISCO_DNA_2: {
+  //                 label: "Cisco DNA Center",
+  //                 value: "CISCO_DNA_2",
+  //                 path: "/Cisco-DNA-Center",
+  //               },
+  //               // -- Cisco SD WAN
+  //               CISCO_SD_WAN_2: {
+  //                 label: "Cisco SD-WAN",
+  //                 value: "CISCO_SD_WAN_2",
+  //                 path: "/Cisco-SD-WAN",
+  //               },
+
+  //               // -- Cisco Cisco Unified Wireless
+  //               CUWNS_2: {
+  //                 label: "Cisco Unified Wireless Network Solution",
+  //                 value: "CUWNS_2",
+  //                 path: "/Cisco-Unified-Wireless-Network-Solution",
+  //               },
+  //               // -- Cisco  Enterprise NSV Infrastructure
+  //               CENIS_2: {
+  //                 label: "Cisco Enterprise NSV Infrastructure",
+  //                 value: "CENIS_2",
+  //                 path: "/Cisco-Enterprise-NSV-Infrastructure",
+  //               },
+  //               // -- Cisco meraki
+  //               CISCO_MERAKI_2: {
+  //                 label: "Cisco Meraki",
+  //                 value: "CISCO_MERAKI_2",
+  //                 path: "/Cisco-Meraki",
+  //               },
+  //               // -- Cisco Aruba Centra
+  //               ARUBA_CENTRAL_2: {
+  //                 label: "Aruba Central",
+  //                 value: "ARUBA_CENTRAL_2",
+  //                 path: "/Aruba-Central",
+  //               },
+  //               // -- Cisco Velo Cloud
+  //               VWVC_2: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC_2",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN_2",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               //______
+  //             },
+  //           },
+  //         },
+  //       },
+  //     },
+
+  //     AACS: {
+  //       label: "ADVISORY AND CONSULTANCY SERVICES",
+  //       value: "AACS",
+  //       menus: {
+  //         image: SECURITY_MAIN_IMAGE,
+  //         mobile_image: MOBILE_SECURITY_IMAGE,
+  //         title: "SECURITY",
+  //         color: THEME_COLOR.security_red,
+  //         subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
+  //         menus: {
+  //           // --SECURITY --
+  //           SECURITY: {
+  //             label: "Security",
+  //             value: "SECURITY",
+  //             shaded: false,
+  //             icon: LAN_ICON,
+  //             image: LAN_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               NETWORK_SECURITY: {
+  //                 label: "Network Security",
+  //                 value: "NETWORK_SECURITY",
+  //                 path: "/security/network-security",
+  //               },
+  //               DATA_CENTER_SECURITY: {
+  //                 label: "Data Center Security",
+  //                 value: "DATA_CENTER_SECURITY",
+  //                 path: "/security/data-center-security",
+  //               },
+  //               CIS: {
+  //                 label: "Cloud Infrastructure Security",
+  //                 value: "CIS",
+  //                 path: "/security/Cloud-Infrastructure-Security",
+  //               },
+  //               WAAS: {
+  //                 label: "Web Application & API Security",
+  //                 value: "WAAS",
+  //                 path: "/security/Web-Application-API-Security",
+  //               },
+  //               EMAIL_SECURITY: {
+  //                 label: "Email Security",
+  //                 value: "EMAIL_SECURITY",
+  //                 path: "/security/Email Security",
+  //               },
+  //               RAVS: {
+  //                 label: "Remote Access VPN Security",
+  //                 value: "RAVS",
+  //                 path: "/security/Remote-Access-VPN-Security",
+  //               },
+  //               IAMM: {
+  //                 label: "Identity and Access Management/MFA",
+  //                 value: "IAMM",
+  //                 path: "/security/Identity-Access-Management",
+  //               },
+  //               DNS_SECURITY: {
+  //                 label: "DNS Security",
+  //                 value: "DNS_SECURITY",
+  //                 path: "/security/DNS-Security",
+  //               },
+  //               SECURITY_ANALYTICS: {
+  //                 label: "Security Analytics",
+  //                 value: "SECURITY_ANALYTICS",
+  //                 path: "/security/Security-Analytics",
+  //               },
+  //             },
+  //           },
+  //           CYBERSECURITY: {
+  //             label: "Cybersecurity",
+  //             value: "CYBERSECURITY",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CSC: {
+  //                 label: "Cybersecurity Consulting",
+  //                 value: "CSC",
+  //                 path: "/cybersecurity/Cybersecurity-Consulting",
+  //               },
+  //               PT: {
+  //                 label: "Penetration Testing",
+  //                 value: "PT",
+  //                 path: "/cybersecurity/Penetration Testing",
+  //               },
+  //               VA: {
+  //                 label: "Vulnerability Assessment",
+  //                 value: "VA",
+  //                 path: "/cybersecurity/Vulnerability-Assessment ",
+  //               },
+  //               RTR: {
+  //                 label: "Ransomeware Threat Response",
+  //                 value: "RTR",
+  //                 path: "/cybersecurity/Ransomeware-Threat-Response ",
+  //               },
+  //               FI: {
+  //                 label: "Forensic Investigation",
+  //                 value: "FI",
+  //                 path: "/cybersecurity/Forensic-Investigation ",
+  //               },
+  //               MDR: {
+  //                 label: "Managed Detection and Response",
+  //                 value: "MDR",
+  //                 path: "/cybersecurity/Managed-Detection-Response ",
+  //               },
+  //             },
+  //           },
+
+  //           BLANK: {
+  //             label: "",
+  //             value: "",
+  //             shaded: false,
+  //             icon: "",
+  //             image: "",
+  //             mobile_image: "",
+  //             menus: {},
+  //           },
+
+  //           MISCELLANEOUS: {
+  //             label: "Miscellaneous",
+  //             value: "MISCELLANEOUS",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CMS: {
+  //                 label: "Cloud Managed Security",
+  //                 value: "CMS",
+  //                 path: "/miscellaneous/Cloud-Managed-Security",
+  //               },
+  //               CDS: {
+  //                 label: "Cloud-Delivered Security(SASE))",
+  //                 value: "CDS",
+  //                 path: "/miscellaneous/Cloud-Delivered-Security",
+  //               },
+  //               SAAS_NOA: {
+  //                 label:
+  //                   "Security-as-a-Service for Networks Orchestration and Automation",
+  //                 value: "SAAS_NOA",
+  //                 path: "/miscellaneous/Security-as-a-Service-for-Networks",
+  //               },
+  //             },
+  //           },
+
+  //           // -- Popular ---
+  //           POPULAR: {
+  //             label: "POPULAR",
+  //             value: "POPULAR",
+  //             shaded: true,
+  //             icon: POPULAR_ICON,
+  //             image: POPULAR_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               // -- Cisco ASA
+  //               CISCO_ASA: {
+  //                 label: "Cisco ASA",
+  //                 value: "CISCO_ASA",
+  //                 path: "/Cisco-ASA",
+  //               },
+  //               // -- Cisco FTD & FMC
+  //               CISCO_FTD_FMC: {
+  //                 label: "Cisco FTD & FMC",
+  //                 value: "CISCO_FTD_FMC",
+  //                 path: "/Cisco-FTD-FMC",
+  //               },
+  //               // -- Cisco SecureX
+  //               CISCO_SECURE_X: {
+  //                 label: "Cisco SecureX",
+  //                 value: "CISCO_SECURE_X",
+  //                 path: "/Cisco-SecureX",
+  //               },
+  //               // -- Cisco Secure Endpoint
+  //               CSE: {
+  //                 label: "Cisco Secure Endpoint(AMP)",
+  //                 value: "CSE",
+  //                 path: "/Cisco-Secure-Endpoint",
+  //               },
+  //               // -- Cisco Duo
+  //               CISCO_DUO: {
+  //                 label: "Cisco Duo",
+  //                 value: "CISCO_DUO",
+  //                 path: "/Cisco-Duo",
+  //               },
+  //               // -- Cisco Umbrella
+  //               CISCO_UMBRELLA: {
+  //                 label: "Cisco Umbrella",
+  //                 value: "CISCO_UMBRELLA",
+  //                 path: "/Cisco-Umbrella",
+  //               },
+  //               // -- Cisco Velo Cloud
+  //               VWVC: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN_2",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2N: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WA_2N",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+
+  //               // -- Cisco DNA
+  //               CISCO_DNA: {
+  //                 label: "Cisco DNA Center",
+  //                 value: "CISCO_DNA",
+  //                 path: "/Cisco-DNA-Center",
+  //               },
+  //               // -- Cisco SD WAN
+  //               CISCO_SD_WAN: {
+  //                 label: "Cisco SD-WAN",
+  //                 value: "CISCO_SD_WAN",
+  //                 path: "/Cisco-SD-WAN",
+  //               },
+
+  //               // -- Cisco Cisco Unified Wireless
+  //               CUWNS: {
+  //                 label: "Cisco Unified Wireless Network Solution",
+  //                 value: "CUWNS",
+  //                 path: "/Cisco-Unified-Wireless-Network-Solution",
+  //               },
+  //               // -- Cisco  Enterprise NSV Infrastructure
+  //               CENIS: {
+  //                 label: "Cisco Enterprise NSV Infrastructure",
+  //                 value: "CENIS",
+  //                 path: "/Cisco-Enterprise-NSV-Infrastructure",
+  //               },
+  //               // -- Cisco meraki
+  //               CISCO_MERAKI: {
+  //                 label: "Cisco Meraki",
+  //                 value: "CISCO_MERAKI",
+  //                 path: "/Cisco-Meraki",
+  //               },
+  //               // -- Cisco Aruba Centra
+  //               ARUBA_CENTRAL: {
+  //                 label: "Aruba Central",
+  //                 value: "ARUBA_CENTRAL",
+  //                 path: "/Aruba-Central",
+  //               },
+
+  //               // -- Cisco Velo Cloud
+  //               VWVC_2: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //             },
+  //           },
+  //         },
+  //       },
+  //     },
+
+  //     PROFESSIONAL_SERVICES: {
+  //       label: "PROFESSIONAL SERVICES",
+  //       value: "PROFESSIONAL_SERVICES",
+  //       menus: {
+  //         image: DATA_CENTER_SECURITY_IMAGE,
+  //         mobile_image: MOBILE_DATA_SECURITY_IMAGE,
+  //         title: "Data Center Security",
+  //         color: THEME_COLOR.data_center_security,
+  //         subtitle: `Data Center Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
+  //         menus: {
+  //           // --SECURITY --
+  //           SECURITY: {
+  //             label: "Security",
+  //             value: "SECURITY",
+  //             shaded: false,
+  //             icon: LAN_ICON,
+  //             image: LAN_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               NETWORK_SECURITY: {
+  //                 label: "Network Security",
+  //                 value: "NETWORK_SECURITY",
+  //                 path: "/security/network-security",
+  //               },
+  //               DATA_CENTER_SECURITY: {
+  //                 label: "Data Center Security",
+  //                 value: "DATA_CENTER_SECURITY",
+  //                 path: "/security/data-center-security",
+  //               },
+  //               CIS: {
+  //                 label: "Cloud Infrastructure Security",
+  //                 value: "CIS",
+  //                 path: "/security/Cloud-Infrastructure-Security",
+  //               },
+  //               WAAS: {
+  //                 label: "Web Application & API Security",
+  //                 value: "WAAS",
+  //                 path: "/security/Web-Application-API-Security",
+  //               },
+  //               EMAIL_SECURITY: {
+  //                 label: "Email Security",
+  //                 value: "EMAIL_SECURITY",
+  //                 path: "/security/Email Security",
+  //               },
+  //               RAVS: {
+  //                 label: "Remote Access VPN Security",
+  //                 value: "RAVS",
+  //                 path: "/security/Remote-Access-VPN-Security",
+  //               },
+  //               IAMM: {
+  //                 label: "Identity and Access Management/MFA",
+  //                 value: "IAMM",
+  //                 path: "/security/Identity-Access-Management",
+  //               },
+  //               DNS_SECURITY: {
+  //                 label: "DNS Security",
+  //                 value: "DNS_SECURITY",
+  //                 path: "/security/DNS-Security",
+  //               },
+  //               SECURITY_ANALYTICS: {
+  //                 label: "Security Analytics",
+  //                 value: "SECURITY_ANALYTICS",
+  //                 path: "/security/Security-Analytics",
+  //               },
+  //             },
+  //           },
+
+  //           CYBERSECURITY: {
+  //             label: "Cybersecurity",
+  //             value: "CYBERSECURITY",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CSC: {
+  //                 label: "Cybersecurity Consulting",
+  //                 value: "CSC",
+  //                 path: "/cybersecurity/Cybersecurity-Consulting",
+  //               },
+  //               PT: {
+  //                 label: "Penetration Testing",
+  //                 value: "PT",
+  //                 path: "/cybersecurity/Penetration Testing",
+  //               },
+  //               VA: {
+  //                 label: "Vulnerability Assessment",
+  //                 value: "VA",
+  //                 path: "/cybersecurity/Vulnerability-Assessment ",
+  //               },
+  //               RTR: {
+  //                 label: "Ransomeware Threat Response",
+  //                 value: "RTR",
+  //                 path: "/cybersecurity/Ransomeware-Threat-Response ",
+  //               },
+  //               FI: {
+  //                 label: "Forensic Investigation",
+  //                 value: "FI",
+  //                 path: "/cybersecurity/Forensic-Investigation ",
+  //               },
+  //               MDR: {
+  //                 label: "Managed Detection and Response",
+  //                 value: "MDR",
+  //                 path: "/cybersecurity/Managed-Detection-Response ",
+  //               },
+  //             },
+  //           },
+
+  //           MISCELLANEOUS: {
+  //             label: "Miscellaneous",
+  //             value: "MISCELLANEOUS",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CMS: {
+  //                 label: "Cloud Managed Security",
+  //                 value: "CMS",
+  //                 path: "/miscellaneous/Cloud-Managed-Security",
+  //               },
+  //               CDS: {
+  //                 label: "Cloud-Delivered Security(SASE))",
+  //                 value: "CDS",
+  //                 path: "/miscellaneous/Cloud-Delivered-Security",
+  //               },
+  //               SAAS_NOA: {
+  //                 label:
+  //                   "Security-as-a-Service for Networks Orchestration and Automation",
+  //                 value: "SAAS_NOA",
+  //                 path: "/miscellaneous/Security-as-a-Service-for-Networks",
+  //               },
+  //             },
+  //           },
+
+  //           // -- Popular ---
+  //           POPULAR: {
+  //             label: "POPULAR",
+  //             value: "POPULAR",
+  //             shaded: true,
+  //             icon: POPULAR_ICON,
+  //             image: POPULAR_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               // -- Cisco ASA
+  //               CISCO_ASA: {
+  //                 label: "Cisco ASA",
+  //                 value: "CISCO_ASA",
+  //                 path: "/Cisco-ASA",
+  //               },
+  //               // -- Cisco FTD & FMC
+  //               CISCO_FTD_FMC: {
+  //                 label: "Cisco FTD & FMC",
+  //                 value: "CISCO_FTD_FMC",
+  //                 path: "/Cisco-FTD-FMC",
+  //               },
+  //               // -- Cisco SecureX
+  //               CISCO_SECURE_X: {
+  //                 label: "Cisco SecureX",
+  //                 value: "CISCO_SECURE_X",
+  //                 path: "/Cisco-SecureX",
+  //               },
+  //               // -- Cisco Secure Endpoint
+  //               CSE: {
+  //                 label: "Cisco Secure Endpoint(AMP)",
+  //                 value: "CSE",
+  //                 path: "/Cisco-Secure-Endpoint",
+  //               },
+  //               // -- Cisco Duo
+  //               CISCO_DUO: {
+  //                 label: "Cisco Duo",
+  //                 value: "CISCO_DUO",
+  //                 path: "/Cisco-Duo",
+  //               },
+  //               // -- Cisco Umbrella
+  //               CISCO_UMBRELLA: {
+  //                 label: "Cisco Umbrella",
+  //                 value: "CISCO_UMBRELLA",
+  //                 path: "/Cisco-Umbrella",
+  //               },
+  //               // -- Cisco Velo Cloud
+  //               VWVC: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN_2",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2N: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WA_2N",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+
+  //               // -- Cisco DNA
+  //               CISCO_DNA: {
+  //                 label: "Cisco DNA Center",
+  //                 value: "CISCO_DNA",
+  //                 path: "/Cisco-DNA-Center",
+  //               },
+  //               // -- Cisco SD WAN
+  //               CISCO_SD_WAN: {
+  //                 label: "Cisco SD-WAN",
+  //                 value: "CISCO_SD_WAN",
+  //                 path: "/Cisco-SD-WAN",
+  //               },
+
+  //               // -- Cisco Cisco Unified Wireless
+  //               CUWNS: {
+  //                 label: "Cisco Unified Wireless Network Solution",
+  //                 value: "CUWNS",
+  //                 path: "/Cisco-Unified-Wireless-Network-Solution",
+  //               },
+  //               // -- Cisco  Enterprise NSV Infrastructure
+  //               CENIS: {
+  //                 label: "Cisco Enterprise NSV Infrastructure",
+  //                 value: "CENIS",
+  //                 path: "/Cisco-Enterprise-NSV-Infrastructure",
+  //               },
+  //               // -- Cisco meraki
+  //               CISCO_MERAKI: {
+  //                 label: "Cisco Meraki",
+  //                 value: "CISCO_MERAKI",
+  //                 path: "/Cisco-Meraki",
+  //               },
+  //               // -- Cisco Aruba Centra
+  //               ARUBA_CENTRAL: {
+  //                 label: "Aruba Central",
+  //                 value: "ARUBA_CENTRAL",
+  //                 path: "/Aruba-Central",
+  //               },
+
+  //               // -- Cisco Velo Cloud
+  //               VWVC_2: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //             },
+  //           },
+  //         },
+  //       },
+  //     },
+
+  //     CSS: {
+  //       label: "CUSTOMIZED SOLUTION SERVICES",
+  //       value: "CSS",
+  //       menus: {
+  //         image: SECURITY_MAIN_IMAGE,
+  //         mobile_image: MOBILE_SECURITY_IMAGE,
+  //         title: "SECURITY",
+  //         color: THEME_COLOR.security_red,
+  //         subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
+  //         menus: {
+  //           // --SECURITY --
+  //           SECURITY: {
+  //             label: "Security",
+  //             value: "SECURITY",
+  //             shaded: false,
+  //             icon: LAN_ICON,
+  //             image: LAN_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               NETWORK_SECURITY: {
+  //                 label: "Network Security",
+  //                 value: "NETWORK_SECURITY",
+  //                 path: "/security/network-security",
+  //               },
+  //               DATA_CENTER_SECURITY: {
+  //                 label: "Data Center Security",
+  //                 value: "DATA_CENTER_SECURITY",
+  //                 path: "/security/data-center-security",
+  //               },
+  //               CIS: {
+  //                 label: "Cloud Infrastructure Security",
+  //                 value: "CIS",
+  //                 path: "/security/Cloud-Infrastructure-Security",
+  //               },
+  //               WAAS: {
+  //                 label: "Web Application & API Security",
+  //                 value: "WAAS",
+  //                 path: "/security/Web-Application-API-Security",
+  //               },
+  //               EMAIL_SECURITY: {
+  //                 label: "Email Security",
+  //                 value: "EMAIL_SECURITY",
+  //                 path: "/security/Email Security",
+  //               },
+  //               RAVS: {
+  //                 label: "Remote Access VPN Security",
+  //                 value: "RAVS",
+  //                 path: "/security/Remote-Access-VPN-Security",
+  //               },
+  //               IAMM: {
+  //                 label: "Identity and Access Management/MFA",
+  //                 value: "IAMM",
+  //                 path: "/security/Identity-Access-Management",
+  //               },
+  //               DNS_SECURITY: {
+  //                 label: "DNS Security",
+  //                 value: "DNS_SECURITY",
+  //                 path: "/security/DNS-Security",
+  //               },
+  //               SECURITY_ANALYTICS: {
+  //                 label: "Security Analytics",
+  //                 value: "SECURITY_ANALYTICS",
+  //                 path: "/security/Security-Analytics",
+  //               },
+  //             },
+  //           },
+  //           CYBERSECURITY: {
+  //             label: "Cybersecurity",
+  //             value: "CYBERSECURITY",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CSC: {
+  //                 label: "Cybersecurity Consulting",
+  //                 value: "CSC",
+  //                 path: "/cybersecurity/Cybersecurity-Consulting",
+  //               },
+  //               PT: {
+  //                 label: "Penetration Testing",
+  //                 value: "PT",
+  //                 path: "/cybersecurity/Penetration Testing",
+  //               },
+  //               VA: {
+  //                 label: "Vulnerability Assessment",
+  //                 value: "VA",
+  //                 path: "/cybersecurity/Vulnerability-Assessment ",
+  //               },
+  //               RTR: {
+  //                 label: "Ransomeware Threat Response",
+  //                 value: "RTR",
+  //                 path: "/cybersecurity/Ransomeware-Threat-Response ",
+  //               },
+  //               FI: {
+  //                 label: "Forensic Investigation",
+  //                 value: "FI",
+  //                 path: "/cybersecurity/Forensic-Investigation ",
+  //               },
+  //               MDR: {
+  //                 label: "Managed Detection and Response",
+  //                 value: "MDR",
+  //                 path: "/cybersecurity/Managed-Detection-Response ",
+  //               },
+  //             },
+  //           },
+
+  //           BLANK: {
+  //             label: "",
+  //             value: "",
+  //             shaded: false,
+  //             icon: "",
+  //             image: "",
+  //             mobile_image: "",
+  //             menus: {},
+  //           },
+
+  //           MISCELLANEOUS: {
+  //             label: "Miscellaneous",
+  //             value: "MISCELLANEOUS",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CMS: {
+  //                 label: "Cloud Managed Security",
+  //                 value: "CMS",
+  //                 path: "/miscellaneous/Cloud-Managed-Security",
+  //               },
+  //               CDS: {
+  //                 label: "Cloud-Delivered Security(SASE))",
+  //                 value: "CDS",
+  //                 path: "/miscellaneous/Cloud-Delivered-Security",
+  //               },
+  //               SAAS_NOA: {
+  //                 label:
+  //                   "Security-as-a-Service for Networks Orchestration and Automation",
+  //                 value: "SAAS_NOA",
+  //                 path: "/miscellaneous/Security-as-a-Service-for-Networks",
+  //               },
+  //             },
+  //           },
+
+  //           // -- Popular ---
+  //           POPULAR: {
+  //             label: "POPULAR",
+  //             value: "POPULAR",
+  //             shaded: true,
+  //             icon: POPULAR_ICON,
+  //             image: POPULAR_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               // -- Cisco ASA
+  //               CISCO_ASA: {
+  //                 label: "Cisco ASA",
+  //                 value: "CISCO_ASA",
+  //                 path: "/Cisco-ASA",
+  //               },
+  //               // -- Cisco FTD & FMC
+  //               CISCO_FTD_FMC: {
+  //                 label: "Cisco FTD & FMC",
+  //                 value: "CISCO_FTD_FMC",
+  //                 path: "/Cisco-FTD-FMC",
+  //               },
+  //               // -- Cisco SecureX
+  //               CISCO_SECURE_X: {
+  //                 label: "Cisco SecureX",
+  //                 value: "CISCO_SECURE_X",
+  //                 path: "/Cisco-SecureX",
+  //               },
+  //               // -- Cisco Secure Endpoint
+  //               CSE: {
+  //                 label: "Cisco Secure Endpoint(AMP)",
+  //                 value: "CSE",
+  //                 path: "/Cisco-Secure-Endpoint",
+  //               },
+  //               // -- Cisco Duo
+  //               CISCO_DUO: {
+  //                 label: "Cisco Duo",
+  //                 value: "CISCO_DUO",
+  //                 path: "/Cisco-Duo",
+  //               },
+  //               // -- Cisco Umbrella
+  //               CISCO_UMBRELLA: {
+  //                 label: "Cisco Umbrella",
+  //                 value: "CISCO_UMBRELLA",
+  //                 path: "/Cisco-Umbrella",
+  //               },
+  //               // -- Cisco Velo Cloud
+  //               VWVC: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN_2",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2N: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WA_2N",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+
+  //               // -- Cisco DNA
+  //               CISCO_DNA: {
+  //                 label: "Cisco DNA Center",
+  //                 value: "CISCO_DNA",
+  //                 path: "/Cisco-DNA-Center",
+  //               },
+  //               // -- Cisco SD WAN
+  //               CISCO_SD_WAN: {
+  //                 label: "Cisco SD-WAN",
+  //                 value: "CISCO_SD_WAN",
+  //                 path: "/Cisco-SD-WAN",
+  //               },
+
+  //               // -- Cisco Cisco Unified Wireless
+  //               CUWNS: {
+  //                 label: "Cisco Unified Wireless Network Solution",
+  //                 value: "CUWNS",
+  //                 path: "/Cisco-Unified-Wireless-Network-Solution",
+  //               },
+  //               // -- Cisco  Enterprise NSV Infrastructure
+  //               CENIS: {
+  //                 label: "Cisco Enterprise NSV Infrastructure",
+  //                 value: "CENIS",
+  //                 path: "/Cisco-Enterprise-NSV-Infrastructure",
+  //               },
+  //               // -- Cisco meraki
+  //               CISCO_MERAKI: {
+  //                 label: "Cisco Meraki",
+  //                 value: "CISCO_MERAKI",
+  //                 path: "/Cisco-Meraki",
+  //               },
+  //               // -- Cisco Aruba Centra
+  //               ARUBA_CENTRAL: {
+  //                 label: "Aruba Central",
+  //                 value: "ARUBA_CENTRAL",
+  //                 path: "/Aruba-Central",
+  //               },
+
+  //               // -- Cisco Velo Cloud
+  //               VWVC_2: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //             },
+  //           },
+  //         },
+  //       },
+  //     },
+
+  //     TS: {
+  //       label: "TRANSFORMATION SERVICES",
+  //       value: "TS",
+  //       menus: {
+  //         image: SECURITY_MAIN_IMAGE,
+  //         mobile_image: MOBILE_SECURITY_IMAGE,
+  //         title: "SECURITY",
+  //         color: THEME_COLOR.security_red,
+  //         subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
+  //         menus: {
+  //           // --SECURITY --
+  //           SECURITY: {
+  //             label: "Security",
+  //             value: "SECURITY",
+  //             shaded: false,
+  //             icon: LAN_ICON,
+  //             image: LAN_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               NETWORK_SECURITY: {
+  //                 label: "Network Security",
+  //                 value: "NETWORK_SECURITY",
+  //                 path: "/security/network-security",
+  //               },
+  //               DATA_CENTER_SECURITY: {
+  //                 label: "Data Center Security",
+  //                 value: "DATA_CENTER_SECURITY",
+  //                 path: "/security/data-center-security",
+  //               },
+  //               CIS: {
+  //                 label: "Cloud Infrastructure Security",
+  //                 value: "CIS",
+  //                 path: "/security/Cloud-Infrastructure-Security",
+  //               },
+  //               WAAS: {
+  //                 label: "Web Application & API Security",
+  //                 value: "WAAS",
+  //                 path: "/security/Web-Application-API-Security",
+  //               },
+  //               EMAIL_SECURITY: {
+  //                 label: "Email Security",
+  //                 value: "EMAIL_SECURITY",
+  //                 path: "/security/Email Security",
+  //               },
+  //               RAVS: {
+  //                 label: "Remote Access VPN Security",
+  //                 value: "RAVS",
+  //                 path: "/security/Remote-Access-VPN-Security",
+  //               },
+  //               IAMM: {
+  //                 label: "Identity and Access Management/MFA",
+  //                 value: "IAMM",
+  //                 path: "/security/Identity-Access-Management",
+  //               },
+  //               DNS_SECURITY: {
+  //                 label: "DNS Security",
+  //                 value: "DNS_SECURITY",
+  //                 path: "/security/DNS-Security",
+  //               },
+  //               SECURITY_ANALYTICS: {
+  //                 label: "Security Analytics",
+  //                 value: "SECURITY_ANALYTICS",
+  //                 path: "/security/Security-Analytics",
+  //               },
+  //             },
+  //           },
+  //           CYBERSECURITY: {
+  //             label: "Cybersecurity",
+  //             value: "CYBERSECURITY",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CSC: {
+  //                 label: "Cybersecurity Consulting",
+  //                 value: "CSC",
+  //                 path: "/cybersecurity/Cybersecurity-Consulting",
+  //               },
+  //               PT: {
+  //                 label: "Penetration Testing",
+  //                 value: "PT",
+  //                 path: "/cybersecurity/Penetration Testing",
+  //               },
+  //               VA: {
+  //                 label: "Vulnerability Assessment",
+  //                 value: "VA",
+  //                 path: "/cybersecurity/Vulnerability-Assessment ",
+  //               },
+  //               RTR: {
+  //                 label: "Ransomeware Threat Response",
+  //                 value: "RTR",
+  //                 path: "/cybersecurity/Ransomeware-Threat-Response ",
+  //               },
+  //               FI: {
+  //                 label: "Forensic Investigation",
+  //                 value: "FI",
+  //                 path: "/cybersecurity/Forensic-Investigation ",
+  //               },
+  //               MDR: {
+  //                 label: "Managed Detection and Response",
+  //                 value: "MDR",
+  //                 path: "/cybersecurity/Managed-Detection-Response ",
+  //               },
+  //             },
+  //           },
+
+  //           BLANK: {
+  //             label: "",
+  //             value: "",
+  //             shaded: false,
+  //             icon: "",
+  //             image: "",
+  //             mobile_image: "",
+  //             menus: {},
+  //           },
+
+  //           MISCELLANEOUS: {
+  //             label: "Miscellaneous",
+  //             value: "MISCELLANEOUS",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CMS: {
+  //                 label: "Cloud Managed Security",
+  //                 value: "CMS",
+  //                 path: "/miscellaneous/Cloud-Managed-Security",
+  //               },
+  //               CDS: {
+  //                 label: "Cloud-Delivered Security(SASE))",
+  //                 value: "CDS",
+  //                 path: "/miscellaneous/Cloud-Delivered-Security",
+  //               },
+  //               SAAS_NOA: {
+  //                 label:
+  //                   "Security-as-a-Service for Networks Orchestration and Automation",
+  //                 value: "SAAS_NOA",
+  //                 path: "/miscellaneous/Security-as-a-Service-for-Networks",
+  //               },
+  //             },
+  //           },
+
+  //           // -- Popular ---
+  //           POPULAR: {
+  //             label: "POPULAR",
+  //             value: "POPULAR",
+  //             shaded: true,
+  //             icon: POPULAR_ICON,
+  //             image: POPULAR_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               // -- Cisco ASA
+  //               CISCO_ASA: {
+  //                 label: "Cisco ASA",
+  //                 value: "CISCO_ASA",
+  //                 path: "/Cisco-ASA",
+  //               },
+  //               // -- Cisco FTD & FMC
+  //               CISCO_FTD_FMC: {
+  //                 label: "Cisco FTD & FMC",
+  //                 value: "CISCO_FTD_FMC",
+  //                 path: "/Cisco-FTD-FMC",
+  //               },
+  //               // -- Cisco SecureX
+  //               CISCO_SECURE_X: {
+  //                 label: "Cisco SecureX",
+  //                 value: "CISCO_SECURE_X",
+  //                 path: "/Cisco-SecureX",
+  //               },
+  //               // -- Cisco Secure Endpoint
+  //               CSE: {
+  //                 label: "Cisco Secure Endpoint(AMP)",
+  //                 value: "CSE",
+  //                 path: "/Cisco-Secure-Endpoint",
+  //               },
+  //               // -- Cisco Duo
+  //               CISCO_DUO: {
+  //                 label: "Cisco Duo",
+  //                 value: "CISCO_DUO",
+  //                 path: "/Cisco-Duo",
+  //               },
+  //               // -- Cisco Umbrella
+  //               CISCO_UMBRELLA: {
+  //                 label: "Cisco Umbrella",
+  //                 value: "CISCO_UMBRELLA",
+  //                 path: "/Cisco-Umbrella",
+  //               },
+  //               // -- Cisco Velo Cloud
+  //               VWVC: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN_2",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2N: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WA_2N",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+
+  //               // -- Cisco DNA
+  //               CISCO_DNA: {
+  //                 label: "Cisco DNA Center",
+  //                 value: "CISCO_DNA",
+  //                 path: "/Cisco-DNA-Center",
+  //               },
+  //               // -- Cisco SD WAN
+  //               CISCO_SD_WAN: {
+  //                 label: "Cisco SD-WAN",
+  //                 value: "CISCO_SD_WAN",
+  //                 path: "/Cisco-SD-WAN",
+  //               },
+
+  //               // -- Cisco Cisco Unified Wireless
+  //               CUWNS: {
+  //                 label: "Cisco Unified Wireless Network Solution",
+  //                 value: "CUWNS",
+  //                 path: "/Cisco-Unified-Wireless-Network-Solution",
+  //               },
+  //               // -- Cisco  Enterprise NSV Infrastructure
+  //               CENIS: {
+  //                 label: "Cisco Enterprise NSV Infrastructure",
+  //                 value: "CENIS",
+  //                 path: "/Cisco-Enterprise-NSV-Infrastructure",
+  //               },
+  //               // -- Cisco meraki
+  //               CISCO_MERAKI: {
+  //                 label: "Cisco Meraki",
+  //                 value: "CISCO_MERAKI",
+  //                 path: "/Cisco-Meraki",
+  //               },
+  //               // -- Cisco Aruba Centra
+  //               ARUBA_CENTRAL: {
+  //                 label: "Aruba Central",
+  //                 value: "ARUBA_CENTRAL",
+  //                 path: "/Aruba-Central",
+  //               },
+
+  //               // -- Cisco Velo Cloud
+  //               VWVC_2: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //             },
+  //           },
+  //         },
+  //       },
+  //     },
+
+  //     SAMS: {
+  //       label: "SUPPORT AND MONITORING SERVICES",
+  //       value: "SAMS",
+  //       menus: {
+  //         image: SECURITY_MAIN_IMAGE,
+  //         mobile_image: MOBILE_SECURITY_IMAGE,
+  //         title: "SECURITY",
+  //         color: THEME_COLOR.security_red,
+  //         subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
+  //         menus: {
+  //           // --SECURITY --
+  //           SECURITY: {
+  //             label: "Security",
+  //             value: "SECURITY",
+  //             shaded: false,
+  //             icon: LAN_ICON,
+  //             image: LAN_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               NETWORK_SECURITY: {
+  //                 label: "Network Security",
+  //                 value: "NETWORK_SECURITY",
+  //                 path: "/security/network-security",
+  //               },
+  //               DATA_CENTER_SECURITY: {
+  //                 label: "Data Center Security",
+  //                 value: "DATA_CENTER_SECURITY",
+  //                 path: "/security/data-center-security",
+  //               },
+  //               CIS: {
+  //                 label: "Cloud Infrastructure Security",
+  //                 value: "CIS",
+  //                 path: "/security/Cloud-Infrastructure-Security",
+  //               },
+  //               WAAS: {
+  //                 label: "Web Application & API Security",
+  //                 value: "WAAS",
+  //                 path: "/security/Web-Application-API-Security",
+  //               },
+  //               EMAIL_SECURITY: {
+  //                 label: "Email Security",
+  //                 value: "EMAIL_SECURITY",
+  //                 path: "/security/Email Security",
+  //               },
+  //               RAVS: {
+  //                 label: "Remote Access VPN Security",
+  //                 value: "RAVS",
+  //                 path: "/security/Remote-Access-VPN-Security",
+  //               },
+  //               IAMM: {
+  //                 label: "Identity and Access Management/MFA",
+  //                 value: "IAMM",
+  //                 path: "/security/Identity-Access-Management",
+  //               },
+  //               DNS_SECURITY: {
+  //                 label: "DNS Security",
+  //                 value: "DNS_SECURITY",
+  //                 path: "/security/DNS-Security",
+  //               },
+  //               SECURITY_ANALYTICS: {
+  //                 label: "Security Analytics",
+  //                 value: "SECURITY_ANALYTICS",
+  //                 path: "/security/Security-Analytics",
+  //               },
+  //             },
+  //           },
+  //           CYBERSECURITY: {
+  //             label: "Cybersecurity",
+  //             value: "CYBERSECURITY",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CSC: {
+  //                 label: "Cybersecurity Consulting",
+  //                 value: "CSC",
+  //                 path: "/cybersecurity/Cybersecurity-Consulting",
+  //               },
+  //               PT: {
+  //                 label: "Penetration Testing",
+  //                 value: "PT",
+  //                 path: "/cybersecurity/Penetration Testing",
+  //               },
+  //               VA: {
+  //                 label: "Vulnerability Assessment",
+  //                 value: "VA",
+  //                 path: "/cybersecurity/Vulnerability-Assessment ",
+  //               },
+  //               RTR: {
+  //                 label: "Ransomeware Threat Response",
+  //                 value: "RTR",
+  //                 path: "/cybersecurity/Ransomeware-Threat-Response ",
+  //               },
+  //               FI: {
+  //                 label: "Forensic Investigation",
+  //                 value: "FI",
+  //                 path: "/cybersecurity/Forensic-Investigation ",
+  //               },
+  //               MDR: {
+  //                 label: "Managed Detection and Response",
+  //                 value: "MDR",
+  //                 path: "/cybersecurity/Managed-Detection-Response ",
+  //               },
+  //             },
+  //           },
+
+  //           BLANK: {
+  //             label: "",
+  //             value: "",
+  //             shaded: false,
+  //             icon: "",
+  //             image: "",
+  //             mobile_image: "",
+  //             menus: {},
+  //           },
+
+  //           MISCELLANEOUS: {
+  //             label: "Miscellaneous",
+  //             value: "MISCELLANEOUS",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CMS: {
+  //                 label: "Cloud Managed Security",
+  //                 value: "CMS",
+  //                 path: "/miscellaneous/Cloud-Managed-Security",
+  //               },
+  //               CDS: {
+  //                 label: "Cloud-Delivered Security(SASE))",
+  //                 value: "CDS",
+  //                 path: "/miscellaneous/Cloud-Delivered-Security",
+  //               },
+  //               SAAS_NOA: {
+  //                 label:
+  //                   "Security-as-a-Service for Networks Orchestration and Automation",
+  //                 value: "SAAS_NOA",
+  //                 path: "/miscellaneous/Security-as-a-Service-for-Networks",
+  //               },
+  //             },
+  //           },
+
+  //           // -- Popular ---
+  //           POPULAR: {
+  //             label: "POPULAR",
+  //             value: "POPULAR",
+  //             shaded: true,
+  //             icon: POPULAR_ICON,
+  //             image: POPULAR_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               // -- Cisco ASA
+  //               CISCO_ASA: {
+  //                 label: "Cisco ASA",
+  //                 value: "CISCO_ASA",
+  //                 path: "/Cisco-ASA",
+  //               },
+  //               // -- Cisco FTD & FMC
+  //               CISCO_FTD_FMC: {
+  //                 label: "Cisco FTD & FMC",
+  //                 value: "CISCO_FTD_FMC",
+  //                 path: "/Cisco-FTD-FMC",
+  //               },
+  //               // -- Cisco SecureX
+  //               CISCO_SECURE_X: {
+  //                 label: "Cisco SecureX",
+  //                 value: "CISCO_SECURE_X",
+  //                 path: "/Cisco-SecureX",
+  //               },
+  //               // -- Cisco Secure Endpoint
+  //               CSE: {
+  //                 label: "Cisco Secure Endpoint(AMP)",
+  //                 value: "CSE",
+  //                 path: "/Cisco-Secure-Endpoint",
+  //               },
+  //               // -- Cisco Duo
+  //               CISCO_DUO: {
+  //                 label: "Cisco Duo",
+  //                 value: "CISCO_DUO",
+  //                 path: "/Cisco-Duo",
+  //               },
+  //               // -- Cisco Umbrella
+  //               CISCO_UMBRELLA: {
+  //                 label: "Cisco Umbrella",
+  //                 value: "CISCO_UMBRELLA",
+  //                 path: "/Cisco-Umbrella",
+  //               },
+  //               // -- Cisco Velo Cloud
+  //               VWVC: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN_2",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2N: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WA_2N",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+
+  //               // -- Cisco DNA
+  //               CISCO_DNA: {
+  //                 label: "Cisco DNA Center",
+  //                 value: "CISCO_DNA",
+  //                 path: "/Cisco-DNA-Center",
+  //               },
+  //               // -- Cisco SD WAN
+  //               CISCO_SD_WAN: {
+  //                 label: "Cisco SD-WAN",
+  //                 value: "CISCO_SD_WAN",
+  //                 path: "/Cisco-SD-WAN",
+  //               },
+
+  //               // -- Cisco Cisco Unified Wireless
+  //               CUWNS: {
+  //                 label: "Cisco Unified Wireless Network Solution",
+  //                 value: "CUWNS",
+  //                 path: "/Cisco-Unified-Wireless-Network-Solution",
+  //               },
+  //               // -- Cisco  Enterprise NSV Infrastructure
+  //               CENIS: {
+  //                 label: "Cisco Enterprise NSV Infrastructure",
+  //                 value: "CENIS",
+  //                 path: "/Cisco-Enterprise-NSV-Infrastructure",
+  //               },
+  //               // -- Cisco meraki
+  //               CISCO_MERAKI: {
+  //                 label: "Cisco Meraki",
+  //                 value: "CISCO_MERAKI",
+  //                 path: "/Cisco-Meraki",
+  //               },
+  //               // -- Cisco Aruba Centra
+  //               ARUBA_CENTRAL: {
+  //                 label: "Aruba Central",
+  //                 value: "ARUBA_CENTRAL",
+  //                 path: "/Aruba-Central",
+  //               },
+
+  //               // -- Cisco Velo Cloud
+  //               VWVC_2: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //             },
+  //           },
+  //         },
+  //       },
+  //     },
+
+  //     MARKET_PLACE: {
+  //       label: "MARKET PLACE",
+  //       value: "MARKET_PLACE",
+  //       menus: {
+  //         image: SECURITY_MAIN_IMAGE,
+  //         mobile_image: MOBILE_SECURITY_IMAGE,
+  //         title: "SECURITY",
+  //         color: THEME_COLOR.security_red,
+  //         subtitle: `Security-Implement enterprise-class connectivity for wired and wireless. Multi-vendor technology and hardware's Satellite, deployment, monitoring and support`,
+  //         menus: {
+  //           // --SECURITY --
+  //           SECURITY: {
+  //             label: "Security",
+  //             value: "SECURITY",
+  //             shaded: false,
+  //             icon: LAN_ICON,
+  //             image: LAN_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               NETWORK_SECURITY: {
+  //                 label: "Network Security",
+  //                 value: "NETWORK_SECURITY",
+  //                 path: "/security/network-security",
+  //               },
+  //               DATA_CENTER_SECURITY: {
+  //                 label: "Data Center Security",
+  //                 value: "DATA_CENTER_SECURITY",
+  //                 path: "/security/data-center-security",
+  //               },
+  //               CIS: {
+  //                 label: "Cloud Infrastructure Security",
+  //                 value: "CIS",
+  //                 path: "/security/Cloud-Infrastructure-Security",
+  //               },
+  //               WAAS: {
+  //                 label: "Web Application & API Security",
+  //                 value: "WAAS",
+  //                 path: "/security/Web-Application-API-Security",
+  //               },
+  //               EMAIL_SECURITY: {
+  //                 label: "Email Security",
+  //                 value: "EMAIL_SECURITY",
+  //                 path: "/security/Email Security",
+  //               },
+  //               RAVS: {
+  //                 label: "Remote Access VPN Security",
+  //                 value: "RAVS",
+  //                 path: "/security/Remote-Access-VPN-Security",
+  //               },
+  //               IAMM: {
+  //                 label: "Identity and Access Management/MFA",
+  //                 value: "IAMM",
+  //                 path: "/security/Identity-Access-Management",
+  //               },
+  //               DNS_SECURITY: {
+  //                 label: "DNS Security",
+  //                 value: "DNS_SECURITY",
+  //                 path: "/security/DNS-Security",
+  //               },
+  //               SECURITY_ANALYTICS: {
+  //                 label: "Security Analytics",
+  //                 value: "SECURITY_ANALYTICS",
+  //                 path: "/security/Security-Analytics",
+  //               },
+  //             },
+  //           },
+  //           CYBERSECURITY: {
+  //             label: "Cybersecurity",
+  //             value: "CYBERSECURITY",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CSC: {
+  //                 label: "Cybersecurity Consulting",
+  //                 value: "CSC",
+  //                 path: "/cybersecurity/Cybersecurity-Consulting",
+  //               },
+  //               PT: {
+  //                 label: "Penetration Testing",
+  //                 value: "PT",
+  //                 path: "/cybersecurity/Penetration Testing",
+  //               },
+  //               VA: {
+  //                 label: "Vulnerability Assessment",
+  //                 value: "VA",
+  //                 path: "/cybersecurity/Vulnerability-Assessment ",
+  //               },
+  //               RTR: {
+  //                 label: "Ransomeware Threat Response",
+  //                 value: "RTR",
+  //                 path: "/cybersecurity/Ransomeware-Threat-Response ",
+  //               },
+  //               FI: {
+  //                 label: "Forensic Investigation",
+  //                 value: "FI",
+  //                 path: "/cybersecurity/Forensic-Investigation ",
+  //               },
+  //               MDR: {
+  //                 label: "Managed Detection and Response",
+  //                 value: "MDR",
+  //                 path: "/cybersecurity/Managed-Detection-Response ",
+  //               },
+  //             },
+  //           },
+
+  //           BLANK: {
+  //             label: "",
+  //             value: "",
+  //             shaded: false,
+  //             icon: "",
+  //             image: "",
+  //             mobile_image: "",
+  //             menus: {},
+  //           },
+
+  //           MISCELLANEOUS: {
+  //             label: "Miscellaneous",
+  //             value: "MISCELLANEOUS",
+  //             shaded: false,
+  //             icon: MISC_ICON,
+  //             image: MISC_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               CMS: {
+  //                 label: "Cloud Managed Security",
+  //                 value: "CMS",
+  //                 path: "/miscellaneous/Cloud-Managed-Security",
+  //               },
+  //               CDS: {
+  //                 label: "Cloud-Delivered Security(SASE))",
+  //                 value: "CDS",
+  //                 path: "/miscellaneous/Cloud-Delivered-Security",
+  //               },
+  //               SAAS_NOA: {
+  //                 label:
+  //                   "Security-as-a-Service for Networks Orchestration and Automation",
+  //                 value: "SAAS_NOA",
+  //                 path: "/miscellaneous/Security-as-a-Service-for-Networks",
+  //               },
+  //             },
+  //           },
+
+  //           // -- Popular ---
+  //           POPULAR: {
+  //             label: "POPULAR",
+  //             value: "POPULAR",
+  //             shaded: true,
+  //             icon: POPULAR_ICON,
+  //             image: POPULAR_ICON,
+  //             mobile_image: "",
+  //             menus: {
+  //               // -- Cisco ASA
+  //               CISCO_ASA: {
+  //                 label: "Cisco ASA",
+  //                 value: "CISCO_ASA",
+  //                 path: "/Cisco-ASA",
+  //               },
+  //               // -- Cisco FTD & FMC
+  //               CISCO_FTD_FMC: {
+  //                 label: "Cisco FTD & FMC",
+  //                 value: "CISCO_FTD_FMC",
+  //                 path: "/Cisco-FTD-FMC",
+  //               },
+  //               // -- Cisco SecureX
+  //               CISCO_SECURE_X: {
+  //                 label: "Cisco SecureX",
+  //                 value: "CISCO_SECURE_X",
+  //                 path: "/Cisco-SecureX",
+  //               },
+  //               // -- Cisco Secure Endpoint
+  //               CSE: {
+  //                 label: "Cisco Secure Endpoint(AMP)",
+  //                 value: "CSE",
+  //                 path: "/Cisco-Secure-Endpoint",
+  //               },
+  //               // -- Cisco Duo
+  //               CISCO_DUO: {
+  //                 label: "Cisco Duo",
+  //                 value: "CISCO_DUO",
+  //                 path: "/Cisco-Duo",
+  //               },
+  //               // -- Cisco Umbrella
+  //               CISCO_UMBRELLA: {
+  //                 label: "Cisco Umbrella",
+  //                 value: "CISCO_UMBRELLA",
+  //                 path: "/Cisco-Umbrella",
+  //               },
+  //               // -- Cisco Velo Cloud
+  //               VWVC: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WAN_2",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+  //               // --SP_SD_WAN: {
+  //               SP_SD_WAN_2N: {
+  //                 label: "Silver Peak SD-WAN",
+  //                 value: "SP_SD_WA_2N",
+  //                 path: "/Silver-Peak-SD-WAN",
+  //               },
+
+  //               // -- Cisco DNA
+  //               CISCO_DNA: {
+  //                 label: "Cisco DNA Center",
+  //                 value: "CISCO_DNA",
+  //                 path: "/Cisco-DNA-Center",
+  //               },
+  //               // -- Cisco SD WAN
+  //               CISCO_SD_WAN: {
+  //                 label: "Cisco SD-WAN",
+  //                 value: "CISCO_SD_WAN",
+  //                 path: "/Cisco-SD-WAN",
+  //               },
+
+  //               // -- Cisco Cisco Unified Wireless
+  //               CUWNS: {
+  //                 label: "Cisco Unified Wireless Network Solution",
+  //                 value: "CUWNS",
+  //                 path: "/Cisco-Unified-Wireless-Network-Solution",
+  //               },
+  //               // -- Cisco  Enterprise NSV Infrastructure
+  //               CENIS: {
+  //                 label: "Cisco Enterprise NSV Infrastructure",
+  //                 value: "CENIS",
+  //                 path: "/Cisco-Enterprise-NSV-Infrastructure",
+  //               },
+  //               // -- Cisco meraki
+  //               CISCO_MERAKI: {
+  //                 label: "Cisco Meraki",
+  //                 value: "CISCO_MERAKI",
+  //                 path: "/Cisco-Meraki",
+  //               },
+  //               // -- Cisco Aruba Centra
+  //               ARUBA_CENTRAL: {
+  //                 label: "Aruba Central",
+  //                 value: "ARUBA_CENTRAL",
+  //                 path: "/Aruba-Central",
+  //               },
+
+  //               // -- Cisco Velo Cloud
+  //               VWVC_2: {
+  //                 label: "VmWare VeloCloud",
+  //                 value: "VWVC",
+  //                 path: "/vmware-velo-cloud",
+  //               },
+  //             },
+  //           },
+  //         },
+  //       },
+  //     },
+  //   },
+  // },
   More: {
     label: "More ",
     value: "More",

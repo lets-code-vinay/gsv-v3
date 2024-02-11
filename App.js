@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useEffect } from "react";
+import React, { Suspense, lazy, useEffect, useLayoutEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Shimmer from "./src/components/Shimmer";
 
@@ -10,13 +10,14 @@ function App() {
   /**
    * @description Rendering Page to the top
    */
-  useEffect(() => {
+  useLayoutEffect(() => {
     const scrollToTop = () => {
       window.scrollTo(0, 0);
     };
 
     // Use requestAnimationFrame to ensure the DOM is painted before scrolling
-    window.requestAnimationFrame(scrollToTop);
+    // window.requestAnimationFrame(scrollToTop);
+    scrollToTop()
   }, []);
 
   return (
@@ -36,6 +37,7 @@ function App() {
             path="/contact-us"
             element={<ContactUs image={ContactImage} />}
           /> */}
+          {/* <Route path="/lan/switching" element={<Switching />} /> */}
         </Routes>
       </BrowserRouter>
     </>
