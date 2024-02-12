@@ -1,0 +1,39 @@
+.heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+  width: 90%;
+  width: 90%;
+  margin-bottom: 2%;
+}
+
+.subtitle {
+  margin: 5% 0;
+  width: 90%;
+  margin-bottom: 2%;
+}
+
+.contactImage {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  padding-top: 10%;
+}
+
+.formContainer {
+  width: 90%;
+}
+
+.buttonClass {
+  background-color: #002446 !important;
+  color: #dfdfdf !important;
+}
+.buttonClass:hover {
+  background-color: #dfdfdf !important;
+  color: #002446 !important;
+}
+.sendButton {
+  color: #dfdfdf;
+}
