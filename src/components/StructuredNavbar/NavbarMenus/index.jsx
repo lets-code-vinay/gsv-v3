@@ -9,6 +9,7 @@ import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
+import Link from "@mui/material/Link"
 
 import { THEME_COLOR } from "../../../configs/Theme";
 import * as classes from "./styles.module.css";
@@ -109,7 +110,7 @@ const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
                       {Object.values(menus).map(
                         ({ path = "", value, label }, index) => {
                           return (
-                            <a
+                            <Link
                               href={path}
                               key={`${value}-${index}`}
                               className={classes["mainMenuLink"]}
@@ -122,7 +123,7 @@ const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
                               >
                                 {label}
                               </Typography>
-                            </a>
+                            </Link>
                           );
                         }
                       )}
