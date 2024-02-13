@@ -142,7 +142,7 @@ export const TESTIMONIAL_CARD_DATA = {
       },
       client_5: {
         value: "client_5",
-        about: "",
+        about: "_",
         author: "",
         designation: " ",
         company: "IHG Group",

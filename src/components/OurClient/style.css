@@ -211,7 +211,7 @@ hr {
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   .topContainer {
     height: 100vh;
-    padding: 21vh 10% !important;
+    padding: 20px 10% !important;
   }
   .hr {
     margin-bottom: 10px;
@@ -222,7 +222,7 @@ hr {
 @media screen and (min-width: 1281px) and (max-width: 1920px) {
   .topContainer {
     height: 100vh;
-    padding: 21vh 10% !important;
+    padding: 20px 10% !important;
   }
   .hr {
     margin: 0 auto 10px;

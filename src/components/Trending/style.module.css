@@ -84,6 +84,7 @@
   text-indent: 50px;
   overflow: overlay;
   margin-bottom: 5% !important;
+  font-size: 17px;
 }
 
 .learn-button {
@@ -404,7 +405,7 @@
   }
 
   .trendingLogo {
-    margin: 0 0% 0% 45%;
+    margin: 0 0% 5% 45%;
   }
   .hr {
     height: 2px;
@@ -435,7 +436,7 @@
   .trendingSubTitle,
   .trendingSubTitleForce,
   .learn-button {
-    font-size: 1.3rem !important;
+    font-size: 17px !important;
   }
 }
 
@@ -466,7 +467,7 @@
   }
 
   .trendingLogo {
-    margin: 0 0% 0% 45%;
+    margin: 0 0% 5% 45%;
   }
   .hr {
     height: 2px;
@@ -519,7 +520,7 @@
   }
 
   .trendingLogo {
-    margin: 0 0% 0% 45%;
+    margin: 0 0% 5% 45%;
   }
   .hr {
     height: 2px;
@@ -579,7 +580,7 @@
   }
 
   .trendingLogo {
-    margin: 0 0% 0% 45%;
+    margin: 0 0% 5% 45%;
   }
   .hr {
     height: 2px;
@@ -632,7 +633,7 @@
   }
 
   .trendingLogo {
-    margin: 0 0% 0% 45%;
+    margin: 0 0% 5% 45%;
   }
   .hr {
     height: 2px;

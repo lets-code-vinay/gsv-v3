@@ -18,11 +18,13 @@
 .image-slider {
   height: 100vh !important;
 }
+
 .infoBlock .informationBar {
   width: 60%;
   height: 210px;
   position: absolute;
 }
+
 .informationMsgContainer {
   width: 100%;
   height: fit-content;
@@ -64,6 +66,7 @@
     background-position-x: 40%;
     background-position-y: 0%;
   }
+
   .infoBlock .informationBar {
     width: 95%;
     height: 60px;
@@ -73,6 +76,7 @@
     background-position-x: 80%;
     background-position-y: 0%;
   }
+
   .informationBar .informationMsgContainer {
     width: 100%;
     height: 8vh;
@@ -80,11 +84,14 @@
     text-shadow: 1px 1px solid black;
     border-radius: 0 100px 100px 0;
   }
+
   .informationMsgContainer .informationMSG {
     color: #ffffff !important;
     opacity: 1;
     padding: 2% 5% 2% 2%;
     font-size: 0.7rem;
+    word-break: keep-all;
+
   }
 
   .progressBars {
@@ -109,6 +116,7 @@
     background-position-x: -40%;
     background-position-y: 0%;
   }
+
   .infoBlock .informationBar {
     width: 95%;
     height: 60px;
@@ -118,6 +126,7 @@
     background-position-x: -5%;
     background-position-y: 0%;
   }
+
   .informationBar .informationMsgContainer {
     width: 100%;
     height: fit-content;
@@ -125,12 +134,16 @@
     text-shadow: 1px 1px solid black;
     border-radius: 0 100px 100px 0;
   }
+
   .informationMsgContainer .informationMSG {
     color: #ffffff !important;
     padding: 1% 3% 1% 2%;
     font-size: 0.7rem;
     opacity: 1;
+    word-break: keep-all;
+
   }
+
   .progressBars {
     width: 70%;
     bottom: 33%;
@@ -151,6 +164,7 @@
     background-position-x: -12%;
     background-position-y: 0%;
   }
+
   .informationBar .informationMsgContainer {
     width: 90%;
     height: fit-content;
@@ -159,13 +173,17 @@
     border-radius: 0 100px 100px 0;
     opacity: 0.8;
   }
+
   .informationMsgContainer .informationMSG {
     color: #ffffff !important;
-    padding: 1% 2%;
+    padding: 1% 1%;
     font-size: 1rem;
     opacity: 1;
     height: 8vh;
+    word-break: keep-all;
+
   }
+
   .sliderInformationBarTitle {
     color: #ffffff;
     padding: 3% 4%;
@@ -200,6 +218,7 @@
     background-position-x: -40%;
     background-position-y: 0%;
   }
+
   .infoBlock .informationBar {
     width: 90%;
     height: 60px;
@@ -209,6 +228,7 @@
     background-position-x: -12%;
     background-position-y: 0%;
   }
+
   .informationBar .informationMsgContainer {
     width: 100%;
     height: fit-content;
@@ -216,11 +236,16 @@
     text-shadow: 1px 1px solid black;
     border-radius: 0 100px 100px 0;
   }
+
   .informationMsgContainer .informationMSG {
     color: #ffffff !important;
-    padding: 1% 2%;
+    padding: 1% 1%;
     font-size: 1rem;
+    word-break: keep-all;
+
+
   }
+
   .progressBars {
     width: 60%;
     bottom: 35%;
@@ -243,6 +268,7 @@
     background-position-y: 0%;
     font-size: 55px !important;
   }
+
   .infoBlock .informationBar {
     width: 60%;
     height: 60px;
@@ -252,6 +278,7 @@
     background-position-x: -20%;
     background-position-y: 0%;
   }
+
   .informationBar .informationMsgContainer {
     width: 100%;
     height: fit-content;
@@ -259,11 +286,16 @@
     text-shadow: 1px 1px solid black;
     border-radius: 0 100px 100px 0;
   }
+
   .informationMsgContainer .informationMSG {
     color: #ffffff !important;
-    padding: 1% 2%;
+    padding: 1% 1%;
     font-size: 24px;
+    word-break: keep-all;
+
+
   }
+
   .progressBars {
     width: 50%;
     bottom: 40%;
@@ -285,6 +317,7 @@
     background-position-x: -40%;
     background-position-y: 0%;
   }
+
   .infoBlock .informationBar {
     width: 70%;
     height: 210px;
@@ -294,6 +327,7 @@
     background-position-x: -5%;
     background-position-y: 0%;
   }
+
   .informationBar .informationMsgContainer {
     width: 100%;
     height: fit-content;
@@ -302,10 +336,14 @@
     border-radius: 0 150px 150px 0;
     opacity: 0.8;
   }
+
   .informationMSG {
-    padding: 1% 2%;
+    padding: 1% 1%;
     font-size: 2rem !important;
+    word-break: keep-all;
+
   }
+
   .progressBars {
     width: 50%;
     bottom: 35%;

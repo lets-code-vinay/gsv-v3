@@ -83,9 +83,9 @@ const MainNavBar = ({
         style={{
           backgroundColor:
             location.pathname.length > 1 ||
-            scrollPosition > 200 ||
-            isSubSectionOpen ||
-            isMoreOpen
+              scrollPosition > 200 ||
+              isSubSectionOpen ||
+              isMoreOpen
               ? "#0D274D"
               : "transparent",
           boxShadow:
@@ -137,9 +137,16 @@ const MainNavBar = ({
           </Box>
           <Box className="nav-bar-grow"></Box>
           <Box className="nav-bar-icons">
-            <SearchIcon className="search" />
-            <AccountCircleOutlinedIcon className="profile" />
-            <LanguageIcon className="globe" />
+            <Typography component='span'>
+              <SearchIcon className="search" />
+            </Typography>
+            <Typography component='span' sx={{padding: '10px'}}>
+              <AccountCircleOutlinedIcon className="profile" />
+            </Typography>
+            <Typography component='span'>
+              <LanguageIcon className="globe" />
+            </Typography>
+
           </Box>
 
           {/* To open icons */}
@@ -167,8 +174,8 @@ MainNavBar.propsType = {
  *  Default Props
  */
 MainNavBar.defaultProps = {
-  onSubNavbarOpen: () => {},
-  onNavMenus: () => {},
+  onSubNavbarOpen: () => { },
+  onNavMenus: () => { },
   isSubSectionOpen: false,
   scrollPosition: 0,
 };
