@@ -1,14 +1,14 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
 import ImageText from '../../../../More/SideBarTab/ImageText'
-import { SwitchingData } from '../../../../../configs/ITInfrastructure/Networking/LAN/Switching'
+import { SDN_Data } from '../../../../../configs/ITInfrastructure/Networking/LAN/SDN'
 import TextImage from '../../../../OrdinaryComponents/TextImage'
 
-const Switching = () => {
-    const [switchingValue, setSwitchingValue] = useState(SwitchingData)
+const SDN = () => {
+    const [switchingValue, setSwitchingValue] = useState(SDN_Data)
 
     return <>
-        <Box>{switchingValue?.title}</Box>
+        <Box>This is SDN Data {switchingValue?.title}</Box>
         {
             switchingValue?.child?.map((text, index) => {
                 return <>
@@ -31,4 +31,4 @@ const Switching = () => {
     </>
 }
 
-export default Switching
+export default SDN

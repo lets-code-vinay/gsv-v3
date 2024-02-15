@@ -8,7 +8,7 @@ export const SwitchingData = {
     child: [{
         image: Switching,
         mobile_image: "",
-        subtitle: `
+        details: `
             Switching is the process of connecting different devices and networks in a way 
             that allows data to be transmitted efficiently and securely. Switching can improve 
             the performance, reliability, and scalability of your organisation's network, as well
@@ -25,7 +25,7 @@ export const SwitchingData = {
     {
         image: Switching_cable,
         mobile_image: "",
-        subtitle: `
+        details: `
         Whether you need to upgrade your existing switches, add new ones, or migrate to a 
         different vendor or platform, we can help you achieve your goals with minimal 
         disruption and maximum satisfaction. We can also provide ongoing support and 

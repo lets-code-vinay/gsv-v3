@@ -113,7 +113,7 @@ const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
                               href={path}
                               key={`${value}-${index}`}
                               className={classes["mainMenuLink"]}
-                              target="_blank"
+                              // target="_blank"
                               rel="noreferrer"
                             >
                               <Typography
