@@ -71,12 +71,12 @@ export const NAVBAR_MENUS = {
                 AI: {
                   label: "Artificial Intelligence for IT Operations",
                   value: "AI",
-                  path: "/lan/Cloud-Managed-Network",
+                  path: "/lan/AI-operations",
                 },
                 IoT: {
                   label: "Internet of Things (IoT)",
                   value: "IoT",
-                  path: "/lan/Cloud-Managed-Network",
+                  path: "/lan/IoT",
                 },
               },
             },
