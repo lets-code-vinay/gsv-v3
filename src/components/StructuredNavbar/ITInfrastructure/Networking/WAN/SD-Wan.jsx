@@ -1,19 +1,19 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
 import ImageText from '../../../../More/SideBarTab/ImageText'
-import { LanRoutingData } from '../../../../../configs/ITInfrastructure/Networking/LAN/Routing'
 import TextImage from '../../../../OrdinaryComponents/TextImage'
+import { SDWAN_Data } from '../../../../../configs/ITInfrastructure/Networking/WAN/SDWAN'
 
 const SD_WAN = () => {
-    const [switchingValue, setSwitchingValue] = useState(LanRoutingData)
+    const [data, setData] = useState(SDWAN_Data)
 
     return <>
-        <Box>
-            This is SD WAN
-            {switchingValue?.title}
+        <Box sx={{margin: '5%', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
+            
+            {data?.title}
         </Box>
         {
-            switchingValue?.child?.map((text, index) => {
+            data?.child?.map((text, index) => {
                 return <>
                     <ImageText
                         title={text?.title}

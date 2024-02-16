@@ -1,14 +1,14 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
 import ImageText from '../../../../More/SideBarTab/ImageText'
-import { SwitchingData } from '../../../../../configs/ITInfrastructure/Networking/LAN/Switching'
 import TextImage from '../../../../OrdinaryComponents/TextImage'
+import { CMN_Data } from '../../../../../configs/ITInfrastructure/Networking/LAN/CloudManagedNetwork'
 
-const Switching = () => {
-    const [data, setData] = useState(SwitchingData)
+const CloudManagedNetwork = () => {
+    const [data, setData] = useState(CMN_Data)
 
     return <>
-        <Box sx={{margin: '5%', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
+       <Box sx={{margin: '5%', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
             
             {data?.title}
         </Box>
@@ -34,4 +34,4 @@ const Switching = () => {
     </>
 }
 
-export default Switching
+export default CloudManagedNetwork

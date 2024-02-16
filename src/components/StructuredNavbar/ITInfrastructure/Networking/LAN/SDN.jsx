@@ -5,12 +5,15 @@ import { SDN_Data } from '../../../../../configs/ITInfrastructure/Networking/LAN
 import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const SDN = () => {
-    const [switchingValue, setSwitchingValue] = useState(SDN_Data)
+    const [data, setData] = useState(SDN_Data)
 
     return <>
-        <Box>This is SDN Data {switchingValue?.title}</Box>
+        <Box sx={{margin: '5%', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
+            
+            {data?.title}
+        </Box>
         {
-            switchingValue?.child?.map((text, index) => {
+            data?.child?.map((text, index) => {
                 return <>
                     <ImageText
                         title={text?.title}

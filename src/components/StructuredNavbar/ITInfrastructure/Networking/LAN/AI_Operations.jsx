@@ -1,11 +1,11 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
 import ImageText from '../../../../More/SideBarTab/ImageText'
-import { SwitchingData } from '../../../../../configs/ITInfrastructure/Networking/LAN/Switching'
 import TextImage from '../../../../OrdinaryComponents/TextImage'
+import { AI_Operations_Data } from '../../../../../configs/ITInfrastructure/Networking/LAN/AI_Operations'
 
-const Switching = () => {
-    const [data, setData] = useState(SwitchingData)
+const AI_Operations = () => {
+    const [data, setData] = useState(AI_Operations_Data)
 
     return <>
         <Box sx={{margin: '5%', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
@@ -34,4 +34,4 @@ const Switching = () => {
     </>
 }
 
-export default Switching
+export default AI_Operations

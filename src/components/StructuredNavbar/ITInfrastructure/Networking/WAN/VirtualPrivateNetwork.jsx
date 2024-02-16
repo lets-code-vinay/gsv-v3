@@ -1,19 +1,19 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
 import ImageText from '../../../../More/SideBarTab/ImageText'
-import { SwitchingData } from '../../../../../configs/ITInfrastructure/Networking/LAN/Switching'
 import TextImage from '../../../../OrdinaryComponents/TextImage'
+import { VPN_Data } from '../../../../../configs/ITInfrastructure/Networking/WAN/VPN'
 
-const Switching = () => {
-    const [data, setData] = useState(SwitchingData)
+const VirtualPrivateNetwork = () => {
+    const [switchingValue, setSwitchingValue] = useState(VPN_Data)
 
     return <>
-        <Box sx={{margin: '5%', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
+       <Box sx={{margin: '5%', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
             
             {data?.title}
         </Box>
         {
-            data?.child?.map((text, index) => {
+            switchingValue?.child?.map((text, index) => {
                 return <>
                     <ImageText
                         title={text?.title}
@@ -34,4 +34,4 @@ const Switching = () => {
     </>
 }
 
-export default Switching
+export default VirtualPrivateNetwork

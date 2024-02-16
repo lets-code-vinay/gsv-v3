@@ -1,14 +1,14 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
 import ImageText from '../../../../More/SideBarTab/ImageText'
-import { SwitchingData } from '../../../../../configs/ITInfrastructure/Networking/LAN/Switching'
 import TextImage from '../../../../OrdinaryComponents/TextImage'
+import { Unified_Wireless_Data } from '../../../../../configs/ITInfrastructure/Networking/Wireless And Mobility/UnifiedWireless'
 
-const Switching = () => {
-    const [data, setData] = useState(SwitchingData)
+const UnifiedWireless = () => {
+    const [data, setData] = useState(Unified_Wireless_Data)
 
     return <>
-        <Box sx={{margin: '5%', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
+          <Box sx={{margin: '5%', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
             
             {data?.title}
         </Box>
@@ -34,4 +34,4 @@ const Switching = () => {
     </>
 }
 
-export default Switching
+export default UnifiedWireless

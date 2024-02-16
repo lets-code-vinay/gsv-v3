@@ -1,11 +1,11 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
 import ImageText from '../../../../More/SideBarTab/ImageText'
-import { SwitchingData } from '../../../../../configs/ITInfrastructure/Networking/LAN/Switching'
 import TextImage from '../../../../OrdinaryComponents/TextImage'
+import { IBN_Data } from '../../../../../configs/ITInfrastructure/Networking/LAN/IntentBasedNetwork'
 
-const Switching = () => {
-    const [data, setData] = useState(SwitchingData)
+const InternetBasedNetwork = () => {
+    const [data, setData] = useState(IBN_Data)
 
     return <>
         <Box sx={{margin: '5%', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
@@ -34,4 +34,4 @@ const Switching = () => {
     </>
 }
 
-export default Switching
+export default InternetBasedNetwork

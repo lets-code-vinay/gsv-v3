@@ -1,19 +1,19 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
 import ImageText from '../../../../More/SideBarTab/ImageText'
-import { SwitchingData } from '../../../../../configs/ITInfrastructure/Networking/LAN/Switching'
 import TextImage from '../../../../OrdinaryComponents/TextImage'
+import { CMW_ServiceProvider } from '../../../../../configs/ITInfrastructure/Networking/ServiceProvider/CMW_ServiceProvider'
 
-const Switching = () => {
-    const [data, setData] = useState(SwitchingData)
+const CMW_Service_Provider = () => {
+    const [switchingValue, setSwitchingValue] = useState(CMW_ServiceProvider)
 
     return <>
-        <Box sx={{margin: '5%', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
-            
-            {data?.title}
+        <Box>
+            This is routing
+            {switchingValue?.title}
         </Box>
         {
-            data?.child?.map((text, index) => {
+            switchingValue?.child?.map((text, index) => {
                 return <>
                     <ImageText
                         title={text?.title}
@@ -34,4 +34,4 @@ const Switching = () => {
     </>
 }
 
-export default Switching
+export default CMW_Service_Provider

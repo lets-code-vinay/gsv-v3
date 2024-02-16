@@ -5,15 +5,15 @@ import { LanRoutingData } from '../../../../../configs/ITInfrastructure/Networki
 import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const Routing = () => {
-    const [switchingValue, setSwitchingValue] = useState(LanRoutingData)
+    const [data, setData] = useState(LanRoutingData)
 
     return <>
-        <Box>
-            This is routing
-            {switchingValue?.title}
+       <Box sx={{margin: '5%', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
+            
+            {data?.title}
         </Box>
         {
-            switchingValue?.child?.map((text, index) => {
+            data?.child?.map((text, index) => {
                 return <>
                     <ImageText
                         title={text?.title}

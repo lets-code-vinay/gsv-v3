@@ -2,11 +2,11 @@
 import Img1 from '../../../../assets/images/IT & Infrastructure/Routing Images/Img1.jpg'
 // import Switching_cable from '../../../../assets/images/IT & Infrastructure/switching-cable.jpg'
 
-export const SDN_Data = {
+export const CMN_Data = {
 
-    title: "SDN",
+    title: "Cloud Managed Network",
     child: [{
-        image: Img1,
+        image: '',
         mobile_image: "",
         details: `
         Are you looking for a way to optimize your organization's workflow and performance? Do you want to reduce costs, save time, and improve customer satisfaction? If so, you might need routing for your organization.
