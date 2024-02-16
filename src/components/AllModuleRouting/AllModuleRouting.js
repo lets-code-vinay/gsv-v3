@@ -160,7 +160,7 @@ export const AllModuleRouting = {
   //   {
   //     id: "P_NSV",
   //     path: "/Cisco-Enterprise-NSV-Infrastructure",
-  //     component: <EnterpriseNSVInfrastructur />,
+  //     component: <EnterpriseNSVInfrastructure />,
   //   },
   //   {
   //     id: "P_ArubaCentral",
