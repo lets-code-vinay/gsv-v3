@@ -42,6 +42,11 @@ const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
   //   closeNavBar();
   // }
 
+  const handlePath = (e, path)=> {
+    // e.preventDefault()
+    console.log('menu routing', path)
+    navigate(`/services/${path}`);
+  }
   return (
     <>
       <Grid container className={classes["subMenu1"]}>
@@ -109,12 +114,14 @@ const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
                       {Object.values(menus).map(
                         ({ path = "", value, label }, index) => {
                           return (
-                            <Link
-                              href={path}
+                            <Box
+                              // href={path}
                               key={`${value}-${index}`}
                               className={classes["mainMenuLink"]}
-                              target="_blank"
+                              // target="_blank"
                               rel="noreferrer"
+                              sx={{cursor:'pointer'}}
+                              onClick={(e) => handlePath(e, path)}
                             >
                               <Typography
                                 className={classes["mainMenuText"]}
@@ -122,7 +129,7 @@ const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
                               >
                                 {label}
                               </Typography>
-                            </Link>
+                            </Box>
                           );
                         }
                       )}

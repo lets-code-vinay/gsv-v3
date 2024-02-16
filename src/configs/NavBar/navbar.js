@@ -15,6 +15,10 @@ import MOBILE_DATA_SECURITY_IMAGE from "../../assets/images/menu-images/mobile-d
 import MOBILE_NETWORK from "../../assets/images/menu-images/mobile-network.webp";
 import { THEME_COLOR } from "../Theme";
 
+// path="/:service-type/:domain/:domain-service/:domain-detail"
+
+const it_infra_path = "it-infrastrucutre"
+
 export const NAVBAR_MENUS = {
   IT_INFRASTRUCTURE: {
     label: "IT Infrastructure",
@@ -45,18 +49,23 @@ export const NAVBAR_MENUS = {
                 ROUTING: {
                   label: "Routing",
                   value: "ROUTING",
-                  path: "/lan/routing",
+                  // path: "/lan/routing",
+                  path:"it-infrastructure/networking/lan/routing",
                   test: "TEST-as",
                 },
                 SWITCHING: {
                   label: "Switching",
                   value: "SWITCHING",
-                  path: "/lan/switching",
+                  // path: "/lan/switching",
+                  path:"it-infrastructure/networking/lan/switching",
+
                 },
                 SDN: {
                   label: "Software Defined Networking",
                   value: "SDN",
-                  path: "/lan/software-Defined-networking",
+                  // path: "/lan/software-Defined-networking",
+                  path:"it-infrastructure/networking/lan/sdn",
+
                 },
                 CMN: {
                   label: "Cloud Managed Network",

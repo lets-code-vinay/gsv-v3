@@ -1,6 +1,7 @@
 import React, { Suspense, lazy, useEffect, useLayoutEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 import Shimmer from "./src/components/Shimmer";
+import DomainPages from "./src/pages/DomainPages";
 
 const Homepage = lazy(() => import("./src/pages/Homepage"));
 // import ContactUs from "./Views/ContactUs";
@@ -20,6 +21,9 @@ function App() {
     scrollToTop()
   }, []);
 
+  const searchParams = useParams()
+
+  console.log('===', window.location.path)
   return (
     <>
       <BrowserRouter>
@@ -30,6 +34,20 @@ function App() {
             element={
               <Suspense fallback={<Shimmer />}>
                 <Homepage />
+              </Suspense>
+            }
+          />
+          <Route
+            // exact
+            // path="/it-insfrastructure/networking/lan/routing"
+            path="/services/:dynamic-route"
+            // path={`services/${window.location.path}`}
+            loader={({ params }) => {
+              console.log('ashu',params); // "hotspur"
+            }}
+            element={
+              <Suspense fallback={<Shimmer />}>
+                <DomainPages />
               </Suspense>
             }
           />
