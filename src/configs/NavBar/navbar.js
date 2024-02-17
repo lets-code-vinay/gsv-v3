@@ -373,7 +373,7 @@ export const NAVBAR_MENUS = {
               mobile_image: "",
               menus: {
                 VCISCOS: {
-                  label: "Virtual CISO Services",
+                  label: "Virtual CISCO Services",
                   value: "VCISCOS",
                   path: "/cybersecurity/virtual-cisco-services",
                 },
@@ -390,22 +390,22 @@ export const NAVBAR_MENUS = {
                 VA: {
                   label: "Vulnerability Assessment",
                   value: "VA",
-                  path: "/cybersecurity/Vulnerability-Assessment ",
+                  path: "/cybersecurity/Vulnerability-Assessment",
                 },
                 RTR: {
                   label: "Ransomeware Threat Response",
                   value: "RTR",
-                  path: "/cybersecurity/Ransomeware-Threat-Response ",
+                  path: "/cybersecurity/Ransomeware-Threat-Response",
                 },
                 FI: {
                   label: "Forensic Investigation",
                   value: "FI",
-                  path: "/cybersecurity/Forensic-Investigation ",
+                  path: "/cybersecurity/Forensic-Investigation",
                 },
                 MDR: {
                   label: "Managed Detection and Response",
                   value: "MDR",
-                  path: "/cybersecurity/Managed-Detection-Response ",
+                  path: "/cybersecurity/Managed-Detection-Response",
                 },
               },
             },

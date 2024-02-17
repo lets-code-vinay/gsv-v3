@@ -14,8 +14,23 @@ import EnterpriseMobility from "../StructuredNavbar/ITInfrastructure/Networking/
 import LocationBasedServices from "../StructuredNavbar/ITInfrastructure/Networking/Wireless And Mobility/LocationBasedServices";
 import UnifiedWireless from "../StructuredNavbar/ITInfrastructure/Networking/Wireless And Mobility/UnifiedWireless";
 import WIFI from "../StructuredNavbar/ITInfrastructure/Networking/Wireless And Mobility/WIFI";
+import CyberSecurity_Consulting from "../StructuredNavbar/ITInfrastructure/Security/CyberSecurity/CyberSecurityConsulting";
+import Forensic_Investigation from "../StructuredNavbar/ITInfrastructure/Security/CyberSecurity/ForensicInvestigation";
+import Manage_Detection_Res from "../StructuredNavbar/ITInfrastructure/Security/CyberSecurity/ManagedDetectionResponse";
+import Penetration_Testing from "../StructuredNavbar/ITInfrastructure/Security/CyberSecurity/PenetrationTesting";
+import RansomeWareThreate from "../StructuredNavbar/ITInfrastructure/Security/CyberSecurity/RansomewareThreatResponse";
+import VirtualCiscoService from "../StructuredNavbar/ITInfrastructure/Security/CyberSecurity/VirtualCiscoServices";
+import VulnerabilityAssesment from "../StructuredNavbar/ITInfrastructure/Security/CyberSecurity/VulnerabilityAssessment";
+import Cloud_Security from "../StructuredNavbar/ITInfrastructure/Security/Security/CloudInfrastructureSecurity";
+import DNS_Security from "../StructuredNavbar/ITInfrastructure/Security/Security/DNSSecurity";
 import DataCenterSecurity from "../StructuredNavbar/ITInfrastructure/Security/Security/DataCenterSecurity";
+import Email_Security from "../StructuredNavbar/ITInfrastructure/Security/Security/EmailSecurity";
+import EndPoint_Security from "../StructuredNavbar/ITInfrastructure/Security/Security/EndpointSecuirty";
+import IdentityAccessMFASecurity from "../StructuredNavbar/ITInfrastructure/Security/Security/IdentityAndAccessMFA";
 import NetworkSecurity from "../StructuredNavbar/ITInfrastructure/Security/Security/NetworkSecurity";
+import RemoteAccessVPN from "../StructuredNavbar/ITInfrastructure/Security/Security/RemoteAccessVPN";
+import Security_Analytics from "../StructuredNavbar/ITInfrastructure/Security/Security/SecuirtyAnalytics";
+import WebAPISecurity from "../StructuredNavbar/ITInfrastructure/Security/Security/WebAPISecurity";
 
 export const AllModuleRouting = {
   // It Infrastructure   ---> Networking
@@ -195,47 +210,83 @@ export const AllModuleRouting = {
       component: <DataCenterSecurity />,
     },
     {
-      id: "Lan_SDN",
-      path: "/lan/software-Defined-networking",
-      component: <SDN />,
+      id: "C_I_F",
+      path: "/security/Cloud-Infrastructure-Security",
+      component: <Cloud_Security />,
     },
     {
-      id: "Lan_CMN",
-      path: "/lan/Cloud-Managed-Network",
-      component: <CloudManagedNetwork />,
+      id: "EP_Security",
+      path: "/security/endpoint-Security",
+      component: <EndPoint_Security />,
     },
     {
-      id: "Lan_IBN",
-      path: "/lan/Intent-based-Networking",
-      component: <InternetBasedNetwork />,
+      id: "Email_Security",
+      path: "/security/Email-Security",
+      component: <Email_Security />,
     },
     {
-      id: "Lan_AI",
-      path: "/lan/AI-operations",
-      component: <AI_Operations />,
+      id: "WebApi_Security",
+      path: "/security/Web-Application-API-Security",
+      component: <WebAPISecurity />,
     },
     {
-      id: "Lan_IoT",
-      path: "/lan/IoT",
-      component: <InternetOfThings />,
+      id: "RAVS",
+      path: "/security/Remote-Access-VPN-Security",
+      component: <RemoteAccessVPN />,
+    },
+    {
+      id: "EP_Security",
+      path: "/security/Identity-Access-Management",
+      component: <IdentityAccessMFASecurity />,
+    },
+    {
+      id: "WebApi_Security",
+      path: "/security/DNS-Security",
+      component: <DNS_Security />,
+    },
+    {
+      id: "RAVS",
+      path: "/security/Security-Analytics",
+      component: <Security_Analytics />,
     },
   ],
   CYBER_SECURITY: [
     {
-      id: "Wan_sD-wan",
-      path: "/wan/sd-wan",
-      component: <SD_WAN />,
+      id: "VCS",
+      path: "/cybersecurity/virtual-cisco-services",
+      component: <VirtualCiscoService />,
     },
     {
-      id: "Wan_SASE",
-      path: "/wan/SASE",
-      component: <SASE />,
+      id: "Cyber_Consulting",
+      path: "/cybersecurity/Cybersecurity-Consulting",
+      component: <CyberSecurity_Consulting />,
     },
     {
-      id: "Wan_VPN",
-      path: "/wan/virtual-private-network",
-      component: <VirtualPrivateNetwork />,
+      id: "Penetration_testing",
+      path: "/cybersecurity/Penetration Testing",
+      component: <Penetration_Testing />,
     },
+    {
+      id: "V_A",
+      path: "/cybersecurity/Vulnerability-Assessment",
+      component: <VulnerabilityAssesment />,
+    },
+    {
+      id: "Ransomeware_Threat",
+      path: "/cybersecurity/Ransomeware-Threat-Response",
+      component: <RansomeWareThreate />,
+    },
+    {
+      id: "F_I",
+      path: "/cybersecurity/Forensic-Investigation",
+      component: <Forensic_Investigation />,
+    },
+    {
+      id: "Managed_Detection",
+      path: "/cybersecurity/Managed-Detection-Response",
+      component: <Manage_Detection_Res />,
+    },
+
   ],
 
   // MISCELLANEOUS: [

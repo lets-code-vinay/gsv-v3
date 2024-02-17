@@ -1,7 +1,7 @@
 import Img1 from "../../../../assets/images/IT & Infrastructure/Routing Images/Img1.jpg";
 // import Switching_cable from '../../../../assets/images/IT & Infrastructure/switching-cable.jpg'
 
-export const VPNSecurity = {
+export const RemoteAccessVPN_Data = {
   title: "Remote Access VPN Security",
   child: [
     {
