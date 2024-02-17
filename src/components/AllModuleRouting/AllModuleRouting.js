@@ -14,8 +14,11 @@ import EnterpriseMobility from "../StructuredNavbar/ITInfrastructure/Networking/
 import LocationBasedServices from "../StructuredNavbar/ITInfrastructure/Networking/Wireless And Mobility/LocationBasedServices";
 import UnifiedWireless from "../StructuredNavbar/ITInfrastructure/Networking/Wireless And Mobility/UnifiedWireless";
 import WIFI from "../StructuredNavbar/ITInfrastructure/Networking/Wireless And Mobility/WIFI";
+import DataCenterSecurity from "../StructuredNavbar/ITInfrastructure/Security/Security/DataCenterSecurity";
+import NetworkSecurity from "../StructuredNavbar/ITInfrastructure/Security/Security/NetworkSecurity";
 
 export const AllModuleRouting = {
+  // It Infrastructure   ---> Networking
   LAN: [
     {
       id: "Lan_Routing",
@@ -178,4 +181,136 @@ export const AllModuleRouting = {
   //     component: <PrismaSDWAN />,
   //   },
   // ],
+
+  // It Infrastructure   ---> Security
+  SECURITY: [
+    {
+      id: "Network_Security",
+      path: "/security/network-security",
+      component: <NetworkSecurity />,
+    },
+    {
+      id: "Data_Center_Security",
+      path: "/security/data-center-security",
+      component: <DataCenterSecurity />,
+    },
+    {
+      id: "Lan_SDN",
+      path: "/lan/software-Defined-networking",
+      component: <SDN />,
+    },
+    {
+      id: "Lan_CMN",
+      path: "/lan/Cloud-Managed-Network",
+      component: <CloudManagedNetwork />,
+    },
+    {
+      id: "Lan_IBN",
+      path: "/lan/Intent-based-Networking",
+      component: <InternetBasedNetwork />,
+    },
+    {
+      id: "Lan_AI",
+      path: "/lan/AI-operations",
+      component: <AI_Operations />,
+    },
+    {
+      id: "Lan_IoT",
+      path: "/lan/IoT",
+      component: <InternetOfThings />,
+    },
+  ],
+  CYBER_SECURITY: [
+    {
+      id: "Wan_sD-wan",
+      path: "/wan/sd-wan",
+      component: <SD_WAN />,
+    },
+    {
+      id: "Wan_SASE",
+      path: "/wan/SASE",
+      component: <SASE />,
+    },
+    {
+      id: "Wan_VPN",
+      path: "/wan/virtual-private-network",
+      component: <VirtualPrivateNetwork />,
+    },
+  ],
+
+  // MISCELLANEOUS: [
+  //   {
+  //     id: "MISC_OOBManagement",
+  //     path: "/miscellaneous/OOB-Management",
+  //     component: <OOBManagement />,
+  //   },
+  //   {
+  //     id: "MISC_AMH",
+  //     path: "/miscellaneous/Automated-Monitoring-Helpdesk",
+  //     component: <AMH_MISC />,
+  //   },
+  //   {
+  //     id: "MISC_OAA",
+  //     path: "/miscellaneous/Orchestration-and-Automation",
+  //     component: <Orchestration_And_Automation />,
+  //   },
+  //   {
+  //     id: "MISC_SDWANS",
+  //     path: "/miscellaneous/SD-WAN-as-a-service",
+  //     component: <SDWAN_Service />,
+  //   },
+  // ],
+  // POPULAR: [
+  //   {
+  //     id: "P_DNA",
+  //     path: "/Cisco-DNA-Center",
+  //     component: <CiscoDNACenter />,
+  //   },
+  //   {
+  //     id: "P_CUWNS",
+  //     path: "/Cisco-Unified-Wireless-Network-Solution",
+  //     component: <CiscoUnifiedWirelessNetworkSolution />,
+  //   },
+  //   {
+  //     id: "P_Cisco-Meraki",
+  //     path: "/Cisco-Meraki",
+  //     component: <CiscoMeraki />,
+  //   },
+  //   {
+  //     id: "P_/vmware",
+  //     path: "/vmware-velo-cloud",
+  //     component: <VmwareVeloCloud />,
+  //   },
+  //   {
+  //     id: "P_/CloudGenix",
+  //     path: "/CloudGenix",
+  //     component: <CloudGenix />,
+  //   },
+  //   {
+  //     id: "P_SD-WAN",
+  //     path: "/Cisco-SD-WAN",
+  //     component: <CiscoSDWAN />,
+  //   },
+  //   {
+  //     id: "P_NSV",
+  //     path: "/Cisco-Enterprise-NSV-Infrastructure",
+  //     component: <EnterpriseNSVInfrastructure />,
+  //   },
+  //   {
+  //     id: "P_ArubaCentral",
+  //     path: "/Aruba-Central",
+  //     component: <ArubaCentral />,
+  //   },
+  //   {
+  //     id: "P_SilverPeak",
+  //     path: "/Silver-Peak-SD-WAN",
+  //     component: <SilverPeakSDWAN />,
+  //   },
+  //   {
+  //     id: "P_Prisma",
+  //     path: "/Prisma-SD-WAN",
+  //     component: <PrismaSDWAN />,
+  //   },
+  // ],
+
 };

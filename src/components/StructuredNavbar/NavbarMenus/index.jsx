@@ -96,6 +96,7 @@ const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
                     <Box
                       key={index}
                       className={classes["MenuTitleContainerBox"]}
+                      sx={{ width: '100%' }}
                     >
                       <Box className={classes["MenuTitleContainer"]}>
                         <Typography
@@ -109,20 +110,22 @@ const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
                       {Object.values(menus).map(
                         ({ path = "", value, label }, index) => {
                           return (
-                            <Link
-                              href={path}
+                            <Typography
                               key={`${value}-${index}`}
-                              className={classes["mainMenuLink"]}
-                              // target="_blank"
-                              rel="noreferrer"
+                              className={classes["mainMenuText"]}
+                              variant={"body1"}
+                              sx={{fontSize: '14px', padding:'6px 0px'}}
                             >
-                              <Typography
-                                className={classes["mainMenuText"]}
-                                variant={"body1"}
+                              <Link
+                                href={path}
+                                className={classes["mainMenuLink"]}
+                                // target="_blank"
+                                rel="noreferrer"
+                                underline="none"
                               >
                                 {label}
-                              </Typography>
-                            </Link>
+                              </Link>
+                            </Typography>
                           );
                         }
                       )}

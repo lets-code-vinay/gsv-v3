@@ -18,7 +18,7 @@ export const IdentityAccess = {
       GSV is a leading provider of IAM solutions for enterprises of all sizes and industries. We have the
       expertise, experience, and technology to help you design, deploy, and manage your IAM
       infrastructure. Whether you need cloud-based, on-premises, or hybrid IAM solutions, we can help
-      you find the best fit for your organization and team
+      you find the best fit for your organization and team.
         
         
                   `,

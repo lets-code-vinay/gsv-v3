@@ -3,29 +3,24 @@ import React, { useState } from 'react'
 import ImageText from '../../../../More/SideBarTab/ImageText'
 import TextImage from '../../../../OrdinaryComponents/TextImage'
 import { Unified_Wireless_Data } from '../../../../../configs/ITInfrastructure/Networking/Wireless And Mobility/UnifiedWireless'
+import ShowData from '../../../../OrdinaryComponents'
 
 const UnifiedWireless = () => {
     const [data, setData] = useState(Unified_Wireless_Data)
 
     return <>
-          <Box sx={{margin: '5%', fontSize: '50px', display: 'flex', justifyContent: 'center'}}>
-            
+        <Box sx={{ background: '#44a8f44f', borderRadius: '20px', fontWeight: '900', margin: '8% 5% 0% 5%', fontSize: '50px', display: 'flex', justifyContent: 'center' }}>
+
             {data?.title}
         </Box>
         {
             data?.child?.map((text, index) => {
                 return <>
-                    <ImageText
-                        title={text?.title}
-                        subtitle={text.details}
+                    <ShowData
+                        title={data?.title}
+                        details={text.details}
                         image={text.image}
-                        alt='test'
-                    />
-                    <TextImage
-                        title={text?.title}
-                        subtitle={text.details}
-                        image={text.image}
-                        alt='test'
+                        alt='img'
                     />
                 </>
             })

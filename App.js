@@ -10,13 +10,10 @@ const Homepage = lazy(() => import("./src/pages/Homepage"));
 // import ContactImage from "./Assets/Images/contact-us.svg";
 
 function App() {
-
-  const [routData, setRoutData] = useState(false)
   /**
    * @description Rendering Page to the top
    */
   useLayoutEffect(() => {
-    // show()
     const scrollToTop = () => {
       window.scrollTo(0, 0);
     };
@@ -68,22 +65,19 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <StructuredNavbar scrollPosition={scrollPosition} /> 
+        <StructuredNavbar scrollPosition={scrollPosition} />
         <Suspense fallback={<Shimmer />}>
-          {/* {showSwitchingComponent()} */}
-          {/* {showLanRoutingComponent()} */}
+
           <Routes>
             <Route
               exact
               path="/"
               element={
-                <Homepage />
+                <Suspense fallback={<Shimmer />}>
+                  <Homepage />
+                </Suspense>
               }
             />
-            {/* <Route
-            path="/contact-us"
-            element={<ContactUs image={ContactImage} />}
-          /> */}
             {
               Object.values(AllModuleRouting)?.map((item, i) => {
                 return item?.map((val, i) => {
@@ -93,16 +87,11 @@ function App() {
                 })
               })
             }
+            {/* <Route
+            path="/contact-us"
+            element={<ContactUs image={ContactImage} />}
+          /> */}
             {/* <Route path="/lan/switching" element={<Switching />} /> */}
-
-            {/* garbage routing will fallback this component */}
-            <Route
-              exact
-              path="/*"
-              element={
-                <Homepage />
-              }
-            />
           </Routes>
         </Suspense>
       </BrowserRouter>

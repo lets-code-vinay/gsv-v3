@@ -3,7 +3,7 @@
 import Cloud_Image from '../../../../assets/images/IT & Infrastructure/Service Provider Images/cloud-managed-wireless.jpg'
 export const CMW_ServiceProvider = {
 
-    title: "SASE",
+    title: "Cloud Manage Wireless",
     child: [{
         image: Cloud_Image,
         mobile_image: "",

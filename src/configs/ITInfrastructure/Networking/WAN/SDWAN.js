@@ -2,7 +2,7 @@
 import SDWAN from '../../../../assets/images/IT & Infrastructure/WAN Images/SDWAN.png'
 export const SDWAN_Data = {
 
-    title: "Routing",
+    title: "SDWAN",
     child: [{
         image: SDWAN,
         mobile_image: "",

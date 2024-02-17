@@ -1,7 +1,4 @@
 
-
-
-
 export const WIFI_data = {
 
     title: "WIFI 6",

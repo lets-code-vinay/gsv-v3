@@ -1,13 +1,13 @@
 import Img1 from "../../../../assets/images/IT & Infrastructure/Routing Images/Img1.jpg";
 // import Switching_cable from '../../../../assets/images/IT & Infrastructure/switching-cable.jpg'
 
-export const EndpointSecurity = {
+export const EndpointSecurity_Data = {
   title: "Endpoint Security",
   child: [
     {
       image: "",
       mobile_image: "",
-      details: `
+      details: ` Security is perpetually abundant until it becomes insufficient.
       Endpoint security protects the devices and data of employees, customers, and partners from cyber
       threats and attacks. With the rise of remote work, cloud computing, and mobile devices, endpoint
       security has become even more important and challenging.

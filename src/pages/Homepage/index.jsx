@@ -37,7 +37,7 @@ const Homepage = () => {
 
   return (
     <Box className={classes["homepage-container"]} ref={mainRef}>
-      <StructuredNavbar scrollPosition={scrollPosition} />
+      {/* <StructuredNavbar scrollPosition={scrollPosition} /> */}
       <MainSlider scrollPosition={scrollPosition} />
       <Trending />
       <Insight />

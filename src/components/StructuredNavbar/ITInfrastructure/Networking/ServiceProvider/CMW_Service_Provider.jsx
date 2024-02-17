@@ -3,29 +3,24 @@ import React, { useState } from 'react'
 import ImageText from '../../../../More/SideBarTab/ImageText'
 import TextImage from '../../../../OrdinaryComponents/TextImage'
 import { CMW_ServiceProvider } from '../../../../../configs/ITInfrastructure/Networking/ServiceProvider/CMW_ServiceProvider'
+import ShowData from '../../../../OrdinaryComponents'
 
 const CMW_Service_Provider = () => {
-    const [switchingValue, setSwitchingValue] = useState(CMW_ServiceProvider)
+    const [data, setData] = useState(CMW_ServiceProvider)
 
     return <>
-        <Box>
-            This is routing
-            {switchingValue?.title}
+        <Box sx={{ background: '#44a8f44f', borderRadius: '20px', fontWeight: '900', margin: '8% 5% 0% 5%', fontSize: '50px', display: 'flex', justifyContent: 'center' }}>
+
+            {data?.title}
         </Box>
         {
-            switchingValue?.child?.map((text, index) => {
+            data?.child?.map((text, index) => {
                 return <>
-                    <ImageText
-                        title={text?.title}
-                        subtitle={text.details}
+                    <ShowData
+                        title={data?.title}
+                        details={text.details}
                         image={text.image}
-                        alt='test'
-                    />
-                    <TextImage
-                        title={text?.title}
-                        subtitle={text.details}
-                        image={text.image}
-                        alt='test'
+                        alt='img'
                     />
                 </>
             })
