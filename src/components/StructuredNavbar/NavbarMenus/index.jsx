@@ -9,7 +9,6 @@ import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
-import Link from "@mui/material/Link"
 
 import { THEME_COLOR } from "../../../configs/Theme";
 import * as classes from "./styles.module.css";
@@ -41,6 +40,13 @@ const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
   // if (scrollPosition > 100) {
   //   closeNavBar();
   // }
+  /**
+   * @description Redirecting to respective Routes
+   */
+  const handleRedirect = (path) => () => {
+    onCloseMenu(false);
+    navigate(path);
+  };
 
   return (
     <>
@@ -96,7 +102,7 @@ const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
                     <Box
                       key={index}
                       className={classes["MenuTitleContainerBox"]}
-                      sx={{ width: '100%' }}
+                      sx={{ width: "100%" }}
                     >
                       <Box className={classes["MenuTitleContainer"]}>
                         <Typography
@@ -114,17 +120,19 @@ const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
                               key={`${value}-${index}`}
                               className={classes["mainMenuText"]}
                               variant={"body1"}
-                              sx={{fontSize: '14px', padding:'6px 0px'}}
+                              sx={{
+                                fontSize: "14px",
+                                padding: "6px 0px",
+                                cursor: "pointer",
+                              }}
                             >
-                              <Link
-                                href={path}
+                              <Typography
                                 className={classes["mainMenuLink"]}
-                                // target="_blank"
-                                rel="noreferrer"
                                 underline="none"
+                                onClick={handleRedirect(path)}
                               >
                                 {label}
-                              </Link>
+                              </Typography>
                             </Typography>
                           );
                         }
