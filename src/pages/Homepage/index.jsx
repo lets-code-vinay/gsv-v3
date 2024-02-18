@@ -10,6 +10,7 @@ import InfinitySliderContainer from "../../components/InfinitySliderContainers";
 import OurClients from "../../components/OurClient/OurClients";
 import Testimonials from "../../components/Testimonials";
 import OurPresence from "../../components/OurPresence";
+import StructuredNavbar from "../../components/StructuredNavbar";
 
 const Homepage = () => {
   const mainRef = React.useRef(null);
@@ -17,7 +18,7 @@ const Homepage = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   /**
-   * @description Getting Scroll Poition
+   * @description Getting Scroll Position
    * @param {object} event
    */
   const handleScroll = () => {
@@ -36,6 +37,7 @@ const Homepage = () => {
 
   return (
     <Box className={classes["homepage-container"]} ref={mainRef}>
+      {/* <StructuredNavbar scrollPosition={scrollPosition} /> */}
       <MainSlider scrollPosition={scrollPosition} />
       <Trending />
       <Insight />

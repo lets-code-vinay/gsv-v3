@@ -94,7 +94,7 @@ const MainSlider = ({ scrollPosition }) => {
           </div>
         </Carousel>
 
-        <StructuredNavbar scrollPosition={scrollPosition} />
+        {/* <StructuredNavbar scrollPosition={scrollPosition} /> */}
 
         <Typography
           variant={"body1"}

@@ -310,21 +310,21 @@ export const TESTIMONIAL_CARD_DATA = {
       client_2: {
         value: "client_2",
         about:
-          "Fantastic vendor. Trustworthy, highly skilled and experienced team members. We've relied on them exclusively since 2013 and look forward to continuing that relationship. As IT Director of the company, I sleep better knowing GSV has got our backs 24/7/365.",
-        author: "Nick Spann",
-        designation: "IT Director",
-        company: "7 Eleven",
-        image: SEVEN_Eleven,
-        client: "Retail",
-      },
-      client_3: {
-        value: "client_3",
-        about:
           "We were having Internet speed and performance issues and server issues that were not getting resolved for quite a long time. Our need for a new managed service provider was inevitable, and GSV was the perfect answer. Kudos to the GSV Team for helping us focus on the future while they handle our day-to-day operations.",
         author: "Rajesh",
         designation: "Operations Head",
         company: "Spar Hypermarket",
         image: SPAR,
+        client: "Retail",
+      },
+      client_3: {
+        value: "client_3",
+        about:
+          "Fantastic vendor. Trustworthy, highly skilled and experienced team members. We've relied on them exclusively since 2013 and look forward to continuing that relationship. As IT Director of the company, I sleep better knowing GSV has got our backs 24/7/365.",
+        author: "Nick Spann",
+        designation: "IT Director",
+        company: "7 Eleven",
+        image: SEVEN_Eleven,
         client: "Retail",
       },
       client_4: {

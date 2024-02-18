@@ -4,6 +4,7 @@ import "./styles.css";
 import Grid from "@mui/material/Grid";
 
 const ImageText = ({ title = "", subtitle = "", image = "", alt = "" }) => {
+  // in this component dom is represented first text data and then right side image
   return (
     <Grid container className="displayFlex">
       <Grid item xs={12} sm={12} md={5} lg={5}>

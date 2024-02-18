@@ -275,7 +275,7 @@
   }
 
   .imageBlock .menuInformationBar {
-    width: 33%;
+    width: 25%;
     bottom: 18%;
     background-position: bottom 18% left 0%;
     background-position-x: -18%;
@@ -283,7 +283,7 @@
     position: absolute;
   }
   .menuInformationBar .menuInformationMSGContainer {
-    width: 82%;
+    width: 100%;
     height: fit-content;
     border-radius: 0 150px 150px 0;
   }

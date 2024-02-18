@@ -258,7 +258,7 @@ const Footer = () => {
           </Grid>
         </Grid>
       </Box>
-      <FooterBottom />
+      <FooterBottom sx={''}/>
     </>
   );
 };

@@ -9,7 +9,6 @@ import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
-import Link from "@mui/material/Link"
 
 import { THEME_COLOR } from "../../../configs/Theme";
 import * as classes from "./styles.module.css";
@@ -41,6 +40,13 @@ const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
   // if (scrollPosition > 100) {
   //   closeNavBar();
   // }
+  /**
+   * @description Redirecting to respective Routes
+   */
+  const handleRedirect = (path) => () => {
+    onCloseMenu(false);
+    navigate(path);
+  };
 
   return (
     <>
@@ -96,6 +102,7 @@ const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
                     <Box
                       key={index}
                       className={classes["MenuTitleContainerBox"]}
+                      sx={{ width: "100%" }}
                     >
                       <Box className={classes["MenuTitleContainer"]}>
                         <Typography
@@ -109,20 +116,24 @@ const NavbarMenus = ({ navMenus = {}, onCloseMenu }) => {
                       {Object.values(menus).map(
                         ({ path = "", value, label }, index) => {
                           return (
-                            <Link
-                              href={path}
+                            <Typography
                               key={`${value}-${index}`}
-                              className={classes["mainMenuLink"]}
-                              target="_blank"
-                              rel="noreferrer"
+                              className={classes["mainMenuText"]}
+                              variant={"body1"}
+                              sx={{
+                                fontSize: "14px",
+                                padding: "6px 0px",
+                                cursor: "pointer",
+                              }}
                             >
                               <Typography
-                                className={classes["mainMenuText"]}
-                                variant={"body1"}
+                                className={classes["mainMenuLink"]}
+                                underline="none"
+                                onClick={handleRedirect(path)}
                               >
                                 {label}
                               </Typography>
-                            </Link>
+                            </Typography>
                           );
                         }
                       )}
