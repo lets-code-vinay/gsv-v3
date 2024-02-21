@@ -2,6 +2,7 @@ import { Box, Grid } from '@mui/material'
 import React, { useState } from 'react'
 import ShowData from '../../../../OrdinaryComponents'
 import { IdentityAccessMFA_Data } from '../../../../../configs/ITInfrastructure/Security/Security/IdentityAndAccess'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const IdentityAccessMFASecurity = () => {
     const [data, setData] = useState(IdentityAccessMFA_Data)
@@ -11,7 +12,7 @@ const IdentityAccessMFASecurity = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -22,7 +23,8 @@ const IdentityAccessMFASecurity = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data}/>
 
     </>
 }

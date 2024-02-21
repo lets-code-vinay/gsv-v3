@@ -1,9 +1,8 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
-import ImageText from '../../../../More/SideBarTab/ImageText'
-import TextImage from '../../../../OrdinaryComponents/TextImage'
 import { CMW_ServiceProvider } from '../../../../../configs/ITInfrastructure/Networking/ServiceProvider/CMW_ServiceProvider'
 import ShowData from '../../../../OrdinaryComponents'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const CMW_Service_Provider = () => {
     const [data, setData] = useState(CMW_ServiceProvider)
@@ -13,7 +12,7 @@ const CMW_Service_Provider = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -24,7 +23,8 @@ const CMW_Service_Provider = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data} />
 
     </>
 }

@@ -1,10 +1,8 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
-import ImageText from '../../../../More/SideBarTab/ImageText'
-import TextImage from '../../../../OrdinaryComponents/TextImage'
-import { SDWAN_Data } from '../../../../../configs/ITInfrastructure/Networking/WAN/SDWAN'
 import ShowData from '../../../../OrdinaryComponents'
 import { Forensic_Investigation_Data } from '../../../../../configs/ITInfrastructure/Security/CyberSecurity/ForensicInvestigation'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const Forensic_Investigation = () => {
     const [data, setData] = useState(Forensic_Investigation_Data)
@@ -14,7 +12,7 @@ const Forensic_Investigation = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -25,7 +23,9 @@ const Forensic_Investigation = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data} />
+
     </>
 }
 

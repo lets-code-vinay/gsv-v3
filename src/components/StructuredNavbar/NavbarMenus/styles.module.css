@@ -29,8 +29,9 @@
 .menuBlock {
   background-color: #ffffff;
   width: 100%;
-  height: 100%;
-  padding: 3% 3% 0 3%;
+  height: 95%;
+  padding: 0% 3% 0 3%;
+  overflow: scroll;
 }
 .menuBlock div div {
   align-items: center;

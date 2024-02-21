@@ -2,8 +2,8 @@ import { Box } from '@mui/material'
 import React, { useState } from 'react'
 import ImageText from '../../../../More/SideBarTab/ImageText'
 import { SDN_Data } from '../../../../../configs/ITInfrastructure/Networking/LAN/SDN'
-import TextImage from '../../../../OrdinaryComponents/TextImage'
 import ShowData from '../../../../OrdinaryComponents'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const SDN = () => {
     const [data, setData] = useState(SDN_Data)
@@ -13,18 +13,7 @@ const SDN = () => {
 
             {data?.title}
         </Box>
-        {
-            data?.child?.map((text, index) => {
-                return <>
-                    <ShowData
-                        title={data?.title}
-                        details={text.details}
-                        image={text.image}
-                        alt='img'
-                    />
-                </>
-            })
-        }
+        <TextImage data={data} />
 
     </>
 }

@@ -1,11 +1,8 @@
 import { Box, Grid } from '@mui/material'
 import React, { useState } from 'react'
-import ImageText from '../../../../More/SideBarTab/ImageText'
-import { LanRoutingData } from '../../../../../configs/ITInfrastructure/Networking/LAN/Routing'
-import TextImage from '../../../../OrdinaryComponents/TextImage'
 import ShowData from '../../../../OrdinaryComponents'
-import { Network_Security_Data } from '../../../../../configs/ITInfrastructure/Security/Security/NetworkSecurity'
 import { Data_Center_Security_Data } from '../../../../../configs/ITInfrastructure/Security/Security/DataCenterSecurity'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const DataCenterSecurity = () => {
     const [data, setData] = useState(Data_Center_Security_Data)
@@ -15,7 +12,7 @@ const DataCenterSecurity = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -26,8 +23,8 @@ const DataCenterSecurity = () => {
                     />
                 </>
             })
-        }
-
+        } */}
+        <TextImage data={data} />
     </>
 }
 

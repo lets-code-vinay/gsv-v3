@@ -1,9 +1,8 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
-import ImageText from '../../../../More/SideBarTab/ImageText'
-import TextImage from '../../../../OrdinaryComponents/TextImage'
 import { IBN_Data } from '../../../../../configs/ITInfrastructure/Networking/LAN/IntentBasedNetwork'
 import ShowData from '../../../../OrdinaryComponents'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const InternetBasedNetwork = () => {
     const [data, setData] = useState(IBN_Data)
@@ -13,7 +12,7 @@ const InternetBasedNetwork = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -24,7 +23,8 @@ const InternetBasedNetwork = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data} />
 
     </>
 }

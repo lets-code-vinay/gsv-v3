@@ -12,7 +12,7 @@ const SDWAN_Service = () => {
             This is routing
             {switchingValue?.title}
         </Box>
-        {
+        {/* {
             switchingValue?.child?.map((text, index) => {
                 return <>
                     <ImageText
@@ -29,7 +29,9 @@ const SDWAN_Service = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data} />
+
 
     </>
 }

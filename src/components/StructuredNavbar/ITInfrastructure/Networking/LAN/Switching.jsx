@@ -1,9 +1,8 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
-import ImageText from '../../../../More/SideBarTab/ImageText'
 import { SwitchingData } from '../../../../../configs/ITInfrastructure/Networking/LAN/Switching'
-import TextImage from '../../../../OrdinaryComponents/TextImage'
 import ShowData from '../../../../OrdinaryComponents'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const Switching = () => {
     const [data, setData] = useState(SwitchingData)
@@ -13,7 +12,7 @@ const Switching = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -24,7 +23,9 @@ const Switching = () => {
                     />
                 </>
             })
-        }
+        } */}
+
+        <TextImage data={data} />
     </>
 }
 

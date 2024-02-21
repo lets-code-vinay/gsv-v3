@@ -1,10 +1,8 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
-import ImageText from '../../../../More/SideBarTab/ImageText'
-import TextImage from '../../../../OrdinaryComponents/TextImage'
-import { SDWAN_Data } from '../../../../../configs/ITInfrastructure/Networking/WAN/SDWAN'
 import ShowData from '../../../../OrdinaryComponents'
 import { Penetration_data } from '../../../../../configs/ITInfrastructure/Security/CyberSecurity/PenetrationTesting'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const Penetration_Testing = () => {
     const [data, setData] = useState(Penetration_data)
@@ -14,7 +12,7 @@ const Penetration_Testing = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -25,7 +23,9 @@ const Penetration_Testing = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data} />
+
     </>
 }
 

@@ -1,9 +1,8 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
-import ImageText from '../../../../More/SideBarTab/ImageText'
-import TextImage from '../../../../OrdinaryComponents/TextImage'
 import { VPN_Data } from '../../../../../configs/ITInfrastructure/Networking/WAN/VPN'
 import ShowData from '../../../../OrdinaryComponents'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const VirtualPrivateNetwork = () => {
     const [data, setData] = useState(VPN_Data)
@@ -13,7 +12,7 @@ const VirtualPrivateNetwork = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -24,7 +23,9 @@ const VirtualPrivateNetwork = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data} />
+
     </>
 }
 

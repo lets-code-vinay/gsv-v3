@@ -1,9 +1,8 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
-import ImageText from '../../../../More/SideBarTab/ImageText'
-import TextImage from '../../../../OrdinaryComponents/TextImage'
 import { SASE_Data } from '../../../../../configs/ITInfrastructure/Networking/WAN/SASE'
 import ShowData from '../../../../OrdinaryComponents'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const SASE = () => {
     const [data, setData] = useState(SASE_Data)
@@ -13,7 +12,7 @@ const SASE = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -24,7 +23,9 @@ const SASE = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data} />
+
     </>
 }
 

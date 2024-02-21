@@ -2,6 +2,7 @@ import { Box, Grid } from '@mui/material'
 import React, { useState } from 'react'
 import ShowData from '../../../../OrdinaryComponents'
 import { EndpointSecurity_Data } from '../../../../../configs/ITInfrastructure/Security/Security/EndpointSecuirty'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const EndPoint_Security = () => {
     const [data, setData] = useState(EndpointSecurity_Data)
@@ -11,7 +12,7 @@ const EndPoint_Security = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -22,7 +23,8 @@ const EndPoint_Security = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data}/>
 
     </>
 }

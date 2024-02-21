@@ -2,6 +2,7 @@ import { Box, Grid } from '@mui/material'
 import React, { useState } from 'react'
 import ShowData from '../../../../OrdinaryComponents'
 import { RemoteAccessVPN_Data } from '../../../../../configs/ITInfrastructure/Security/Security/RemoteAccessVPN'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const RemoteAccessVPN = () => {
     const [data, setData] = useState(RemoteAccessVPN_Data)
@@ -11,7 +12,7 @@ const RemoteAccessVPN = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -22,7 +23,8 @@ const RemoteAccessVPN = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data}/>
 
     </>
 }

@@ -1,9 +1,8 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
-import ImageText from '../../../../More/SideBarTab/ImageText'
-import TextImage from '../../../../OrdinaryComponents/TextImage'
 import { WIFI_data } from '../../../../../configs/ITInfrastructure/Networking/Wireless And Mobility/WIFI'
 import ShowData from '../../../../OrdinaryComponents'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const WIFI = () => {
     const [data, setData] = useState(WIFI_data)
@@ -13,7 +12,7 @@ const WIFI = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -24,7 +23,8 @@ const WIFI = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data} />
 
     </>
 }

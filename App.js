@@ -57,8 +57,6 @@ function App() {
     };
   }, []);
   localStorage.setItem("scrollPosition", scrollPosition);
-  console.log('window', window?.location?.pathname === '/lan/switching'
-  )
 
   // navbar end ---
 

@@ -2,10 +2,9 @@
 
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
-import ImageText from '../../../../More/SideBarTab/ImageText'
-import TextImage from '../../../../OrdinaryComponents/TextImage'
 import { LBS_Data } from '../../../../../configs/ITInfrastructure/Networking/Wireless And Mobility/LocationBasedServices'
 import ShowData from '../../../../OrdinaryComponents'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const LocationBasedServices = () => {
     const [data, setData] = useState(LBS_Data)
@@ -15,7 +14,7 @@ const LocationBasedServices = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -26,7 +25,9 @@ const LocationBasedServices = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data} />
+
 
     </>
 }

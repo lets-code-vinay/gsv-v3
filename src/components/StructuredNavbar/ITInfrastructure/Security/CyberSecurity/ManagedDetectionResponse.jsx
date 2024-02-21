@@ -1,6 +1,7 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
 import ShowData from '../../../../OrdinaryComponents'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 import { ManagedDetection_Data } from '../../../../../configs/ITInfrastructure/Security/CyberSecurity/ManagedDetectionResponse'
 const Manage_Detection_Res = () => {
     const [data, setData] = useState(ManagedDetection_Data)
@@ -10,7 +11,7 @@ const Manage_Detection_Res = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -21,7 +22,8 @@ const Manage_Detection_Res = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data}/>
     </>
 }
 

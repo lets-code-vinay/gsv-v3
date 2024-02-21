@@ -1,9 +1,8 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
-import ImageText from '../../../../More/SideBarTab/ImageText'
-import TextImage from '../../../../OrdinaryComponents/TextImage'
 import { Enterprise_Mobility_Data } from '../../../../../configs/ITInfrastructure/Networking/Wireless And Mobility/EnterpriseMobility'
 import ShowData from '../../../../OrdinaryComponents'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const EnterpriseMobility = () => {
     const [data, setData] = useState(Enterprise_Mobility_Data)
@@ -13,7 +12,7 @@ const EnterpriseMobility = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -24,7 +23,8 @@ const EnterpriseMobility = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data} />
 
     </>
 }

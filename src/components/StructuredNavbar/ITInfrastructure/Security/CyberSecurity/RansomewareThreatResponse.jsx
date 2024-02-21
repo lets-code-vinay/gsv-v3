@@ -1,11 +1,8 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
-import ImageText from '../../../../More/SideBarTab/ImageText'
-import TextImage from '../../../../OrdinaryComponents/TextImage'
-import { SDWAN_Data } from '../../../../../configs/ITInfrastructure/Networking/WAN/SDWAN'
 import ShowData from '../../../../OrdinaryComponents'
-import { Penetration_data } from '../../../../../configs/ITInfrastructure/Security/CyberSecurity/PenetrationTesting'
 import { RansomeWare_Data } from '../../../../../configs/ITInfrastructure/Security/CyberSecurity/RansomewareThreatResponse'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const RansomeWareThreate = () => {
     const [data, setData] = useState(RansomeWare_Data)
@@ -15,7 +12,7 @@ const RansomeWareThreate = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -26,7 +23,9 @@ const RansomeWareThreate = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data} />
+
     </>
 }
 

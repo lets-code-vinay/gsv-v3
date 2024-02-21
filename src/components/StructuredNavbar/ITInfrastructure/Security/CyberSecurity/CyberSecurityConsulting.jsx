@@ -1,10 +1,8 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
-import ImageText from '../../../../More/SideBarTab/ImageText'
-import TextImage from '../../../../OrdinaryComponents/TextImage'
-import { SDWAN_Data } from '../../../../../configs/ITInfrastructure/Networking/WAN/SDWAN'
 import ShowData from '../../../../OrdinaryComponents'
 import { Cyber_Security_Data } from '../../../../../configs/ITInfrastructure/Security/CyberSecurity/CyberSecurityConsulting'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const CyberSecurity_Consulting = () => {
     const [data, setData] = useState(Cyber_Security_Data)
@@ -14,7 +12,7 @@ const CyberSecurity_Consulting = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -25,7 +23,9 @@ const CyberSecurity_Consulting = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data} />
+
     </>
 }
 

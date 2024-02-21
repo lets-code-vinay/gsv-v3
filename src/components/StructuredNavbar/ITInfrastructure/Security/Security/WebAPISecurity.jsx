@@ -2,6 +2,7 @@ import { Box, Grid } from '@mui/material'
 import React, { useState } from 'react'
 import ShowData from '../../../../OrdinaryComponents'
 import { WebAPISecurity_Data } from '../../../../../configs/ITInfrastructure/Security/Security/WebAPISecurity'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const WebAPISecurity = () => {
     const [data, setData] = useState(WebAPISecurity_Data)
@@ -11,7 +12,7 @@ const WebAPISecurity = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -22,7 +23,8 @@ const WebAPISecurity = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data}/>
 
     </>
 }

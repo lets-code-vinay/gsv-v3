@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import { IOT_Data } from "../../../../../configs/ITInfrastructure/Networking/LAN/IOT";
 import ShowData from "../../../../OrdinaryComponents";
+import TextImage from "../../../../OrdinaryComponents/TextImage";
 
 const InternetOfThings = () => {
   const [data, setData] = useState(IOT_Data);
@@ -21,7 +22,7 @@ const InternetOfThings = () => {
       >
         {data?.title}
       </Box>
-      {data?.child?.map((text, index) => {
+      {/* {data?.child?.map((text, index) => {
         return (
           <>
             <ShowData
@@ -32,7 +33,9 @@ const InternetOfThings = () => {
             />
           </>
         );
-      })}
+      })} */}
+        <TextImage data={data}/>
+
     </>
   );
 };

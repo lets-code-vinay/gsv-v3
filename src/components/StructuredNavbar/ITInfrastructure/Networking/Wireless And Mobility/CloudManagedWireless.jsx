@@ -1,9 +1,8 @@
 import { Box } from '@mui/material'
 import React, { useState } from 'react'
-import ImageText from '../../../../More/SideBarTab/ImageText'
-import TextImage from '../../../../OrdinaryComponents/TextImage'
 import { CMW_Data } from '../../../../../configs/ITInfrastructure/Networking/Wireless And Mobility/CloudManagedWireless'
 import ShowData from '../../../../OrdinaryComponents'
+import TextImage from '../../../../OrdinaryComponents/TextImage'
 
 const Cloud_Managed_Wireless = () => {
     const [data, setData] = useState(CMW_Data)
@@ -14,7 +13,7 @@ const Cloud_Managed_Wireless = () => {
 
             {data?.title}
         </Box>
-        {
+        {/* {
             data?.child?.map((text, index) => {
                 return <>
                     <ShowData
@@ -25,7 +24,8 @@ const Cloud_Managed_Wireless = () => {
                     />
                 </>
             })
-        }
+        } */}
+        <TextImage data={data} />
 
     </>
 }
