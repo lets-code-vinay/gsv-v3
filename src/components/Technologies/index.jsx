@@ -72,6 +72,8 @@ const Technologies = () => {
                     src={Software_Define_Grid}
                     className={classes["imgTagSoftware"]}
                     alt="tech"
+                    width='100%'
+                    height='100%'
                   />
                 </div>
                 <h3 className={classes["text"]}>Software-Defined Networking</h3>
@@ -146,7 +148,7 @@ const Technologies = () => {
                 >
                   <CardContent className={`${classes["cardContent"]}`}>
                     <div className={classes["overlay"]}>
-                      <div className={className} src={img}>
+                      <div className={className} src={img} style={{ width: '100%', height: '100%' }}>
                         <img
                           src={img}
                           width="100%"

@@ -6,7 +6,8 @@ import StructuredNavbar from "./src/components/StructuredNavbar";
 import Routing from "./src/components/StructuredNavbar/ITInfrastructure/Networking/LAN/Routing";
 import { AllModuleRouting } from "./src/components/AllModuleRouting/AllModuleRouting";
 const Homepage = lazy(() => import("./src/pages/Homepage"));
-// import ContactUs from "./Views/ContactUs";
+import ContactUs from "./src/pages/ContactUs";
+import ContactImage from "./src/assets/images/contact-us.svg";
 // import ContactImage from "./Assets/Images/contact-us.svg";
 
 function App() {
@@ -86,10 +87,14 @@ function App() {
               })
             }
             {/* <Route
-            path="/contact-us"
-            element={<ContactUs image={ContactImage} />}
-          /> */}
-            {/* <Route path="/lan/switching" element={<Switching />} /> */}
+              path="/contact-us"
+              element={<ContactUs image={ContactImage} />}
+            /> */}
+            <Route path="/*" element={
+              <Suspense fallback={<Shimmer />}>
+                <Homepage />
+              </Suspense>}
+            />
           </Routes>
         </Suspense>
       </BrowserRouter>

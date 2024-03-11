@@ -156,7 +156,7 @@ const Trending = () => {
                             className={`btn btn-outline-primary ${classes["learn-button"]}`}
                             rel="noreferrer"
                             onClick={handleLearnMore(title, subtitle)}
-                            onMouseOver={handleLearnMore(title, subtitle)}
+                            // onMouseOver={handleLearnMore(title, subtitle)}
                             variant="h5"
                           >
                             Learn More...

@@ -63,7 +63,7 @@ hr {
   background-position: top 40% left 3%;
   background-position-x: 40%;
   background-position-y: 3%;
-  z-index: 99;
+  z-index: 10;
 }
 
 .imageStyle {
