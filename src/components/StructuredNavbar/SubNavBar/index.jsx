@@ -26,6 +26,7 @@ const SubNavBar = ({
 }) => {
   const [menuListing, setMenuListing] = useState({});
   const [value, setValue] = useState(0);
+  const [showRoutingPages, setShowRoutingPages] = useState(false)
 
   /**
    * @description Changing the values on button click
@@ -33,7 +34,9 @@ const SubNavBar = ({
    * @param {Object} _
    * @param {Number} newValue
    */
-  const handleChange = (_, newValue) => {
+
+  const handleChange = (e, newValue) => {
+    setShowRoutingPages(false)
     setValue(newValue);
     setMenuListing(Object.values(subNavMenus?.menus)[newValue] || menuListing);
     onNavMenus(Object.values(subNavMenus?.menus)[newValue] || menuListing);
@@ -48,9 +51,9 @@ const SubNavBar = ({
 
   return (
     <ClickAwayListener
-      mouseEvent="onMouseDown"
-      touchEvent="onTouchStart"
-      // onClickAway={handleClose}
+      // mouseEvent="onMouseDown" this show error in console
+      // touchEvent="onTouchStart"  this show error in console
+    // onClickAway={handleClose}
     >
       <Box className={classes["headBar"]} ref={nodeRef}>
         {(!subNavMenus.isMore || isSubNavbarOpened) && (
@@ -62,6 +65,7 @@ const SubNavBar = ({
             <Tabs
               value={value}
               onChange={handleChange}
+              onClick={() => {setShowRoutingPages(false)}}
               aria-label="basic tabs"
               className={classes["subMenuTabContainer"]}
             >
@@ -81,7 +85,12 @@ const SubNavBar = ({
 
         {/* --- Navbar menus ---- */}
         {isSubNavbarOpened && !subNavMenus.isMore && (
-          <NavbarMenus navMenus={navMenus} onCloseMenu={handleCloseMenu} />
+          <NavbarMenus
+            navMenus={navMenus}
+            onCloseMenu={handleCloseMenu}
+            showRoutingPages={showRoutingPages}
+            setShowRoutingPages={setShowRoutingPages}
+          />
         )}
       </Box>
     </ClickAwayListener>

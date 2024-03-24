@@ -2,6 +2,8 @@ import Img1 from "../../../../assets/images/IT & Infrastructure/Routing Images/I
 // import Switching_cable from '../../../../assets/images/IT & Infrastructure/switching-cable.jpg'
 
 export const CISCO_Security = {
+    parent: "IT & Infrastruture",
+    thumbnail: Img1,
     title: "Virtual CISCO Security",
     child: [
         {

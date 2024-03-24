@@ -8,28 +8,6 @@ const SDWAN_Service = () => {
     const [switchingValue, setSwitchingValue] = useState(LanRoutingData)
 
     return <>
-        <Box>
-            This is routing
-            {switchingValue?.title}
-        </Box>
-        {/* {
-            switchingValue?.child?.map((text, index) => {
-                return <>
-                    <ImageText
-                        title={text?.title}
-                        subtitle={text.details}
-                        image={text.image}
-                        alt='test'
-                    />
-                    <TextImage
-                        title={text?.title}
-                        subtitle={text.details}
-                        image={text.image}
-                        alt='test'
-                    />
-                </>
-            })
-        } */}
         <TextImage data={data} />
 
 

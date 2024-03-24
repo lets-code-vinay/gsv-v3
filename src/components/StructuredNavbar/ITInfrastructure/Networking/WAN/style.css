@@ -1,0 +1,11 @@
+.background-img{
+    background-image: url('../../../../../assets/images/SD-WAN.jpg');
+    background-repeat: no-repeat;
+    height: 75vh;
+}
+
+.bread-crumb {
+    color: wheat;
+    width: 80%;
+    padding: 20px 0;
+}

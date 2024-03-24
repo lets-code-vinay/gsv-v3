@@ -2,7 +2,8 @@
 
 import SASE_Image from '../../../../assets/images/IT & Infrastructure/WAN Images/SASE.png'
 export const SASE_Data = {
-
+    parent: "IT & Infrastruture",
+    thumbnail: SASE_Image,
     title: "SASE",
     child: [{
         image: SASE_Image,

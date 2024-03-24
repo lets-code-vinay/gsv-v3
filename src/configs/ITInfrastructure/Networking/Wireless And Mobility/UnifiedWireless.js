@@ -1,6 +1,8 @@
+import LBS_Image from '../../../../assets/images/IT & Infrastructure/WAM Images/LBS Image.png'
 
 export const Unified_Wireless_Data = {
-
+    parent: "IT & Infrastruture",
+    thumbnail: LBS_Image,
     title: "Unified Wireless",
     child: [{
         image: '',

@@ -1,7 +1,8 @@
 
 import LBS_Image from '../../../../assets/images/IT & Infrastructure/WAM Images/LBS Image.png'
 export const LBS_Data = {
-
+    parent: "IT & Infrastruture",
+    thumbnail: LBS_Image,
     title: "Location Based Services",
     child: [{
         image: LBS_Image,

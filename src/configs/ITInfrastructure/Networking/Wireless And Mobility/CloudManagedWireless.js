@@ -4,7 +4,8 @@ import CMW_Image2 from '../../../../assets/images/IT & Infrastructure/WAM Images
 
 
 export const CMW_Data = {
-
+    parent: "IT & Infrastruture",
+    thumbnail: CMW_Image,
     title: "Cloud Managed Wireless",
     child: [{
         image: CMW_Image,

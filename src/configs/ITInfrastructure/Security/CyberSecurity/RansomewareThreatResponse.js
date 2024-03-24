@@ -2,6 +2,8 @@ import Img1 from "../../../../assets/images/IT & Infrastructure/Routing Images/I
 // import Switching_cable from '../../../../assets/images/IT & Infrastructure/switching-cable.jpg'
 
 export const RansomeWare_Data = {
+    parent: "IT & Infrastruture",
+    thumbnail: Img1,
     title: "Ransomeware Threat Response",
     child: [
         {

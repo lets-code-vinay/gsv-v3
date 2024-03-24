@@ -3,7 +3,8 @@ import Switching from '../../../../assets/images/IT & Infrastructure/switching.j
 import Switching_cable from '../../../../assets/images/IT & Infrastructure/switching-cable.jpg'
 
 export const SwitchingData = {
-
+    parent: 'IT & Infrastructure',
+    thumbnail: Switching,
     title: "Switching",
     child: [{
         image: Switching,

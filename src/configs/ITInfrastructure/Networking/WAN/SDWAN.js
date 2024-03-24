@@ -1,7 +1,8 @@
 
 import SDWAN from '../../../../assets/images/IT & Infrastructure/WAN Images/SDWAN.png'
 export const SDWAN_Data = {
-
+    parent: "IT & Infrastruture",
+    thumbnail: SDWAN,
     title: "SDWAN",
     child: [{
         image: SDWAN,

@@ -2,6 +2,7 @@ import Img1 from "../../../../assets/images/IT & Infrastructure/Routing Images/I
 // import Switching_cable from '../../../../assets/images/IT & Infrastructure/switching-cable.jpg'
 
 export const CMN_Data = {
+  parent:'IT & Infrastructure',
   title: "Cloud Managed Network",
   child: [
     {
@@ -40,4 +41,5 @@ export const CMN_Data = {
       cloud-managed network services from GSV`,
     },
   ],
+  thumbnail: Img1
 };

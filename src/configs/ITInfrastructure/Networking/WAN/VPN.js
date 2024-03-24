@@ -3,7 +3,8 @@
 
 import SDWAN from '../../../../assets/images/IT & Infrastructure/WAN Images/SDWAN.png'
 export const VPN_Data = {
-
+    parent: "IT & Infrastruture",
+    thumbnail: SDWAN,
     title: "Virtual Private Network",
     child: [{
         image: SDWAN,

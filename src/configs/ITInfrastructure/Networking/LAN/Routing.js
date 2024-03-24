@@ -3,7 +3,8 @@ import Img1 from '../../../../assets/images/IT & Infrastructure/Routing Images/I
 // import Switching_cable from '../../../../assets/images/IT & Infrastructure/switching-cable.jpg'
 
 export const LanRoutingData = {
-
+    parent: 'IT & Infrastructure',
+    thumbnail: Img1,
     title: "Routing",
     child: [
         {

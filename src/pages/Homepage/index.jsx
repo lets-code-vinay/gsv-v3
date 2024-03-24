@@ -36,7 +36,9 @@ const Homepage = () => {
   localStorage.setItem("scrollPosition", scrollPosition);
 
   return (
-    <Box className={classes["homepage-container"]} ref={mainRef}>
+    <Box 
+    // className={classes["homepage-container"]} 
+    ref={mainRef}>
       {/* <StructuredNavbar scrollPosition={scrollPosition} /> */}
       <MainSlider scrollPosition={scrollPosition} />
       <Trending />
@@ -46,7 +48,7 @@ const Homepage = () => {
       <OurPresence />
       <Testimonials />
       <OurClients />
-      <Footer />
+      {/* <Footer /> */}
     </Box>
   );
 };

@@ -1,9 +1,11 @@
+import LBS_Image from '../../../../assets/images/IT & Infrastructure/WAM Images/LBS Image.png'
 
 export const WIFI_data = {
-
+  parent: "IT & Infrastruture",
+  thumbnail: LBS_Image,
     title: "WIFI 6",
     child: [{
-        image: '',
+        image: LBS_Image,
         mobile_image: "",
         details: `
         We are the service provider of WI-FI6, the latest and fastest wireless technology available.

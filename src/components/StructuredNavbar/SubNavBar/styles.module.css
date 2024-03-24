@@ -107,7 +107,7 @@
 
 @media screen and (min-width: 1280px) and (max-width: 1919px) {
   .headBar {
-    top: 8%;
+    top: 5%;
     background-position: top 10% left 0;
     background-position-x: 10%;
     background-position-y: 0%;
@@ -183,7 +183,7 @@
 
 @media screen and (min-width: 2560px) and (min-height: 1080px) {
   .headBar {
-    top: 9%;
+    top: 6%;
     min-height: 80px;
     background-position: top 9% left 0;
     background-position-x: 9%;

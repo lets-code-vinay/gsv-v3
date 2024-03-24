@@ -5,7 +5,7 @@ import IBN_Image from '../../../../assets/images/IT & Infrastructure/LAN Images/
 import IBN_Image2 from '../../../../assets/images/IT & Infrastructure/LAN Images/IBN_Image2.jpg'
 
 export const IBN_Data = {
-
+    parent: 'IT & Infrastructure',
     title: "Intent Based Network",
     child: [{
         image: IBN_Image,
@@ -40,6 +40,6 @@ export const IBN_Data = {
     },
 
     ],
-
+    thumbnail: Img1
 
 };

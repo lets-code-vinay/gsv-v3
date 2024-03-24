@@ -3,12 +3,12 @@ import Img1 from '../../../../assets/images/IT & Infrastructure/Routing Images/I
 // import Switching_cable from '../../../../assets/images/IT & Infrastructure/switching-cable.jpg'
 
 export const AI_Operations_Data = {
-
+    parent: 'It & Infrastructure',
     title: "AI Operations",
     child: [{
         image: '',
         mobile_image: "",
-        details: <div>  
+        details: <div>
             Are you looking for a way to boost your IT performance and productivity? Do you want to leverage the power of artificial intelligence to solve complex problems and optimize your workflows? If yes, then you need artificial intelligence for IT services from GSV!
 
             GSV is a leading provider of artificial intelligence for IT solutions that can help you transform your IT operations and achieve your business goals. Whether you need to automate tasks, monitor systems, analyse data, or enhance security, we have the right AI solution for you.
@@ -56,13 +56,13 @@ export const AI_Operations_Data = {
 
             Don't miss this chance to transform your IT operations with artificial intelligence. Contact GSV today and get a free consultation on how we can help you with our AI for IT services. We are ready to assist you with any questions or queries you may have. Let us show you how AI can make a difference for your IT!
 
-            </div>
+        </div>
 
         ,
     },
 
 
     ],
-
+    thumbnail: Img1
 
 };

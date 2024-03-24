@@ -8,6 +8,7 @@ import { AllModuleRouting } from "./src/components/AllModuleRouting/AllModuleRou
 const Homepage = lazy(() => import("./src/pages/Homepage"));
 import ContactUs from "./src/pages/ContactUs";
 import ContactImage from "./src/assets/images/contact-us.svg";
+import Footer from "./src/components/Footer/index";
 // import ContactImage from "./Assets/Images/contact-us.svg";
 
 function App() {
@@ -37,17 +38,7 @@ function App() {
     const position = window.pageYOffset; // if not work use-- window.pageYOffset
     setScrollPosition(position);
   };
-  const showSwitchingComponent = () => {
-    if (window?.location?.pathname === '/lan/switching') {
-      return <Switching />
-    }
-  }
-
-  const showLanRoutingComponent = () => {
-    if (window?.location?.pathname === '/lan/routing') {
-      return <Routing />
-    }
-  }
+ 
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -96,6 +87,8 @@ function App() {
               </Suspense>}
             />
           </Routes>
+          <Footer />
+
         </Suspense>
       </BrowserRouter>
     </>

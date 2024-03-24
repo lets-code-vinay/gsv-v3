@@ -3,7 +3,8 @@ import Img1 from '../../../../assets/images/IT & Infrastructure/Routing Images/I
 // import Switching_cable from '../../../../assets/images/IT & Infrastructure/switching-cable.jpg'
 
 export const SDN_Data = {
-
+    parent: 'IT & Infrastructure',
+    thumbnail: Img1,
     title: "SDN",
     child: [{
         image: Img1,
